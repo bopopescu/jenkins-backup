@@ -1,0 +1,28 @@
+2018-05-08 12:07:21,164 DEBUG    root            Loaded Command Group: [u'gcloud', u'init']
+2018-05-08 12:07:21,165 DEBUG    root            Running [gcloud.init] with arguments: []
+2018-05-08 12:07:21,165 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2018-05-08 12:07:21,166 INFO     ___FILE_ONLY___ Settings from your current configuration [amu2812] are:
+
+2018-05-08 12:07:21,167 INFO     ___FILE_ONLY___ core:
+  disable_usage_reporting: 'True'
+
+2018-05-08 12:07:21,167 INFO     ___FILE_ONLY___ 
+
+2018-05-08 12:07:29,463 DEBUG    root            (gcloud.init) Cannot create configuration [amu2812], it already exists.
+Traceback (most recent call last):
+  File "/var/lib/jenkins/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 844, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/var/lib/jenkins/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 756, in Run
+    resources = command_instance.Run(args)
+  File "/var/lib/jenkins/google-cloud-sdk/lib/surface/init.py", line 96, in Run
+    configuration_name = self._PickConfiguration()
+  File "/var/lib/jenkins/google-cloud-sdk/lib/surface/init.py", line 255, in _PickConfiguration
+    return self._CreateConfiguration()
+  File "/var/lib/jenkins/google-cloud-sdk/lib/surface/init.py", line 403, in _CreateConfiguration
+    named_configs.ConfigurationStore.CreateConfig(configuration_name)
+  File "/var/lib/jenkins/google-cloud-sdk/lib/googlecloudsdk/core/configurations/named_configs.py", line 238, in CreateConfig
+    .format(config_name))
+NamedConfigError: Cannot create configuration [amu2812], it already exists.
+2018-05-08 12:07:29,495 ERROR    root            (gcloud.init) Cannot create configuration [amu2812], it already exists.

@@ -1,0 +1,37 @@
+Started by upstream project "[8mha:////4Ia7MG2MzKZwdrJWXMembAin+bwcvJS9Ufs12D+lpjWeAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JH2X/OTs1KK0zJxUfQCko2JXxQAAAA==[0mDockerfile" build number [8mha:////4DXQgDPhh8UEDeRyikBORQWhOzMRCOrFrKN3CLCskNaGAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwmoBn6WflJ+i75ydmpRWmZOan6pkYA5X18Y8cAAAA=[0m52
+originally caused by:
+ Started by user [8mha:////4HCZzfWImOcXIGN7aD59HYhOERYuMZB9dM9wo69rhKsIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6pcWpRfpZqXnZmXnFSaWZOSkAiHITRscAAAA=[0mjenkinsbuild
+Building in workspace /var/lib/jenkins/workspace/kube-deploy
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github-cred-gcp
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision eb27b2c88f3490102e428093dc025d4ae1eb32d4 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f eb27b2c88f3490102e428093dc025d4ae1eb32d4
+Commit message: "Update ems-k8s-deployment.yaml"
+ > git rev-list --no-walk eb27b2c88f3490102e428093dc025d4ae1eb32d4 # timeout=10
+[kube-deploy] $ /bin/sh -xe /tmp/jenkins8337964888159742214.sh
++ grep image: ems-k8s-deployment.yaml
++ awk {print$3}
++ cut -d / -f2
++ IMAGENAME=amritase:latest
++ /var/lib/jenkins/workspace/EMS-k8s-deployment/google-cloud-sdk/bin/gcloud container clusters get-credentials cluster-1 --zone us-central1-a --project elevated-module-203506
+WARNING: Accessing a Kubernetes Engine cluster requires the kubernetes commandline
+client [kubectl]. To install, run
+  $ gcloud components install kubectl
+
+Fetching cluster endpoint and auth data.
+kubeconfig entry generated for cluster-1.
++ /var/lib/jenkins/google-cloud-sdk/bin/kubectl delete -f ems-k8s-deployment.yaml
+service "k8s" deleted
+deployment "k8s" deleted
++ /var/lib/jenkins/google-cloud-sdk/bin/kubectl create -f ems-k8s-deployment.yaml
+service "k8s" created
+deployment "k8s" created
+Finished: SUCCESS

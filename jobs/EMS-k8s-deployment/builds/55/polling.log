@@ -1,0 +1,10 @@
+Started on 8 May, 2018 2:38:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision bec3a175bbe8fc84bdbf9a55638c0198416baa97 (refs/remotes/origin/master)
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git ls-remote -h https://github.com/amritasengar/dockerfile.git # timeout=10
+Found 1 remote heads on https://github.com/amritasengar/dockerfile.git
+[poll] Latest remote head revision on refs/heads/master is: eb27b2c88f3490102e428093dc025d4ae1eb32d4
+Done. Took 1.7 sec
+Changes found

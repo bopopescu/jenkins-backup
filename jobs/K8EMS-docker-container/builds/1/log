@@ -1,0 +1,23 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/Dockerfile
+Cloning the remote Git repository
+Cloning repository https://github.com/amritasengar/dockerfile.git
+ > git init /var/lib/jenkins/workspace/Dockerfile # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision e419ae7f778152232401e7bbe43993cf100d4f68 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e419ae7f778152232401e7bbe43993cf100d4f68
+Commit message: "Create Dockerfile"
+First time build. Skipping changelog.
+Finished: SUCCESS

@@ -1,0 +1,16 @@
+2018-05-07 18:57:55,389 DEBUG    root            Loaded Command Group: [u'gcloud', u'init']
+2018-05-07 18:57:55,391 DEBUG    root            Running [gcloud.init] with arguments: []
+2018-05-07 18:57:55,391 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2018-05-07 18:57:55,392 INFO     ___FILE_ONLY___ Settings from your current configuration [default] are:
+
+2018-05-07 18:57:55,394 INFO     ___FILE_ONLY___ core:
+  account: shanky.ur.kanky@gmail.com
+  disable_usage_reporting: 'False'
+  project: formidable-byte-176106
+
+2018-05-07 18:57:55,394 INFO     ___FILE_ONLY___ 
+
+2018-05-07 18:57:55,394 INFO     root            Display format: "default"
+2018-05-07 18:57:55,601 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,178 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors/>
+  <version>2.150.3</version>
+  <installStateName>RUNNING</installStateName>
+  <numExecutors>2</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.GlobalMatrixAuthorizationStrategy">
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:jenkinsbuild</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:jenkinsbuild</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:jenkinsbuild</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:jenkinsbuild</permission>
+    <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:jenkinsbuild</permission>
+    <permission>hudson.model.Computer.Build:jenkinsbuild</permission>
+    <permission>hudson.model.Computer.Configure:jenkinsbuild</permission>
+    <permission>hudson.model.Computer.Connect:jenkinsbuild</permission>
+    <permission>hudson.model.Computer.Create:jenkinsbuild</permission>
+    <permission>hudson.model.Computer.Delete:jenkinsbuild</permission>
+    <permission>hudson.model.Computer.Disconnect:jenkinsbuild</permission>
+    <permission>hudson.model.Hudson.Administer:jenkinsbuild</permission>
+    <permission>hudson.model.Hudson.Read:jenkinsbuild</permission>
+    <permission>hudson.model.Item.Build:jenkinsbuild</permission>
+    <permission>hudson.model.Item.Cancel:jenkinsbuild</permission>
+    <permission>hudson.model.Item.Configure:jenkinsbuild</permission>
+    <permission>hudson.model.Item.Create:jenkinsbuild</permission>
+    <permission>hudson.model.Item.Delete:jenkinsbuild</permission>
+    <permission>hudson.model.Item.Discover:jenkinsbuild</permission>
+    <permission>hudson.model.Item.Move:jenkinsbuild</permission>
+    <permission>hudson.model.Item.Read:jenkinsbuild</permission>
+    <permission>hudson.model.Item.Workspace:jenkinsbuild</permission>
+    <permission>hudson.model.Run.Delete:jenkinsbuild</permission>
+    <permission>hudson.model.Run.Replay:jenkinsbuild</permission>
+    <permission>hudson.model.Run.Update:jenkinsbuild</permission>
+    <permission>hudson.model.View.Configure:jenkinsbuild</permission>
+    <permission>hudson.model.View.Create:jenkinsbuild</permission>
+    <permission>hudson.model.View.Delete:jenkinsbuild</permission>
+    <permission>hudson.model.View.Read:jenkinsbuild</permission>
+    <permission>hudson.scm.SCM.Tag:jenkinsbuild</permission>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+    <disableSignup>true</disableSignup>
+    <enableCaptcha>false</enableCaptcha>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULLNAME}</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks>
+    <jdk>
+      <name>Default</name>
+      <home>/usr/lib/jvm/java-8-oracle/</home>
+      <properties/>
+    </jdk>
+  </jdks>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds>
+    <com.cloudbees.jenkins.plugins.amazonecs.ECSCloud plugin="amazon-ecs@1.16">
+      <name>ecs</name>
+      <templates>
+        <com.cloudbees.jenkins.plugins.amazonecs.ECSTaskTemplate>
+          <templateName>jenkinsTask-e902121d-82a8-4940-ac69-fe950fbbb84c</templateName>
+          <label>ecs</label>
+          <image>cloudbees/jnlp-slave-with-java-build-tools:latest</image>
+          <remoteFSRoot>/home/jenkins</remoteFSRoot>
+          <memory>513</memory>
+          <memoryReservation>512</memoryReservation>
+          <cpu>512</cpu>
+          <subnets></subnets>
+          <securityGroups></securityGroups>
+          <assignPublicIp>false</assignPublicIp>
+          <executionRole>ecsTaskExecutionRole</executionRole>
+          <launchType>EC2</launchType>
+          <privileged>false</privileged>
+        </com.cloudbees.jenkins.plugins.amazonecs.ECSTaskTemplate>
+      </templates>
+      <credentialsId>as-ecs-cluster</credentialsId>
+      <cluster>arn:aws:ecs:us-east-1:269306371522:cluster/ecs-jenkins-test</cluster>
+      <regionName>us-east-1</regionName>
+      <tunnel></tunnel>
+      <jenkinsUrl>http://172.27.59.74:8080/</jenkinsUrl>
+      <slaveTimoutInSeconds>900</slaveTimoutInSeconds>
+      <ecsService>
+        <credentialsId>as-ecs-cluster</credentialsId>
+        <regionName>us-east-1</regionName>
+      </ecsService>
+    </com.cloudbees.jenkins.plugins.amazonecs.ECSCloud>
+  </clouds>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>all</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView plugin="build-pipeline-plugin@1.5.8">
+      <owner class="hudson" reference="../../.."/>
+      <name>EMS DEPLOY</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
+        <firstJob>K8EMS-build-job</firstJob>
+        <firstJobLink>job/K8EMS-build-job/</firstJobLink>
+      </gridBuilder>
+      <noOfDisplayedBuilds>1</noOfDisplayedBuilds>
+      <buildViewTitle>EMS DEPLOY</buildViewTitle>
+      <consoleOutputLinkStyle>Lightbox</consoleOutputLinkStyle>
+      <cssUrl></cssUrl>
+      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
+      <alwaysAllowManualTrigger>false</alwaysAllowManualTrigger>
+      <showPipelineParameters>false</showPipelineParameters>
+      <rowHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.SimpleRowHeader"/>
+      <showPipelineParametersInHeaders>false</showPipelineParametersInHeaders>
+      <columnHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.NullColumnHeader"/>
+      <buildCard class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.StandardBuildCard"/>
+      <startsWithParameters>false</startsWithParameters>
+      <refreshFrequency>3</refreshFrequency>
+      <showPipelineDefinitionHeader>false</showPipelineDefinitionHeader>
+    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
+    <se.diabol.jenkins.pipeline.DeliveryPipelineView plugin="delivery-pipeline-plugin@1.1.1">
+      <owner class="hudson" reference="../../.."/>
+      <name>delivery pipeline</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <componentSpecs>
+        <se.diabol.jenkins.pipeline.DeliveryPipelineView_-ComponentSpec>
+          <name>delivery</name>
+          <firstJob>build test</firstJob>
+          <lastJob></lastJob>
+          <showUpstream>false</showUpstream>
+        </se.diabol.jenkins.pipeline.DeliveryPipelineView_-ComponentSpec>
+      </componentSpecs>
+      <noOfPipelines>3</noOfPipelines>
+      <showAggregatedPipeline>false</showAggregatedPipeline>
+      <noOfColumns>1</noOfColumns>
+      <sorting>none</sorting>
+      <showAvatars>true</showAvatars>
+      <updateInterval>2</updateInterval>
+      <showChanges>false</showChanges>
+      <allowManualTriggers>true</allowManualTriggers>
+      <showTotalBuildTime>false</showTotalBuildTime>
+      <allowRebuild>true</allowRebuild>
+      <allowPipelineStart>true</allowPipelineStart>
+      <showDescription>false</showDescription>
+      <showPromotions>false</showPromotions>
+      <showTestResults>false</showTestResults>
+      <showStaticAnalysisResults>false</showStaticAnalysisResults>
+      <linkRelative>false</linkRelative>
+      <pagingEnabled>false</pagingEnabled>
+      <showAggregatedChanges>false</showAggregatedChanges>
+      <aggregatedChangesGroupingPattern></aggregatedChangesGroupingPattern>
+      <theme>default</theme>
+      <maxNumberOfVisiblePipelines>-1</maxNumberOfVisiblePipelines>
+      <regexpFirstJobs/>
+      <linkToConsoleLog>false</linkToConsoleLog>
+      <description></description>
+    </se.diabol.jenkins.pipeline.DeliveryPipelineView>
+  </views>
+  <primaryView>all</primaryView>
+  <slaveAgentPort>0</slaveAgentPort>
+  <disabledAgentProtocols>
+    <string>JNLP-connect</string>
+    <string>JNLP2-connect</string>
+  </disabledAgentProtocols>
+  <label></label>
+  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
+    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
+  </crumbIssuer>
+  <nodeProperties/>
+  <globalNodeProperties/>
+</hudson>

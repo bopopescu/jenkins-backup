@@ -1,0 +1,25 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-08-06 19:30:00.468 UTC</timestamp>
+  <md5sum>6cf9a1a81c6338f8aedce1977fadac3c</md5sum>
+  <fileName>Credential id=e9dc2483-abba-42e6-a456-0d9a9402a08b name=amritasengar/****** (github)</fileName>
+  <usages>
+    <entry>
+      <string>K8EMS-docker-container</string>
+      <ranges>60</ranges>
+    </entry>
+    <entry>
+      <string>docker deploy</string>
+      <ranges>14</ranges>
+    </entry>
+    <entry>
+      <string>EMS-k8s-deployment</string>
+      <ranges>57</ranges>
+    </entry>
+    <entry>
+      <string>git job</string>
+      <ranges>1-4</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

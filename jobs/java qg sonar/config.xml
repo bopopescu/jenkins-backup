@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.8.0">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/amritasengar/Employee-Management-System.git</url>
+        <credentialsId>359a57db-18ad-4b85-9783-6657bd114752</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.plugins.sonar.SonarRunnerBuilder plugin="sonar@2.6.1">
+      <project></project>
+      <properties>     # must be unique in a given SonarQube instance
+sonar.projectKey=my-java
+# this is the name and version displayed in the SonarQube UI. Was mandatory prior to SonarQube 6.1.
+sonar.projectName=My java
+sonar.projectVersion=1.0
+ 
+# Path is relative to the sonar-project.properties file. Replace &quot;\&quot; by &quot;/&quot; on Windows.
+# This property is optional if sonar.modules is set. 
+sonar.sources=.</properties>
+      <javaOpts></javaOpts>
+      <additionalArguments></additionalArguments>
+      <jdk>(Inherit From Job)</jdk>
+      <task></task>
+    </hudson.plugins.sonar.SonarRunnerBuilder>
+  </builders>
+  <publishers>
+    <quality.gates.jenkins.plugin.QGPublisher plugin="quality-gates@2.5">
+      <jobConfigData>
+        <projectKey>sonar.projectKey=my-java</projectKey>
+        <sonarInstanceName>quality gate</sonarInstanceName>
+      </jobConfigData>
+      <buildDecision>
+        <qualityGatesProvider>
+          <qualityGateResponseParser/>
+          <sonarHttpRequester/>
+          <sonarInstanceValidationService/>
+        </qualityGatesProvider>
+      </buildDecision>
+      <jobConfigurationService/>
+      <jobExecutionService/>
+    </quality.gates.jenkins.plugin.QGPublisher>
+  </publishers>
+  <buildWrappers/>
+</project>

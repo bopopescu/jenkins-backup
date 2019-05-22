@@ -1,0 +1,149 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.plugins.promoted__builds.parameters.PromotedBuildParameterDefinition plugin="promoted-builds@3.1">
+          <name>build_number</name>
+          <description></description>
+          <projectName>deployment</projectName>
+          <promotionProcessName></promotionProcessName>
+        </hudson.plugins.promoted__builds.parameters.PromotedBuildParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.8.0">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/amritasengar/Employee-Management-System.git</url>
+        <credentialsId>bcd725a2-cd67-4e3d-8045-16f32fc59996</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <jenkins.triggers.ReverseBuildTrigger>
+      <spec></spec>
+      <upstreamProjects></upstreamProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </jenkins.triggers.ReverseBuildTrigger>
+    <hudson.triggers.SCMTrigger>
+      <spec>* * * * *</spec>
+      <ignorePostCommitHooks>false</ignorePostCommitHooks>
+    </hudson.triggers.SCMTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Maven>
+      <targets>clean install cobertura:cobertura -Dcobertura.report.format=xml </targets>
+      <mavenName>maven</mavenName>
+      <usePrivateRepository>false</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+      <injectBuildVariables>false</injectBuildVariables>
+    </hudson.tasks.Maven>
+  </builders>
+  <publishers>
+    <hudson.plugins.cobertura.CoberturaPublisher plugin="cobertura@1.12">
+      <coberturaReportFile>**/target/site/cobertura/coverage.xml</coberturaReportFile>
+      <onlyStable>false</onlyStable>
+      <failUnhealthy>false</failUnhealthy>
+      <failUnstable>false</failUnstable>
+      <autoUpdateHealth>false</autoUpdateHealth>
+      <autoUpdateStability>false</autoUpdateStability>
+      <zoomCoverageChart>false</zoomCoverageChart>
+      <maxNumberOfBuilds>0</maxNumberOfBuilds>
+      <failNoReports>true</failNoReports>
+      <lineCoverageTargets>80, 0, 0</lineCoverageTargets>
+      <methodCoverageTargets>80, 0, 0</methodCoverageTargets>
+      <conditionalCoverageTargets>70, 0, 0</conditionalCoverageTargets>
+      <healthyTarget>
+        <targets class="enum-map" enum-type="hudson.plugins.cobertura.targets.CoverageMetric">
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>METHOD</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>8000000</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>LINE</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>8000000</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>CONDITIONAL</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>7000000</int>
+          </entry>
+        </targets>
+      </healthyTarget>
+      <unhealthyTarget>
+        <targets class="enum-map" enum-type="hudson.plugins.cobertura.targets.CoverageMetric">
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>METHOD</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>0</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>LINE</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>0</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>CONDITIONAL</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>0</int>
+          </entry>
+        </targets>
+      </unhealthyTarget>
+      <failingTarget>
+        <targets class="enum-map" enum-type="hudson.plugins.cobertura.targets.CoverageMetric">
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>METHOD</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>0</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>LINE</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>0</int>
+          </entry>
+          <entry>
+            <hudson.plugins.cobertura.targets.CoverageMetric>CONDITIONAL</hudson.plugins.cobertura.targets.CoverageMetric>
+            <int>0</int>
+          </entry>
+        </targets>
+      </failingTarget>
+      <sourceEncoding>ASCII</sourceEncoding>
+    </hudson.plugins.cobertura.CoberturaPublisher>
+    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.24">
+      <testResults>**target/surefire-reports/*.xml</testResults>
+      <keepLongStdio>false</keepLongStdio>
+      <healthScaleFactor>1.0</healthScaleFactor>
+      <allowEmptyResults>true</allowEmptyResults>
+    </hudson.tasks.junit.JUnitResultArchiver>
+    <hudson.plugins.deploy.DeployPublisher plugin="deploy@1.13">
+      <adapters>
+        <hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
+          <credentialsId>id</credentialsId>
+          <url>http://localhost:8090/</url>
+        </hudson.plugins.deploy.tomcat.Tomcat8xAdapter>
+      </adapters>
+      <contextPath></contextPath>
+      <war>**/*.war</war>
+      <onFailure>false</onFailure>
+    </hudson.plugins.deploy.DeployPublisher>
+  </publishers>
+  <buildWrappers/>
+</project>

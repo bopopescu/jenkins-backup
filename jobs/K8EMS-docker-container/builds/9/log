@@ -1,0 +1,79 @@
+Started by user [8mha:////4HCZzfWImOcXIGN7aD59HYhOERYuMZB9dM9wo69rhKsIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6pcWpRfpZqXnZmXnFSaWZOSkAiHITRscAAAA=[0mjenkinsbuild
+Building in workspace /var/lib/jenkins/workspace/Dockerfile
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision e419ae7f778152232401e7bbe43993cf100d4f68 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e419ae7f778152232401e7bbe43993cf100d4f68
+Commit message: "Create Dockerfile"
+ > git rev-list --no-walk e419ae7f778152232401e7bbe43993cf100d4f68 # timeout=10
+Copied 1 artifact from "[8mha:////4ErJ1t690Ajt+AyTUeRqalI+Rvm9n+vMXESS4beXS8tKAAAAlx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgK2GQ0M/KT9J39Q1WNTJIKs3MSQHSJanFJfoAYvv9Vp0AAAA=[0mEMS build test" build number [8mha:////4And7PBTbJV6AEkF7OXel4wL31VwC3psAkew5BGQ3o7QAAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmGQ1s/KT9J39Q1WNTJIKs3MSQHSJanFJfomlvoAmW8fSKAAAAA=[0m49
+[Dockerfile] $ docker build -t index.docker.io/amritasengar/dockerfile:9 --pull=true /var/lib/jenkins/workspace/Dockerfile
+Sending build context to Docker daemon  54.22MB
+Step 1/12 : FROM ubuntu:14.04
+14.04: Pulling from library/ubuntu
+Digest: sha256:b8855dc848e2622653ab557d1ce2f4c34218a9380cceaa51ced85c5f3c8eb201
+Status: Image is up to date for ubuntu:14.04
+ ---> 8cef1fa16c77
+Step 2/12 : LABEL Description="This image is used for github->circleci->dockerhub->tutum->aws" Version="1.0"
+ ---> Using cache
+ ---> 3445723c5b29
+Step 3/12 : MAINTAINER pushpendra
+ ---> Using cache
+ ---> 805d44fe20b4
+Step 4/12 : RUN apt-get update
+ ---> Using cache
+ ---> 38ff8899e877
+Step 5/12 : RUN sudo apt-get install -y openjdk-7-jdk
+ ---> Using cache
+ ---> c0633a54d6f5
+Step 6/12 : RUN sudo apt-get install -y tomcat7
+ ---> Using cache
+ ---> e66a5829e732
+Step 7/12 : ENV CATALINA_HOME /usr/share/tomcat7/
+ ---> Using cache
+ ---> ca195f7e85ac
+Step 8/12 : ENV CATALINA_BASE /var/lib/tomcat7/
+ ---> Using cache
+ ---> ccb9e9c58187
+Step 9/12 : ENV PATH $CATALINA_HOME/bin:$PATH
+ ---> Using cache
+ ---> 6d46348aed8e
+Step 10/12 : COPY ./target/*.war /var/lib/tomcat7/webapps/EmployeeApplication.war
+ ---> Using cache
+ ---> 0bba45ff4b67
+Step 11/12 : EXPOSE 8080
+ ---> Using cache
+ ---> 550bcfb43acb
+Step 12/12 : CMD ["catalina.sh", "run"]
+ ---> Using cache
+ ---> 618936582b1e
+Successfully built 618936582b1e
+Successfully tagged amritasengar/dockerfile:9
+[Dockerfile] $ docker tag 618936582b1e index.docker.io/amritasengar/dockerfile:latest
+[Dockerfile] $ docker inspect 618936582b1e
+[Dockerfile] $ docker push index.docker.io/amritasengar/dockerfile:9
+The push refers to repository [docker.io/amritasengar/dockerfile]
+806cd87b8683: Preparing
+70c993c6f3a2: Preparing
+2301fa78529e: Preparing
+1eaf5c5317cd: Preparing
+4622c8e1bdc0: Preparing
+b33859b66bfd: Preparing
+14fa4a9494bf: Preparing
+0c3819952093: Preparing
+05b0f7f2a817: Preparing
+0c3819952093: Waiting
+b33859b66bfd: Waiting
+14fa4a9494bf: Waiting
+05b0f7f2a817: Waiting
+denied: requested access to the resource is denied
+Build step 'Docker Build and Publish' marked build as failure
+Finished: FAILURE

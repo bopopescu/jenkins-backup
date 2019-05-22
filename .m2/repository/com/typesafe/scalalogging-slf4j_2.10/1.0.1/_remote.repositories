@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Mar 29 14:17:25 IST 2018
+scalalogging-slf4j_2.10-1.0.1.jar>spring.test-mvc=
+scalalogging-slf4j_2.10-1.0.1.pom>spring.test-mvc=

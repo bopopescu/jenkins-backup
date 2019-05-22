@@ -1,0 +1,19 @@
+Started by user [8mha:////4HCZzfWImOcXIGN7aD59HYhOERYuMZB9dM9wo69rhKsIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6pcWpRfpZqXnZmXnFSaWZOSkAiHITRscAAAA=[0mjenkinsbuild
+Building in workspace /var/lib/jenkins/workspace/image
+[image] $ /bin/sh -xe /tmp/jenkins3067426543732934568.sh
++ docker pull nginx
+Using default tag: latest
+latest: Pulling from library/nginx
+Digest: sha256:3e2ffcf0edca2a4e9b24ca442d227baea7b7f0e33ad654ef1eb806fbd9bedcf0
+Status: Image is up to date for nginx:latest
++ docker tag nginx amritase/amritase
++ docker push amritase/amritase
+The push refers to repository [docker.io/amritase/amritase]
+3ff93588120e: Preparing
+24ee0a3fd4b9: Preparing
+d626a8ad97a1: Preparing
+d626a8ad97a1: Mounted from library/nginx
+24ee0a3fd4b9: Mounted from library/nginx
+3ff93588120e: Mounted from library/nginx
+latest: digest: sha256:1f9c00b4c95ef931afa097823d902e7602aebc3ec5532e907e066978075ca3e0 size: 948
+Finished: SUCCESS

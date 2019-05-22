@@ -1,0 +1,106 @@
+Started by user [8mha:////4HCZzfWImOcXIGN7aD59HYhOERYuMZB9dM9wo69rhKsIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6pcWpRfpZqXnZmXnFSaWZOSkAiHITRscAAAA=[0mjenkinsbuild
+Building in workspace /var/lib/jenkins/workspace/jenkins POC--copy
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/Employee-Management-System.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/Employee-Management-System.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/amritasengar/Employee-Management-System.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision eed2c336d1cfc9ecff38527fd67076c69fd1621d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f eed2c336d1cfc9ecff38527fd67076c69fd1621d
+Commit message: "new comit"
+ > git rev-list --no-walk eed2c336d1cfc9ecff38527fd67076c69fd1621d # timeout=10
+[jenkins POC--copy] $ /opt/maven/bin/mvn -U -x clean install cobertura:cobertura -Dcobertura.report.format=xml package deploy
+Unable to parse command line options: Unrecognized option: -x
+
+usage: mvn [options] [<goal(s)>] [<phase(s)>]
+
+Options:
+ -am,--also-make                        If project list is specified, also
+                                        build projects required by the
+                                        list
+ -amd,--also-make-dependents            If project list is specified, also
+                                        build projects that depend on
+                                        projects on the list
+ -B,--batch-mode                        Run in non-interactive (batch)
+                                        mode
+ -b,--builder <arg>                     The id of the build strategy to
+                                        use.
+ -C,--strict-checksums                  Fail the build if checksums don't
+                                        match
+ -c,--lax-checksums                     Warn if checksums don't match
+ -cpu,--check-plugin-updates            Ineffective, only kept for
+                                        backward compatibility
+ -D,--define <arg>                      Define a system property
+ -e,--errors                            Produce execution error messages
+ -emp,--encrypt-master-password <arg>   Encrypt master security password
+ -ep,--encrypt-password <arg>           Encrypt server password
+ -f,--file <arg>                        Force the use of an alternate POM
+                                        file (or directory with pom.xml).
+ -fae,--fail-at-end                     Only fail the build afterwards;
+                                        allow all non-impacted builds to
+                                        continue
+ -ff,--fail-fast                        Stop at first failure in
+                                        reactorized builds
+ -fn,--fail-never                       NEVER fail the build, regardless
+                                        of project result
+ -gs,--global-settings <arg>            Alternate path for the global
+                                        settings file
+ -gt,--global-toolchains <arg>          Alternate path for the global
+                                        toolchains file
+ -h,--help                              Display help information
+ -l,--log-file <arg>                    Log file where all build output
+                                        will go.
+ -llr,--legacy-local-repository         Use Maven 2 Legacy Local
+                                        Repository behaviour, ie no use of
+                                        _remote.repositories. Can also be
+                                        activated by using
+                                        -Dmaven.legacyLocalRepo=true
+ -N,--non-recursive                     Do not recurse into sub-projects
+ -npr,--no-plugin-registry              Ineffective, only kept for
+                                        backward compatibility
+ -npu,--no-plugin-updates               Ineffective, only kept for
+                                        backward compatibility
+ -nsu,--no-snapshot-updates             Suppress SNAPSHOT updates
+ -o,--offline                           Work offline
+ -P,--activate-profiles <arg>           Comma-delimited list of profiles
+                                        to activate
+ -pl,--projects <arg>                   Comma-delimited list of specified
+                                        reactor projects to build instead
+                                        of all projects. A project can be
+                                        specified by [groupId]:artifactId
+                                        or by its relative path.
+ -q,--quiet                             Quiet output - only show errors
+ -rf,--resume-from <arg>                Resume reactor from specified
+                                        project
+ -s,--settings <arg>                    Alternate path for the user
+                                        settings file
+ -T,--threads <arg>                     Thread count, for instance 2.0C
+                                        where C is core multiplied
+ -t,--toolchains <arg>                  Alternate path for the user
+                                        toolchains file
+ -U,--update-snapshots                  Forces a check for missing
+                                        releases and updated snapshots on
+                                        remote repositories
+ -up,--update-plugins                   Ineffective, only kept for
+                                        backward compatibility
+ -V,--show-version                      Display version information
+                                        WITHOUT stopping build
+ -v,--version                           Display version information
+ -X,--debug                             Produce execution debug output
+Build step 'Invoke top-level Maven targets' marked build as failure
+[Cobertura] Publishing Cobertura coverage report...
+
+[Cobertura] Publishing Cobertura coverage results...
+
+[Cobertura] Cobertura coverage report found.
+
+Recording test results
+ERROR: Step ‘Publish JUnit test result report’ failed: Test reports were found but none of them are new. Did leafNodes run? 
+For example, /var/lib/jenkins/workspace/jenkins POC--copy/target/surefire-reports/TEST-com.sample.mvc.controllerTest.EmployeeControllerTest.xml is 33 min old
+
+Finished: FAILURE

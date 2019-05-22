@@ -1,0 +1,11 @@
+2018-05-08 20:12:27,451 DEBUG    root            Loaded Command Group: [u'gcloud', u'container']
+2018-05-08 20:12:27,453 DEBUG    root            Loaded Command Group: [u'gcloud', u'container', u'clusters']
+2018-05-08 20:12:27,454 DEBUG    root            Loaded Command Group: [u'gcloud', u'container', u'clusters', u'get_credentials']
+2018-05-08 20:12:27,471 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "elevated-module-203506", --zone: "us-central1-a", NAME: "cluster-1"]
+2018-05-08 20:12:27,472 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2018-05-08 20:12:28,426 DEBUG    root            Saved kubeconfig to /var/lib/jenkins/.kube/config
+2018-05-08 20:12:28,426 INFO     ___FILE_ONLY___ kubeconfig entry generated for cluster-1.
+
+2018-05-08 20:12:28,426 INFO     root            Display format: "default"
+2018-05-08 20:12:28,641 DEBUG    root            Metrics reporting process started...

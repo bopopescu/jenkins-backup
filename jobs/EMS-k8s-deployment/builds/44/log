@@ -1,0 +1,43 @@
+Started by upstream project "[8mha:////4Ia7MG2MzKZwdrJWXMembAin+bwcvJS9Ufs12D+lpjWeAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JH2X/OTs1KK0zJxUfQCko2JXxQAAAA==[0mDockerfile" build number [8mha:////4M2OALOOWVqJ2rtZR/KNfbJJbrhPSMIi6VMhfVzrbEZmAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwmoBn6WflJ+i75ydmpRWmZOan6JmYAvYgKfccAAAA=[0m46
+originally caused by:
+ Started by upstream project "[8mha:////4OL/PTOay+cuxYqslPnvlT08V94WA9chpizlg+I792CQAAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYl/az8JH1X32BVI4PEopLMtMTkkmIguyQfSOSlVpQW6wMA+Yp9cNcAAAA=[0mEMS artifacts to nexus" build number [8mha:////4CHlWusHSPPzcxFDZ4wm1P9vyxo0w2+CDWZ4t6x/Ek0tAAAArh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYV/az8JH1X32BVI4PEopLMtMTkkmIguyQfSOSlVpQW65uaAACqWuua2QAAAA==[0m54
+ originally caused by:
+  Started by upstream project "[8mha:////4D/8sbNLkN+rgecQ6bDAHx0XIm8f6iKlqKJD3paQ6punAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYJ/az8JH1X32BVI4Ok0sycFCBdklpcog8ALRwl8c0AAAA=[0mEMS build test" build number [8mha:////4JbYvQKeEkt9ilVzJvNxIRQ/su1DdRc954aTn3WLv2JNAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYp/az8JH1X32BVI4Ok0sycFCBdklpcom9mCgCPFLC+zwAAAA==[0m65
+  originally caused by:
+   Started by user [8mha:////4HCZzfWImOcXIGN7aD59HYhOERYuMZB9dM9wo69rhKsIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6pcWpRfpZqXnZmXnFSaWZOSkAiHITRscAAAA=[0mjenkinsbuild
+Building in workspace /var/lib/jenkins/workspace/EMS-k8s-deployment
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 118aba5919c16333c7a7eaa39fc552d8cc78304a (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 118aba5919c16333c7a7eaa39fc552d8cc78304a
+Commit message: "new1"
+ > git rev-list --no-walk 118aba5919c16333c7a7eaa39fc552d8cc78304a # timeout=10
+[EMS-k8s-deployment] $ /bin/sh -xe /tmp/jenkins6930199553378629414.sh
++ grep image: ems-k8s-deployment.yaml
++ awk {print$3}
++ cut -d / -f2
++ IMAGENAME=amritase
++ git checkout master
+Previous HEAD position was 118aba5... new1
+Switched to branch 'master'
+Your branch and 'origin/master' have diverged,
+and have 30 and 5 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
++ sed -i s/amritase\/amritase/amritase\/amritase:46/g ems-k8s-deployment.yaml
++ git add ems-k8s-deployment.yaml
++ git commit -m EMS Deployment file updated with version 46
+[master c42ca04] EMS Deployment file updated with version 46
+ 1 file changed, 1 insertion(+), 1 deletion(-)
++ git config --global push.default simple
++ git push https://github.com/amritasengar/dockerfile.git
+fatal: could not read Username for 'https://github.com': No such device or address
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

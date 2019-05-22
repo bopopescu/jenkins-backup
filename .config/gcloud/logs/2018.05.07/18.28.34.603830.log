@@ -1,0 +1,81 @@
+2018-05-07 18:28:34,605 DEBUG    root            Loaded Command Group: [u'gcloud', u'init']
+2018-05-07 18:28:34,607 DEBUG    root            Running [gcloud.init] with arguments: []
+2018-05-07 18:28:34,607 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2018-05-07 18:28:34,607 INFO     ___FILE_ONLY___ Your current configuration has been set to: [default]
+
+
+2018-05-07 18:28:34,608 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2018-05-07 18:28:34,608 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2018-05-07 18:28:34,608 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2018-05-07 18:28:34,608 INFO     ___FILE_ONLY___ Checking network connection...
+2018-05-07 18:28:42,618 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2018-05-07 18:28:42,619 INFO     ___FILE_ONLY___ Network diagnostic (1/1 checks) passed.
+
+
+2018-05-07 18:28:47,050 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth']
+2018-05-07 18:28:47,056 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'login']
+2018-05-07 18:28:47,060 INFO     root            Executing: [gcloud auth login --force --brief]
+2018-05-07 18:28:47,062 DEBUG    root            Running [gcloud.auth.login] with arguments: [--brief: "True", --force: "True"]
+2018-05-07 18:28:47,083 INFO     ___FILE_ONLY___ Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&prompt=select_account&response_type=code&client_id=32555940559.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&access_type=offline
+
+
+
+2018-05-07 18:29:08,237 INFO     oauth2client.client Successfully retrieved access token
+2018-05-07 18:29:08,408 INFO     root            Display format: "none"
+2018-05-07 18:29:08,411 INFO     ___FILE_ONLY___ You are logged in as: [shanky.ur.kanky@gmail.com].
+
+
+2018-05-07 18:29:25,188 INFO     ___FILE_ONLY___ Your current project has been set to: [formidable-byte-176106].
+
+
+2018-05-07 18:29:25,189 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'project_info']
+2018-05-07 18:29:25,199 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'project-info', u'describe']
+2018-05-07 18:29:25,200 INFO     root            Executing: [gcloud compute project-info describe --quiet]
+2018-05-07 18:29:25,202 DEBUG    root            Running [gcloud.compute.project-info.describe] with arguments: [--no-user-output-enabled: "false", --quiet: "True", --verbosity: "none"]
+2018-05-07 18:29:25,809 INFO     root            Display disabled.
+2018-05-07 18:29:28,216 DEBUG    root            Executing command: [u'/var/lib/jenkins/google-cloud-sdk/bin/gsutil', 'config', '-n', '-o', '/var/lib/jenkins/.boto']
+2018-05-07 18:29:29,233 DEBUG    ___FILE_ONLY___ 
+2018-05-07 18:29:29,233 DEBUG    ___FILE_ONLY___ This command will create a boto config file at /var/lib/jenkins/.boto
+containing your credentials, based on your responses to the following
+questions.
+
+Boto config file "/var/lib/jenkins/.boto" created. If you need to use
+a proxy to access the Internet please see the instructions in that
+file.
+
+2018-05-07 18:29:29,234 INFO     ___FILE_ONLY___ Created a default .boto configuration file at [/var/lib/jenkins/.boto]. See this file and
+[https://cloud.google.com/storage/docs/gsutil/commands/config] for more
+information about configuring Google Cloud Storage.
+
+2018-05-07 18:29:29,234 INFO     ___FILE_ONLY___ Your Google Cloud SDK is configured and ready to use!
+
+
+2018-05-07 18:29:29,234 INFO     ___FILE_ONLY___ * Commands that require authentication will use shanky.ur.kanky@gmail.com by default
+
+2018-05-07 18:29:29,234 INFO     ___FILE_ONLY___ * Commands will reference project `formidable-byte-176106` by default
+
+2018-05-07 18:29:29,234 INFO     ___FILE_ONLY___ Run `gcloud help config` to learn how to change individual settings
+
+
+2018-05-07 18:29:29,234 INFO     ___FILE_ONLY___ This gcloud configuration is called [default]. You can create additional configurations if you work with multiple accounts and/or projects.
+
+2018-05-07 18:29:29,234 INFO     ___FILE_ONLY___ Run `gcloud topic configurations` to learn more.
+
+
+2018-05-07 18:29:29,234 INFO     ___FILE_ONLY___ Some things to try next:
+
+
+2018-05-07 18:29:29,235 INFO     ___FILE_ONLY___ * Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+
+2018-05-07 18:29:29,235 INFO     ___FILE_ONLY___ * Run `gcloud topic -h` to learn about advanced features of the SDK like arg files and output formatting
+
+2018-05-07 18:29:29,235 INFO     root            Display format: "default"

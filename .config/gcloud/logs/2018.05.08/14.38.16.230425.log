@@ -1,0 +1,16 @@
+2018-05-08 14:38:16,273 DEBUG    root            Loaded Command Group: [u'gcloud', u'init']
+2018-05-08 14:38:16,275 DEBUG    root            Running [gcloud.init] with arguments: []
+2018-05-08 14:38:16,275 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2018-05-08 14:38:16,276 INFO     ___FILE_ONLY___ Settings from your current configuration [amu2812] are:
+
+2018-05-08 14:38:16,279 INFO     ___FILE_ONLY___ core:
+  account: amu2812@gmail.com
+  disable_usage_reporting: 'False'
+  project: elevated-module-203506
+
+2018-05-08 14:38:16,279 INFO     ___FILE_ONLY___ 
+
+2018-05-08 14:38:16,279 INFO     root            Display format: "default"
+2018-05-08 14:38:16,492 DEBUG    root            Metrics reporting process started...

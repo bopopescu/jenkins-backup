@@ -1,0 +1,415 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+
+<coverage line-rate="0.8588235294117647" branch-rate="0.5" lines-covered="73" lines-valid="85" branches-covered="1" branches-valid="2" complexity="1.0425531914893618" version="2.1.1" timestamp="1525695457695">
+	<sources>
+		<source>--source</source>
+		<source>/var/lib/jenkins/workspace/EMS build test/src/main/java</source>
+	</sources>
+	<packages>
+		<package name="com.sample.mvc.controller" line-rate="0.8787878787878788" branch-rate="1.0" complexity="1.1428571428571428">
+			<classes>
+				<class name="com.sample.mvc.controller.EmployeeController" filename="com/sample/mvc/controller/EmployeeController.java" line-rate="0.8787878787878788" branch-rate="1.0" complexity="1.1428571428571428">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="24" hits="5" branch="false"/>
+								<line number="28" hits="5" branch="false"/>
+							</lines>
+						</method>
+						<method name="addEmployee" signature="(Lcom/sample/mvc/model/EmployeeCommand;)Lorg/springframework/web/servlet/ModelAndView;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="65" hits="3" branch="false"/>
+								<line number="66" hits="3" branch="false"/>
+								<line number="67" hits="3" branch="false"/>
+							</lines>
+						</method>
+						<method name="deleteEmplyee" signature="(Ljava/lang/Integer;)Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="88" hits="1" branch="false"/>
+								<line number="90" hits="1" branch="false"/>
+								<line number="92" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="getEmployeeById" signature="(Ljava/lang/Integer;Lorg/springframework/ui/Model;)Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="72" hits="1" branch="false"/>
+								<line number="73" hits="1" branch="false"/>
+								<line number="74" hits="1" branch="false"/>
+								<line number="76" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="listContacts" signature="(Ljava/util/Map;)Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="55" hits="1" branch="false"/>
+								<line number="56" hits="1" branch="false"/>
+								<line number="58" hits="1" branch="false"/>
+								<line number="60" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="logMessage" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" line-rate="0.8333333333333334" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="31" hits="7" branch="false"/>
+								<line number="32" hits="7" branch="false"/>
+								<line number="33" hits="7" branch="false"/>
+								<line number="34" hits="7" branch="false"/>
+								<line number="35" hits="7" branch="false"/>
+								<line number="36" hits="7" branch="false"/>
+								<line number="38" hits="7" branch="false"/>
+								<line number="39" hits="0" branch="false"/>
+								<line number="41" hits="0" branch="false"/>
+								<line number="42" hits="7" branch="false"/>
+								<line number="43" hits="7" branch="false"/>
+								<line number="44" hits="7" branch="false"/>
+							</lines>
+						</method>
+						<method name="updateEmployee" signature="(Lcom/sample/mvc/model/EmployeeCommand;)Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="81" hits="1" branch="false"/>
+								<line number="82" hits="1" branch="false"/>
+								<line number="83" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="viewHome" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="49" hits="0" branch="false"/>
+								<line number="50" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="24" hits="5" branch="false"/>
+						<line number="28" hits="5" branch="false"/>
+						<line number="31" hits="7" branch="false"/>
+						<line number="32" hits="7" branch="false"/>
+						<line number="33" hits="7" branch="false"/>
+						<line number="34" hits="7" branch="false"/>
+						<line number="35" hits="7" branch="false"/>
+						<line number="36" hits="7" branch="false"/>
+						<line number="38" hits="7" branch="false"/>
+						<line number="39" hits="0" branch="false"/>
+						<line number="41" hits="0" branch="false"/>
+						<line number="42" hits="7" branch="false"/>
+						<line number="43" hits="7" branch="false"/>
+						<line number="44" hits="7" branch="false"/>
+						<line number="49" hits="0" branch="false"/>
+						<line number="50" hits="0" branch="false"/>
+						<line number="55" hits="1" branch="false"/>
+						<line number="56" hits="1" branch="false"/>
+						<line number="58" hits="1" branch="false"/>
+						<line number="60" hits="1" branch="false"/>
+						<line number="65" hits="3" branch="false"/>
+						<line number="66" hits="3" branch="false"/>
+						<line number="67" hits="3" branch="false"/>
+						<line number="72" hits="1" branch="false"/>
+						<line number="73" hits="1" branch="false"/>
+						<line number="74" hits="1" branch="false"/>
+						<line number="76" hits="1" branch="false"/>
+						<line number="81" hits="1" branch="false"/>
+						<line number="82" hits="1" branch="false"/>
+						<line number="83" hits="1" branch="false"/>
+						<line number="88" hits="1" branch="false"/>
+						<line number="90" hits="1" branch="false"/>
+						<line number="92" hits="1" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package name="com.sample.mvc.dao" line-rate="1.0" branch-rate="0.5" complexity="1.1">
+			<classes>
+				<class name="com.sample.mvc.dao.EmployeeDAO" filename="com/sample/mvc/dao/EmployeeDAO.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+					</methods>
+					<lines>
+					</lines>
+				</class>
+				<class name="com.sample.mvc.dao.EmployeeDAOImpl" filename="com/sample/mvc/dao/EmployeeDAOImpl.java" line-rate="1.0" branch-rate="0.5" complexity="1.2">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="10" hits="5" branch="false"/>
+							</lines>
+						</method>
+						<method name="addEmployee" signature="(Lcom/sample/mvc/model/EmployeeCommand;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="17" hits="1" branch="false"/>
+								<line number="18" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="deleteEmployee" signature="(Ljava/lang/Integer;)V" line-rate="1.0" branch-rate="0.5" complexity="0">
+							<lines>
+								<line number="22" hits="1" branch="false"/>
+								<line number="23" hits="1" branch="true" condition-coverage="50% (1/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="50%"/>
+									</conditions>
+								</line>
+								<line number="24" hits="1" branch="false"/>
+								<line number="26" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="getEmployeebyId" signature="(Ljava/lang/Integer;)Lcom/sample/mvc/model/EmployeeCommand;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="35" hits="1" branch="false"/>
+								<line number="36" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="listContact" signature="()Ljava/util/List;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="30" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="updateEmployee" signature="(Lcom/sample/mvc/model/EmployeeCommand;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="41" hits="1" branch="false"/>
+								<line number="42" hits="1" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="10" hits="5" branch="false"/>
+						<line number="17" hits="1" branch="false"/>
+						<line number="18" hits="1" branch="false"/>
+						<line number="22" hits="1" branch="false"/>
+						<line number="23" hits="1" branch="true" condition-coverage="50% (1/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="50%"/>
+							</conditions>
+						</line>
+						<line number="24" hits="1" branch="false"/>
+						<line number="26" hits="1" branch="false"/>
+						<line number="30" hits="1" branch="false"/>
+						<line number="35" hits="1" branch="false"/>
+						<line number="36" hits="1" branch="false"/>
+						<line number="41" hits="1" branch="false"/>
+						<line number="42" hits="1" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package name="com.sample.mvc.model" line-rate="0.7419354838709677" branch-rate="1.0" complexity="1.0">
+			<classes>
+				<class name="com.sample.mvc.model.EmployeeCommand" filename="com/sample/mvc/model/EmployeeCommand.java" line-rate="0.9090909090909091" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="10" hits="18" branch="false"/>
+							</lines>
+						</method>
+						<method name="getCity" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="40" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="getCode" signature="()I" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="32" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="getName" signature="()Ljava/lang/String;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="24" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="setCity" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="44" hits="15" branch="false"/>
+								<line number="45" hits="15" branch="false"/>
+							</lines>
+						</method>
+						<method name="setCode" signature="(I)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="36" hits="15" branch="false"/>
+								<line number="37" hits="15" branch="false"/>
+							</lines>
+						</method>
+						<method name="setName" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="28" hits="15" branch="false"/>
+								<line number="29" hits="15" branch="false"/>
+							</lines>
+						</method>
+						<method name="toString" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="49" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="10" hits="18" branch="false"/>
+						<line number="24" hits="1" branch="false"/>
+						<line number="28" hits="15" branch="false"/>
+						<line number="29" hits="15" branch="false"/>
+						<line number="32" hits="1" branch="false"/>
+						<line number="36" hits="15" branch="false"/>
+						<line number="37" hits="15" branch="false"/>
+						<line number="40" hits="2" branch="false"/>
+						<line number="44" hits="15" branch="false"/>
+						<line number="45" hits="15" branch="false"/>
+						<line number="49" hits="0" branch="false"/>
+					</lines>
+				</class>
+				<class name="com.sample.mvc.model.LogMessage" filename="com/sample/mvc/model/LogMessage.java" line-rate="0.65" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="3" hits="7" branch="false"/>
+							</lines>
+						</method>
+						<method name="getApplicationName" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="53" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getContinerHostName" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="29" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getEcsCluster" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="13" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getHttpMethod" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="37" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getResourcePath" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="45" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getServerAddress" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="21" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="setApplicationName" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="57" hits="7" branch="false"/>
+								<line number="58" hits="7" branch="false"/>
+							</lines>
+						</method>
+						<method name="setContinerHostName" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="33" hits="7" branch="false"/>
+								<line number="34" hits="7" branch="false"/>
+							</lines>
+						</method>
+						<method name="setEcsCluster" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="17" hits="7" branch="false"/>
+								<line number="18" hits="7" branch="false"/>
+							</lines>
+						</method>
+						<method name="setHttpMethod" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="41" hits="7" branch="false"/>
+								<line number="42" hits="7" branch="false"/>
+							</lines>
+						</method>
+						<method name="setResourcePath" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="49" hits="7" branch="false"/>
+								<line number="50" hits="7" branch="false"/>
+							</lines>
+						</method>
+						<method name="setServerAddress" signature="(Ljava/lang/String;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="25" hits="7" branch="false"/>
+								<line number="26" hits="7" branch="false"/>
+							</lines>
+						</method>
+						<method name="toString" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="62" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="3" hits="7" branch="false"/>
+						<line number="13" hits="0" branch="false"/>
+						<line number="17" hits="7" branch="false"/>
+						<line number="18" hits="7" branch="false"/>
+						<line number="21" hits="0" branch="false"/>
+						<line number="25" hits="7" branch="false"/>
+						<line number="26" hits="7" branch="false"/>
+						<line number="29" hits="0" branch="false"/>
+						<line number="33" hits="7" branch="false"/>
+						<line number="34" hits="7" branch="false"/>
+						<line number="37" hits="0" branch="false"/>
+						<line number="41" hits="7" branch="false"/>
+						<line number="42" hits="7" branch="false"/>
+						<line number="45" hits="0" branch="false"/>
+						<line number="49" hits="7" branch="false"/>
+						<line number="50" hits="7" branch="false"/>
+						<line number="53" hits="0" branch="false"/>
+						<line number="57" hits="7" branch="false"/>
+						<line number="58" hits="7" branch="false"/>
+						<line number="62" hits="0" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package name="com.sample.mvc.service" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+			<classes>
+				<class name="com.sample.mvc.service.EmployeeService" filename="com/sample/mvc/service/EmployeeService.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+					</methods>
+					<lines>
+					</lines>
+				</class>
+				<class name="com.sample.mvc.service.EmployeeServiceImpl" filename="com/sample/mvc/service/EmployeeServiceImpl.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="13" hits="5" branch="false"/>
+							</lines>
+						</method>
+						<method name="addEmployee" signature="(Lcom/sample/mvc/model/EmployeeCommand;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="21" hits="1" branch="false"/>
+								<line number="22" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="deleteEmployee" signature="(Ljava/lang/Integer;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="27" hits="1" branch="false"/>
+								<line number="28" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="getEmployeebyId" signature="(Ljava/lang/Integer;)Lcom/sample/mvc/model/EmployeeCommand;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="33" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="listContact" signature="()Ljava/util/List;" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="39" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="updateEmployee" signature="(Lcom/sample/mvc/model/EmployeeCommand;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="45" hits="1" branch="false"/>
+								<line number="46" hits="1" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="13" hits="5" branch="false"/>
+						<line number="21" hits="1" branch="false"/>
+						<line number="22" hits="1" branch="false"/>
+						<line number="27" hits="1" branch="false"/>
+						<line number="28" hits="1" branch="false"/>
+						<line number="33" hits="1" branch="false"/>
+						<line number="39" hits="1" branch="false"/>
+						<line number="45" hits="1" branch="false"/>
+						<line number="46" hits="1" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+	</packages>
+</coverage>

@@ -1,0 +1,33 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.plugins.promoted__builds.PromotionProcess plugin="promoted-builds@3.1">
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <conditions>
+    <hudson.plugins.promoted__builds.conditions.ManualCondition>
+      <users>jenkinsbuild</users>
+      <parameterDefinitions/>
+    </hudson.plugins.promoted__builds.conditions.ManualCondition>
+  </conditions>
+  <icon>star-gold</icon>
+  <isVisible></isVisible>
+  <buildSteps>
+    <hudson.plugins.deploy.DeployPublisher plugin="deploy@1.13">
+      <adapters>
+        <hudson.plugins.deploy.tomcat.Tomcat7xAdapter>
+          <credentialsId>id</credentialsId>
+          <url>http://35.153.54.216:8080/</url>
+        </hudson.plugins.deploy.tomcat.Tomcat7xAdapter>
+      </adapters>
+      <contextPath></contextPath>
+      <war>**/*.war</war>
+      <onFailure>false</onFailure>
+    </hudson.plugins.deploy.DeployPublisher>
+  </buildSteps>
+</hudson.plugins.promoted__builds.PromotionProcess>

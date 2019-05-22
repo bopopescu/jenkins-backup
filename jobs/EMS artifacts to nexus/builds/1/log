@@ -1,0 +1,161 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/jenkins POC
+Cloning the remote Git repository
+Cloning repository https://github.com/amritasengar/Employee-Management-System.git
+ > git init /var/lib/jenkins/workspace/jenkins POC # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/Employee-Management-System.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/amritasengar/Employee-Management-System.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/amritasengar/Employee-Management-System.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/amritasengar/Employee-Management-System.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/Employee-Management-System.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/amritasengar/Employee-Management-System.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 70e1fdd8528dfd243d7ff853853db005d04e79ae (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 70e1fdd8528dfd243d7ff853853db005d04e79ae
+Commit message: "Update test"
+First time build. Skipping changelog.
+[jenkins POC] $ mvn BUILD
+FATAL: command execution failed
+java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+Caused: java.io.IOException: Cannot run program "mvn" (in directory "/var/lib/jenkins/workspace/jenkins POC"): error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at hudson.Proc$LocalProc.<init>(Proc.java:249)
+	at hudson.Proc$LocalProc.<init>(Proc.java:218)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:929)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:449)
+	at hudson.Launcher$ProcStarter.join(Launcher.java:460)
+	at hudson.tasks.Maven.perform(Maven.java:367)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.Build$BuildExecution.build(Build.java:206)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:504)
+	at hudson.model.Run.execute(Run.java:1727)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Build step 'Invoke top-level Maven targets' marked build as failure
+Recording test results
+ERROR: Step ‘Publish JUnit test result report’ aborted due to exception: 
+org.dom4j.DocumentException: Error on line 1 of document  : Content is not allowed in prolog. Nested exception: Content is not allowed in prolog.
+	at org.dom4j.io.SAXReader.read(SAXReader.java:482)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:343)
+	at hudson.tasks.junit.SuiteResult.parse(SuiteResult.java:178)
+	at hudson.tasks.junit.TestResult.parse(TestResult.java:348)
+	at hudson.tasks.junit.TestResult.parsePossiblyEmpty(TestResult.java:281)
+	at hudson.tasks.junit.TestResult.parse(TestResult.java:206)
+	at hudson.tasks.junit.TestResult.parse(TestResult.java:178)
+	at hudson.tasks.junit.TestResult.<init>(TestResult.java:143)
+	at hudson.tasks.junit.JUnitParser$ParseResultCallable.invoke(JUnitParser.java:146)
+	at hudson.tasks.junit.JUnitParser$ParseResultCallable.invoke(JUnitParser.java:118)
+	at hudson.FilePath.act(FilePath.java:1009)
+	at hudson.FilePath.act(FilePath.java:987)
+	at hudson.tasks.junit.JUnitParser.parseResult(JUnitParser.java:114)
+	at hudson.tasks.junit.JUnitResultArchiver.parse(JUnitResultArchiver.java:136)
+	at hudson.tasks.junit.JUnitResultArchiver.parseAndAttach(JUnitResultArchiver.java:166)
+	at hudson.tasks.junit.JUnitResultArchiver.perform(JUnitResultArchiver.java:153)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:81)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+	at hudson.model.Run.execute(Run.java:1752)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:994)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:465)
+	... 25 more
+Nested exception: 
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Content is not allowed in prolog.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1472)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:994)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:465)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:343)
+	at hudson.tasks.junit.SuiteResult.parse(SuiteResult.java:178)
+	at hudson.tasks.junit.TestResult.parse(TestResult.java:348)
+	at hudson.tasks.junit.TestResult.parsePossiblyEmpty(TestResult.java:281)
+	at hudson.tasks.junit.TestResult.parse(TestResult.java:206)
+	at hudson.tasks.junit.TestResult.parse(TestResult.java:178)
+	at hudson.tasks.junit.TestResult.<init>(TestResult.java:143)
+	at hudson.tasks.junit.JUnitParser$ParseResultCallable.invoke(JUnitParser.java:146)
+	at hudson.tasks.junit.JUnitParser$ParseResultCallable.invoke(JUnitParser.java:118)
+	at hudson.FilePath.act(FilePath.java:1009)
+	at hudson.FilePath.act(FilePath.java:987)
+	at hudson.tasks.junit.JUnitParser.parseResult(JUnitParser.java:114)
+	at hudson.tasks.junit.JUnitResultArchiver.parse(JUnitResultArchiver.java:136)
+	at hudson.tasks.junit.JUnitResultArchiver.parseAndAttach(JUnitResultArchiver.java:166)
+	at hudson.tasks.junit.JUnitResultArchiver.perform(JUnitResultArchiver.java:153)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:81)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+	at hudson.model.Run.execute(Run.java:1752)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Caused: java.io.IOException: Failed to read /var/lib/jenkins/workspace/jenkins POC/.scannerwork/report-task.txt
+Is this really a JUnit report file? Your configuration must be matching too many files
+	at hudson.tasks.junit.TestResult.parse(TestResult.java:356)
+	at hudson.tasks.junit.TestResult.parsePossiblyEmpty(TestResult.java:281)
+	at hudson.tasks.junit.TestResult.parse(TestResult.java:206)
+	at hudson.tasks.junit.TestResult.parse(TestResult.java:178)
+	at hudson.tasks.junit.TestResult.<init>(TestResult.java:143)
+	at hudson.tasks.junit.JUnitParser$ParseResultCallable.invoke(JUnitParser.java:146)
+	at hudson.tasks.junit.JUnitParser$ParseResultCallable.invoke(JUnitParser.java:118)
+	at hudson.FilePath.act(FilePath.java:1009)
+	at hudson.FilePath.act(FilePath.java:987)
+	at hudson.tasks.junit.JUnitParser.parseResult(JUnitParser.java:114)
+	at hudson.tasks.junit.JUnitResultArchiver.parse(JUnitResultArchiver.java:136)
+	at hudson.tasks.junit.JUnitResultArchiver.parseAndAttach(JUnitResultArchiver.java:166)
+	at hudson.tasks.junit.JUnitResultArchiver.perform(JUnitResultArchiver.java:153)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:81)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+	at hudson.model.Run.execute(Run.java:1752)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Finished: FAILURE

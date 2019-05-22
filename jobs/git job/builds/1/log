@@ -1,0 +1,31 @@
+Started by user [8mha:////4HCZzfWImOcXIGN7aD59HYhOERYuMZB9dM9wo69rhKsIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6pcWpRfpZqXnZmXnFSaWZOSkAiHITRscAAAA=[0mjenkinsbuild
+Building in workspace /var/lib/jenkins/workspace/git job
+Cloning the remote Git repository
+Cloning repository https://github.com/amritasengar/EMS-dockerconfig.git
+ > git init /var/lib/jenkins/workspace/git job # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/EMS-dockerconfig.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/EMS-dockerconfig.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/amritasengar/EMS-dockerconfig.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/amritasengar/EMS-dockerconfig.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/EMS-dockerconfig.git
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/EMS-dockerconfig.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin1.url https://github.com/amritasengar/docker-compose.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/docker-compose.git
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/docker-compose.git +refs/heads/*:refs/remotes/origin1/*
+Seen branch in repository origin/master
+Seen branch in repository origin1/master
+Seen 2 remote branches
+ > git show-ref --tags -d # timeout=10
+Multiple candidate revisions
+Scheduling another build to catch up with git job
+Checking out Revision e1993dbe6390ae0e34659254bb4a787a95664a23 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e1993dbe6390ae0e34659254bb4a787a95664a23
+Commit message: "Update ems-k8s-deployment.yaml"
+First time build. Skipping changelog.
+Finished: SUCCESS

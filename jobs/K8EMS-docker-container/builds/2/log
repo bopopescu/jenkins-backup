@@ -1,0 +1,21 @@
+Started by user [8mha:////4HCZzfWImOcXIGN7aD59HYhOERYuMZB9dM9wo69rhKsIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6pcWpRfpZqXnZmXnFSaWZOSkAiHITRscAAAA=[0mjenkinsbuild
+Building in workspace /var/lib/jenkins/workspace/Dockerfile
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision e419ae7f778152232401e7bbe43993cf100d4f68 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e419ae7f778152232401e7bbe43993cf100d4f68
+Commit message: "Create Dockerfile"
+ > git rev-list --no-walk e419ae7f778152232401e7bbe43993cf100d4f68 # timeout=10
+[Dockerfile] $ docker build -t hub.docker.com/https://github.com/amritasengar/dockerfile.git:2 --pull=true /var/lib/jenkins/workspace/Dockerfile
+invalid argument "hub.docker.com/https://github.com/amritasengar/dockerfile.git:2" for "-t, --tag" flag: invalid reference format
+See 'docker build --help'.
+Build step 'Docker Build and Publish' marked build as failure
+Finished: FAILURE

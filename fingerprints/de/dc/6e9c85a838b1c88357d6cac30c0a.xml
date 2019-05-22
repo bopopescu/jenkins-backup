@@ -1,0 +1,25 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-08-06 19:30:00.470 UTC</timestamp>
+  <md5sum>dedc6e9c85a838b1c88357d6cac30c0a</md5sum>
+  <fileName>Credential id=bcd725a2-cd67-4e3d-8045-16f32fc59996 name=amritasengar/******</fileName>
+  <usages>
+    <entry>
+      <string>deployment</string>
+      <ranges>9</ranges>
+    </entry>
+    <entry>
+      <string>myjenkins</string>
+      <ranges>18</ranges>
+    </entry>
+    <entry>
+      <string>QA deployment</string>
+      <ranges>21</ranges>
+    </entry>
+    <entry>
+      <string>K8EMS-build-job</string>
+      <ranges>74</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

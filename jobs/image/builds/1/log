@@ -1,0 +1,24 @@
+Started by user [8mha:////4HCZzfWImOcXIGN7aD59HYhOERYuMZB9dM9wo69rhKsIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6pcWpRfpZqXnZmXnFSaWZOSkAiHITRscAAAA=[0mjenkinsbuild
+Building in workspace /var/lib/jenkins/workspace/image
+[image] $ /bin/sh -xe /tmp/jenkins5964394185264875476.sh
++ docker pull nginx
+Using default tag: latest
+latest: Pulling from library/nginx
+f2aa67a397c4: Pulling fs layer
+1cd0975d4f45: Pulling fs layer
+72fd2d3be09a: Pulling fs layer
+72fd2d3be09a: Verifying Checksum
+72fd2d3be09a: Download complete
+1cd0975d4f45: Verifying Checksum
+f2aa67a397c4: Verifying Checksum
+f2aa67a397c4: Download complete
+f2aa67a397c4: Pull complete
+1cd0975d4f45: Pull complete
+72fd2d3be09a: Pull complete
+Digest: sha256:3e2ffcf0edca2a4e9b24ca442d227baea7b7f0e33ad654ef1eb806fbd9bedcf0
+Status: Downloaded newer image for nginx:latest
++ docker push amritase/amritase
+The push refers to repository [docker.io/amritase/amritase]
+An image does not exist locally with the tag: amritase/amritase
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

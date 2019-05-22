@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<com.sonatype.nexus.ci.config.GlobalNexusConfiguration plugin="nexus-jenkins-plugin@1.1.0-05">
+  <nxrmConfigs>
+    <com.sonatype.nexus.ci.config.Nxrm2Configuration>
+      <id>12345</id>
+      <internalId>50096fde-a18e-4ded-9300-20a038bd80cd</internalId>
+      <displayName>nexuslocalrepo</displayName>
+      <serverUrl>http://localhost:8081/nexus</serverUrl>
+      <credentialsId>88e186a8-f68a-417c-9f9f-fe122b705f79</credentialsId>
+    </com.sonatype.nexus.ci.config.Nxrm2Configuration>
+  </nxrmConfigs>
+  <iqConfigs/>
+  <instanceId>cfc4ee22921c440ab0c8a630c9a7926c</instanceId>
+</com.sonatype.nexus.ci.config.GlobalNexusConfiguration>

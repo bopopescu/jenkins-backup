@@ -1,0 +1,45 @@
+2018-05-08 12:06:55,862 DEBUG    root            Loaded Command Group: [u'gcloud', u'init']
+2018-05-08 12:06:55,867 DEBUG    root            Running [gcloud.init] with arguments: []
+2018-05-08 12:06:55,867 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2018-05-08 12:06:55,867 INFO     ___FILE_ONLY___ Settings from your current configuration [default] are:
+
+2018-05-08 12:06:55,869 INFO     ___FILE_ONLY___ core:
+  account: shanky.ur.kanky@gmail.com
+  disable_usage_reporting: 'True'
+  project: formidable-byte-176106
+
+2018-05-08 12:06:55,869 INFO     ___FILE_ONLY___ 
+
+2018-05-08 12:07:02,344 INFO     ___FILE_ONLY___ Your current configuration has been set to: [amu2812]
+
+
+2018-05-08 12:07:02,344 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2018-05-08 12:07:02,344 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2018-05-08 12:07:02,344 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2018-05-08 12:07:02,345 INFO     ___FILE_ONLY___ Checking network connection...
+2018-05-08 12:07:06,351 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2018-05-08 12:07:06,351 INFO     ___FILE_ONLY___ Network diagnostic (1/1 checks) passed.
+
+
+2018-05-08 12:07:08,279 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth']
+2018-05-08 12:07:08,307 DEBUG    root            Loaded Command Group: [u'gcloud', u'auth', u'login']
+2018-05-08 12:07:08,309 INFO     root            Executing: [gcloud auth login --force --brief]
+2018-05-08 12:07:08,311 DEBUG    root            Running [gcloud.auth.login] with arguments: [--brief: "True", --force: "True"]
+2018-05-08 12:07:08,319 INFO     ___FILE_ONLY___ Go to the following link in your browser:
+
+    https://accounts.google.com/o/oauth2/auth?redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&prompt=select_account&response_type=code&client_id=32555940559.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&access_type=offline
+
+
+
+2018-05-08 12:07:15,463 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

@@ -1,0 +1,106 @@
+2018-05-07 19:07:54,385 DEBUG    root            Loaded Command Group: [u'gcloud', u'compute', u'ssh']
+2018-05-07 19:07:54,388 DEBUG    root            Running [gcloud.compute.ssh] with arguments: [--project: "formidable-byte-176106", --zone: "us-central1-a", [USER@]INSTANCE: "gke-my-cluster-default-pool-7882287f-m6qj"]
+2018-05-07 19:07:54,448 WARNING  root            The public SSH key file for gcloud does not exist.
+2018-05-07 19:07:54,448 WARNING  root            The private SSH key file for gcloud does not exist.
+2018-05-07 19:07:54,448 WARNING  root            You do not have an SSH key for gcloud.
+2018-05-07 19:07:54,449 WARNING  root            SSH keygen will be executed to generate a key.
+2018-05-07 19:07:56,916 DEBUG    root            Running command [/usr/bin/ssh-keygen -t rsa -f /var/lib/jenkins/.ssh/google_compute_engine].
+2018-05-07 19:07:56,916 DEBUG    root            Executing command: [u'/usr/bin/ssh-keygen', u'-t', u'rsa', u'-f', u'/var/lib/jenkins/.ssh/google_compute_engine']
+2018-05-07 19:08:01,021 DEBUG    root            SSH Known Hosts File [/var/lib/jenkins/.ssh/google_compute_known_hosts] could not be opened: Unable to read file [/var/lib/jenkins/.ssh/google_compute_known_hosts]: [Errno 2] No such file or directory: u'/var/lib/jenkins/.ssh/google_compute_known_hosts'
+2018-05-07 19:08:01,021 DEBUG    root            Current SSH keys in project: [u'shanky_ur_kanky:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCI0fCcCzmCzfGnUMqhAZOzUtjVEBtUWmS/mDSFfBaKyHLfG6Au1UjbHdFWvuC0gb5ncCvA0xOIOfwQ/URuUftIzT9ffZR5/Hkogf5+9dcb/3stNU5SnXdqx0EgKrtbo5ZtALykZDPftwQlT7IblSEbivzkHX6zONpbmCjIcVtPqROYonWQO+SHn3YxtCyJPWS0xrwFID06wwdq4mdcGzMNamlPWJPWcOaKH1COS8mujrWbTTugSFnFDCmXzumc7mrOLAatA5tnQCk2xXn6gzThCzKcYapVH3oad+ivC17X50pF+f4MaQS5HbYc9TG/ecSjgyz+KouTdBjIm1tPN8ab google-ssh {"userName":"shanky.ur.kanky@gmail.com","expireOn":"2018-03-08T10:47:49+0000"}', u'shanky_ur_kanky:ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBP6UZXT/SqUO7Xr2oqqgnSrtyDloz18eV5P9YyyNyBKgWtDUyQEC9P00HjerLq58MGUS+sHgJOQCAuT1Vn3JVd4= google-ssh {"userName":"shanky.ur.kanky@gmail.com","expireOn":"2018-03-08T10:47:43+0000"}', u'shanky_ur_kanky:ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJ9ZwUzkI+3kwcT645rwBTWH7MBrKErECTDuQUVK5GiddRYZspOm3paZb0p4wzr791DmWO13Hj5OpTrcINuZ0hY= google-ssh {"userName":"shanky.ur.kanky@gmail.com","expireOn":"2018-03-08T10:46:38+0000"}', u'shashankt:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCihxzos6DkMwompb2pDBBi5jEkWGUmEMeOUqJhgGc9pW9oDLxRHVaaKHIPZ5jkdbEUUtP0ii/k5qPObQ/X8lY3De8kGTYrUTh2HSfSqXRoDzZrmLQtvQclV0IUhcQYQwlBoLfWYxgWVgYgQqbX/uTwz+um7tGk/PqQgIZa120p42W/4bdK56FozIo4hELjeugJ2comdfZjYtbhhsI445zv/rtRhzKNoJHR6kLeNpHRUbYQASHxo9RdB+9GDVPiQ7k9eljEScQnBMtgGKcx9x3IKrhRRAe/agW6ydWwQWKrkKQM+OfcpHGAbzctx0BYGz/96kxQLs3cmpGzUPv54NPB shashankt@shashankt-ubuntu16', u'shanky_ur_kanky:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6WrwuKfDbW8TqyeEurqJefPMcvDXMEbr+vzjVWQv0JDzR/ZjgLCFEGvlehyUk43mvNZf5SkQouDzlfq0PYglqYisAZ3my62JYaAvrik6uaQLiGGTXmdmWnTQVgqJOM1JBwQHoniiIcOMM7sxMNkno3jMNSB+oasdi1wAIFSKxvqj5iX0jGfTftKtBnWakYxYIhwIWQ4tIze9M6bjWgBf299XFeL3dmVe80CrwVYc3JYXSHHjWkVwIx1rQKJ6mFe/ic0oSTDrNBUOkCfsp54tmT0AD82FV7nCtPz2XwNZiSvlucE7WtBFqedELDKS0rDssGmcu+VO+zUGB6NTFUx+v google-ssh {"userName":"shanky.ur.kanky@gmail.com","expireOn":"2017-08-14T05:56:59+0000"}', u'shanky_ur_kanky:ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBL14S8hFDWpGeh2AKIkJQnUqeclHjGwb9oq1BhKSwAL2fUhy/VZIg+f6V6hGyKFQEmOqYznkAidrH2vIGd9mI10= google-ssh {"userName":"shanky.ur.kanky@gmail.com","expireOn":"2017-08-14T05:56:54+0000"}', u'gke-1d9907f2fa827eafae8f:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWhybFyL9Ps/YZgdb3WnfKaY1jeNbEaqfEKs8QR46rFnKxucA6ubbMN82sUuT5VmdlzrJ5hZ65+kXqW2qL+I0Kd4at9BshPqX6w6B8DyZhMf4Qt0BgT+k5GSyKihY8UXxFOG2SAw8ddkbZxmeuYOICEBpPL3JHPTY2RWGNZBie5hhJAzHKfKgbjrtP0mZlV/pDrwdL7Xf7FJ7I/W/XmtFLTXXJ6pS+28DzqkwuMRUXNrQB51eWG+kYYuiI17LbvPs6KN3fqwFYD5J5vDQh+/C288yFcWd0ZNFbJAV9btNDf1J0nldTHnWeEMDM/UXjOu0EDGY0tpLoZelQQZE2vv2h gke-1d9907f2fa827eafae8f@gke-1d9907f2fa827eafae8f']
+2018-05-07 19:08:01,021 INFO     ___FILE_ONLY___ Updating project ssh metadata...
+2018-05-07 19:08:01,808 DEBUG    root            Operations to inspect: [<Operation
+ id: 3043764134288943190
+ insertTime: u'2018-05-07T06:38:01.481-07:00'
+ kind: u'compute#operation'
+ name: u'operation-1525700281037-56b9dc748f0cb-692d4163-533ee80f'
+ operationType: u'setMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/formidable-byte-176106/global/operations/operation-1525700281037-56b9dc748f0cb-692d4163-533ee80f'
+ status: StatusValueValuesEnum(PENDING, 1)
+ targetId: 519063075696
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/formidable-byte-176106'
+ user: u'shanky.ur.kanky@gmail.com'
+ warnings: []>]
+2018-05-07 19:08:02,228 DEBUG    root            Sleeping for 1s.
+2018-05-07 19:08:03,230 DEBUG    root            Operations to inspect: [<Operation
+ id: 3043764134288943190
+ insertTime: u'2018-05-07T06:38:01.481-07:00'
+ kind: u'compute#operation'
+ name: u'operation-1525700281037-56b9dc748f0cb-692d4163-533ee80f'
+ operationType: u'setMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/formidable-byte-176106/global/operations/operation-1525700281037-56b9dc748f0cb-692d4163-533ee80f'
+ status: StatusValueValuesEnum(PENDING, 1)
+ targetId: 519063075696
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/formidable-byte-176106'
+ user: u'shanky.ur.kanky@gmail.com'
+ warnings: []>]
+2018-05-07 19:08:03,630 DEBUG    root            Sleeping for 2s.
+2018-05-07 19:08:05,633 DEBUG    root            Operations to inspect: [<Operation
+ id: 3043764134288943190
+ insertTime: u'2018-05-07T06:38:01.481-07:00'
+ kind: u'compute#operation'
+ name: u'operation-1525700281037-56b9dc748f0cb-692d4163-533ee80f'
+ operationType: u'setMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/formidable-byte-176106/global/operations/operation-1525700281037-56b9dc748f0cb-692d4163-533ee80f'
+ status: StatusValueValuesEnum(PENDING, 1)
+ targetId: 519063075696
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/formidable-byte-176106'
+ user: u'shanky.ur.kanky@gmail.com'
+ warnings: []>]
+2018-05-07 19:08:06,043 DEBUG    root            Sleeping for 3s.
+2018-05-07 19:08:09,044 DEBUG    root            Operations to inspect: [<Operation
+ id: 3043764134288943190
+ insertTime: u'2018-05-07T06:38:01.481-07:00'
+ kind: u'compute#operation'
+ name: u'operation-1525700281037-56b9dc748f0cb-692d4163-533ee80f'
+ operationType: u'setMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/formidable-byte-176106/global/operations/operation-1525700281037-56b9dc748f0cb-692d4163-533ee80f'
+ startTime: u'2018-05-07T06:38:02.535-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 519063075696
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/formidable-byte-176106'
+ user: u'shanky.ur.kanky@gmail.com'
+ warnings: []>]
+2018-05-07 19:08:09,502 DEBUG    root            Sleeping for 4s.
+2018-05-07 19:08:13,506 DEBUG    root            Operations to inspect: [<Operation
+ id: 3043764134288943190
+ insertTime: u'2018-05-07T06:38:01.481-07:00'
+ kind: u'compute#operation'
+ name: u'operation-1525700281037-56b9dc748f0cb-692d4163-533ee80f'
+ operationType: u'setMetadata'
+ progress: 0
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/formidable-byte-176106/global/operations/operation-1525700281037-56b9dc748f0cb-692d4163-533ee80f'
+ startTime: u'2018-05-07T06:38:02.535-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 519063075696
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/formidable-byte-176106'
+ user: u'shanky.ur.kanky@gmail.com'
+ warnings: []>]
+2018-05-07 19:08:13,899 DEBUG    root            Sleeping for 5s.
+2018-05-07 19:08:18,904 DEBUG    root            Operations to inspect: [<Operation
+ endTime: u'2018-05-07T06:38:11.799-07:00'
+ id: 3043764134288943190
+ insertTime: u'2018-05-07T06:38:01.481-07:00'
+ kind: u'compute#operation'
+ name: u'operation-1525700281037-56b9dc748f0cb-692d4163-533ee80f'
+ operationType: u'setMetadata'
+ progress: 100
+ selfLink: u'https://www.googleapis.com/compute/v1/projects/formidable-byte-176106/global/operations/operation-1525700281037-56b9dc748f0cb-692d4163-533ee80f'
+ startTime: u'2018-05-07T06:38:02.535-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 519063075696
+ targetLink: u'https://www.googleapis.com/compute/v1/projects/formidable-byte-176106'
+ user: u'shanky.ur.kanky@gmail.com'
+ warnings: []>]
+2018-05-07 19:08:18,905 INFO     ___FILE_ONLY___ Updated [https://www.googleapis.com/compute/v1/projects/formidable-byte-176106].
+
+2018-05-07 19:08:20,048 INFO     ___FILE_ONLY___ Waiting for SSH key to propagate.
+
+2018-05-07 19:08:20,049 DEBUG    root            Running command [/usr/bin/ssh -T -i /var/lib/jenkins/.ssh/google_compute_engine -o CheckHostIP=no -o HostKeyAlias=compute.5676069175334635158 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/var/lib/jenkins/.ssh/google_compute_known_hosts jenkins@35.232.119.130 -- true].
+2018-05-07 19:08:20,049 DEBUG    root            Executing command: [u'/usr/bin/ssh', u'-T', u'-i', u'/var/lib/jenkins/.ssh/google_compute_engine', u'-o', u'CheckHostIP=no', u'-o', u'HostKeyAlias=compute.5676069175334635158', u'-o', u'IdentitiesOnly=yes', u'-o', u'StrictHostKeyChecking=no', u'-o', u'UserKnownHostsFile=/var/lib/jenkins/.ssh/google_compute_known_hosts', u'jenkins@35.232.119.130', u'--', u'true']
+2018-05-07 19:08:23,264 DEBUG    root            Running command [/usr/bin/ssh -t -i /var/lib/jenkins/.ssh/google_compute_engine -o CheckHostIP=no -o HostKeyAlias=compute.5676069175334635158 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o UserKnownHostsFile=/var/lib/jenkins/.ssh/google_compute_known_hosts jenkins@35.232.119.130].
+2018-05-07 19:08:23,265 DEBUG    root            Executing command: [u'/usr/bin/ssh', u'-t', u'-i', u'/var/lib/jenkins/.ssh/google_compute_engine', u'-o', u'CheckHostIP=no', u'-o', u'HostKeyAlias=compute.5676069175334635158', u'-o', u'IdentitiesOnly=yes', u'-o', u'StrictHostKeyChecking=no', u'-o', u'UserKnownHostsFile=/var/lib/jenkins/.ssh/google_compute_known_hosts', u'jenkins@35.232.119.130']

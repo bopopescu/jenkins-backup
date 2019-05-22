@@ -1,0 +1,27 @@
+Started by upstream project "[8mha:////4OL/PTOay+cuxYqslPnvlT08V94WA9chpizlg+I792CQAAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYl/az8JH1X32BVI4PEopLMtMTkkmIguyQfSOSlVpQW6wMA+Yp9cNcAAAA=[0mEMS artifacts to nexus" build number [8mha:////4JUkzy4llrkRz1a/SRXJctoEmVGFZcnw7GXPen5SVg+AAAAArh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYV/az8JH1X32BVI4PEopLMtMTkkmIguyQfSOSlVpQW65uYAgB9W/f02QAAAA==[0m45
+originally caused by:
+ Started by upstream project "[8mha:////4D/8sbNLkN+rgecQ6bDAHx0XIm8f6iKlqKJD3paQ6punAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYJ/az8JH1X32BVI4Ok0sycFCBdklpcog8ALRwl8c0AAAA=[0mEMS build test" build number [8mha:////4N9vt7izxWV7oobeffxRM+geGryaxYcQYsK++MZgenigAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYp/az8JH1X32BVI4Ok0sycFCBdklpcom9qCgBMR52VzwAAAA==[0m55
+ originally caused by:
+  Started by user [8mha:////4Ic7CrHJ5vMO8u+CXASKo6IeCCPwwF5jPnLTWGiK/QQ0AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL94sQioCkAXZHSqMEAAAA=[0msarang
+Building in workspace /var/lib/jenkins/workspace/Dockerfile
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision f0ae5fdcb3e1143b1802507d5f8a04bbc63cf574 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f0ae5fdcb3e1143b1802507d5f8a04bbc63cf574
+Commit message: "Update ems-k8s-deployment.yaml"
+ > git rev-list --no-walk f0ae5fdcb3e1143b1802507d5f8a04bbc63cf574 # timeout=10
+Copied 1 artifact from "[8mha:////4ErJ1t690Ajt+AyTUeRqalI+Rvm9n+vMXESS4beXS8tKAAAAlx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgK2GQ0M/KT9J39Q1WNTJIKs3MSQHSJanFJfoAYvv9Vp0AAAA=[0mEMS build test" build number [8mha:////4NqhhCUJ7H54zCsrbN2fB3/TNuGxdK+qB/53hhTQussIAAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmGQ1s/KT9J39Q1WNTJIKs3MSQHSJanFJfqmpvoAokpo5aAAAAA=[0m55
+[Dockerfile] $ docker build -t amritase/amritase:35 --pull=true /var/lib/jenkins/workspace/Dockerfile
+Sending build context to Docker daemon  54.28MB
+Step 1/12 : FROM ubuntu:14.04
+Get https://registry-1.docker.io/v2/: dial tcp: lookup registry-1.docker.io on 127.0.1.1:53: read udp 127.0.0.1:38205->127.0.1.1:53: i/o timeout
+Build step 'Docker Build and Publish' marked build as failure
+Finished: FAILURE

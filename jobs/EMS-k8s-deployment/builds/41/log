@@ -1,0 +1,27 @@
+Started by upstream project "[8mha:////4Ia7MG2MzKZwdrJWXMembAin+bwcvJS9Ufs12D+lpjWeAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JH2X/OTs1KK0zJxUfQCko2JXxQAAAA==[0mDockerfile" build number [8mha:////4DAgOA1cEZsgLlX+oNIrpOek67JdQ4bYq/0KZXyZimMSAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwmoBn6WflJ+i75ydmpRWmZOan6JsYAMnxgDccAAAA=[0m43
+originally caused by:
+ Started by upstream project "[8mha:////4OL/PTOay+cuxYqslPnvlT08V94WA9chpizlg+I792CQAAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYl/az8JH1X32BVI4PEopLMtMTkkmIguyQfSOSlVpQW6wMA+Yp9cNcAAAA=[0mEMS artifacts to nexus" build number [8mha:////4FD7TSjabDc5OiJVFow4tTEzwXpv+QAeZVRt1ukqYO1PAAAArh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYV/az8JH1X32BVI4PEopLMtMTkkmIguyQfSOSlVpQW65saAQCf/4hz2QAAAA==[0m52
+ originally caused by:
+  Started by upstream project "[8mha:////4D/8sbNLkN+rgecQ6bDAHx0XIm8f6iKlqKJD3paQ6punAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYJ/az8JH1X32BVI4Ok0sycFCBdklpcog8ALRwl8c0AAAA=[0mEMS build test" build number [8mha:////4O33VO3MHme0Oik0NVOrxrrodWhTR07PlARQ/PZivwCoAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYp/az8JH1X32BVI4Ok0sycFCBdklpcom9mDAC6sdNXzwAAAA==[0m63
+  originally caused by:
+   Started by user [8mha:////4Ic7CrHJ5vMO8u+CXASKo6IeCCPwwF5jPnLTWGiK/QQ0AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL94sQioCkAXZHSqMEAAAA=[0msarang
+Building in workspace /var/lib/jenkins/workspace/EMS-k8s-deployment
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 118aba5919c16333c7a7eaa39fc552d8cc78304a (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 118aba5919c16333c7a7eaa39fc552d8cc78304a
+Commit message: "new1"
+ > git rev-list --no-walk 118aba5919c16333c7a7eaa39fc552d8cc78304a # timeout=10
+[EMS-k8s-deployment] $ /bin/sh -xe /tmp/jenkins9050392512513778306.sh
++ gcloud container clusters get-credentials ems-k8s-app --zone us-central1-a --project sonar-198615
+/tmp/jenkins9050392512513778306.sh: 2: /tmp/jenkins9050392512513778306.sh: gcloud: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

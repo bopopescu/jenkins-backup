@@ -1,0 +1,161 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/Dockerfile
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision fad88660140f528a3257604613668a285526d405 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f fad88660140f528a3257604613668a285526d405
+Commit message: "Update ems-k8s-deployment.yaml"
+ > git rev-list --no-walk eb27b2c88f3490102e428093dc025d4ae1eb32d4 # timeout=10
+Copied 1 artifact from "[8mha:////4ErJ1t690Ajt+AyTUeRqalI+Rvm9n+vMXESS4beXS8tKAAAAlx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgK2GQ0M/KT9J39Q1WNTJIKs3MSQHSJanFJfoAYvv9Vp0AAAA=[0mEMS build test" build number [8mha:////4Ac9pFyNzyGnxY5oPzhXO01brjOFH89VAYhq7VbfbdJlAAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmGQ1s/KT9J39Q1WNTJIKs3MSQHSJanFJfpmFvoAtoqAUqAAAAA=[0m68
+[Dockerfile] $ docker build -t amritase/emsrepo:53 --pull=true /var/lib/jenkins/workspace/Dockerfile
+Sending build context to Docker daemon  54.31MB
+Step 1/12 : FROM ubuntu:14.04
+14.04: Pulling from library/ubuntu
+Digest: sha256:b8855dc848e2622653ab557d1ce2f4c34218a9380cceaa51ced85c5f3c8eb201
+Status: Image is up to date for ubuntu:14.04
+ ---> 8cef1fa16c77
+Step 2/12 : LABEL Description="This image is used for github->circleci->dockerhub->tutum->aws" Version="1.0"
+ ---> Using cache
+ ---> 3445723c5b29
+Step 3/12 : MAINTAINER pushpendra
+ ---> Using cache
+ ---> 805d44fe20b4
+Step 4/12 : RUN apt-get update
+ ---> Using cache
+ ---> 38ff8899e877
+Step 5/12 : RUN sudo apt-get install -y openjdk-7-jdk
+ ---> Using cache
+ ---> c0633a54d6f5
+Step 6/12 : RUN sudo apt-get install -y tomcat7
+ ---> Using cache
+ ---> e66a5829e732
+Step 7/12 : ENV CATALINA_HOME /usr/share/tomcat7/
+ ---> Using cache
+ ---> ca195f7e85ac
+Step 8/12 : ENV CATALINA_BASE /var/lib/tomcat7/
+ ---> Using cache
+ ---> ccb9e9c58187
+Step 9/12 : ENV PATH $CATALINA_HOME/bin:$PATH
+ ---> Using cache
+ ---> 6d46348aed8e
+Step 10/12 : COPY ./target/*.war /var/lib/tomcat7/webapps/EmployeeApplication.war
+ ---> Using cache
+ ---> bce5f52fd350
+Step 11/12 : EXPOSE 8080
+ ---> Using cache
+ ---> 04d91c0fbe5c
+Step 12/12 : CMD ["catalina.sh", "run"]
+ ---> Using cache
+ ---> 18eda8cbe586
+Successfully built 18eda8cbe586
+Successfully tagged amritase/emsrepo:53
+[Dockerfile] $ docker tag 18eda8cbe586 amritase/emsrepo:latest
+[Dockerfile] $ docker inspect 18eda8cbe586
+[Dockerfile] $ docker push amritase/emsrepo:53
+The push refers to repository [docker.io/amritase/emsrepo]
+f6505cb9bd40: Preparing
+70c993c6f3a2: Preparing
+2301fa78529e: Preparing
+1eaf5c5317cd: Preparing
+4622c8e1bdc0: Preparing
+b33859b66bfd: Preparing
+14fa4a9494bf: Preparing
+0c3819952093: Preparing
+05b0f7f2a817: Preparing
+b33859b66bfd: Waiting
+14fa4a9494bf: Waiting
+0c3819952093: Waiting
+05b0f7f2a817: Waiting
+f6505cb9bd40: Layer already exists
+4622c8e1bdc0: Layer already exists
+1eaf5c5317cd: Layer already exists
+70c993c6f3a2: Layer already exists
+2301fa78529e: Layer already exists
+14fa4a9494bf: Layer already exists
+b33859b66bfd: Layer already exists
+0c3819952093: Layer already exists
+05b0f7f2a817: Layer already exists
+53: digest: sha256:2bf2e39d09e4ba65dcd0e18b9cd8ee055de202362f9ebbdba7e5dc04aec9d03e size: 2207
+[Dockerfile] $ docker push amritase/emsrepo:latest
+The push refers to repository [docker.io/amritase/emsrepo]
+f6505cb9bd40: Preparing
+70c993c6f3a2: Preparing
+2301fa78529e: Preparing
+1eaf5c5317cd: Preparing
+4622c8e1bdc0: Preparing
+b33859b66bfd: Preparing
+14fa4a9494bf: Preparing
+0c3819952093: Preparing
+05b0f7f2a817: Preparing
+14fa4a9494bf: Waiting
+0c3819952093: Waiting
+05b0f7f2a817: Waiting
+b33859b66bfd: Waiting
+f6505cb9bd40: Layer already exists
+70c993c6f3a2: Layer already exists
+1eaf5c5317cd: Layer already exists
+4622c8e1bdc0: Layer already exists
+2301fa78529e: Layer already exists
+0c3819952093: Layer already exists
+14fa4a9494bf: Layer already exists
+b33859b66bfd: Layer already exists
+05b0f7f2a817: Layer already exists
+latest: digest: sha256:2bf2e39d09e4ba65dcd0e18b9cd8ee055de202362f9ebbdba7e5dc04aec9d03e size: 2207
+[Dockerfile] $ /bin/sh -xe /tmp/jenkins7165872841809757026.sh
++ docker build -t amritase/mysql --file Dockerfile1 .
+Sending build context to Docker daemon  54.31MB
+Step 1/11 : FROM oraclelinux:7-slim
+ ---> c94cc930790a
+Step 2/11 : ARG PACKAGE_URL=https://repo.mysql.com/yum/mysql-8.0-community/docker/x86_64/mysql-community-server-minimal-8.0.11-1.el7.x86_64.rpm
+ ---> Using cache
+ ---> 1dd3e4818967
+Step 3/11 : ARG PACKAGE_URL_SHELL=https://repo.mysql.com/yum/mysql-tools-community/el/7/x86_64/mysql-shell-8.0.11-1.el7.x86_64.rpm
+ ---> Using cache
+ ---> 17a85b04855b
+Step 4/11 : RUN rpmkeys --import https://repo.mysql.com/RPM-GPG-KEY-mysql   && yum install -y $PACKAGE_URL $PACKAGE_URL_SHELL libpwquality   && yum clean all   && mkdir /docker-entrypoint-initdb.d
+ ---> Using cache
+ ---> ff56b488a082
+Step 5/11 : VOLUME /var/lib/mysql
+ ---> Using cache
+ ---> d668103ac7b3
+Step 6/11 : COPY docker-entrypoint.sh /entrypoint.sh
+ ---> Using cache
+ ---> e19e8f2af8a8
+Step 7/11 : COPY healthcheck.sh /healthcheck.sh
+ ---> Using cache
+ ---> d8dc11b1e367
+Step 8/11 : ENTRYPOINT ["/entrypoint.sh"]
+ ---> Using cache
+ ---> f3ce6ba8b3fa
+Step 9/11 : HEALTHCHECK CMD /healthcheck.sh
+ ---> Using cache
+ ---> 19ad716a4dcb
+Step 10/11 : EXPOSE 3306 33060
+ ---> Using cache
+ ---> d5269bb76d4b
+Step 11/11 : CMD ["mysqld"]
+ ---> Using cache
+ ---> e10db589a89a
+Successfully built e10db589a89a
+Successfully tagged amritase/mysql:latest
++ docker push amritase/mysql
+The push refers to repository [docker.io/amritase/mysql]
+ee8b1fbe94da: Preparing
+1de14b3f5b4c: Preparing
+f979ed08be13: Preparing
+401b941ef605: Preparing
+1de14b3f5b4c: Layer already exists
+401b941ef605: Layer already exists
+ee8b1fbe94da: Layer already exists
+f979ed08be13: Layer already exists
+latest: digest: sha256:7e0a97e11d64aca49ca6a6fb7cd7027fded42a172424f9e5dcaa9e3fc7e652d4 size: 1156
+Triggering a new build of [8mha:////4EM0/cJEUCBzyO3mqyU2kJYO9NdL8OO6dCJWY/jP9q6BAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/az8JP3s0qRU3ZTUgpz8Sn0AZgIvLcYAAAA=[0mkube-deploy
+Finished: SUCCESS

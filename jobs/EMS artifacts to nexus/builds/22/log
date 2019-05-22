@@ -1,0 +1,49 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/jenkins POC
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/Employee-Management-System.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/Employee-Management-System.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/amritasengar/Employee-Management-System.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 316a616faa682eb3db4b4debc2ea498844cd337e (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 316a616faa682eb3db4b4debc2ea498844cd337e
+Commit message: "newmerge Merge https://github.com/amritasengar/Employee-Management-System"
+ > git rev-list --no-walk 70e1fdd8528dfd243d7ff853853db005d04e79ae # timeout=10
+[jenkins POC] $ /opt/maven/bin/mvn clean install cobertura:cobertura -Dcobertura.report.format=xml
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Employee Management System 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[8mha:////4CiX0MVzgoAv95q7FvvY0nZRvD0SlnQ0F7L39CAYkmXnAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] The POM for io.gatling.highcharts:gatling-charts-highcharts:jar:2.0.0-M3a is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.427 s
+[INFO] Finished at: 2018-04-01T15:09:11+05:30
+[INFO] Final Memory: 10M/212M
+[INFO] ------------------------------------------------------------------------
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Failed to execute goal on project EmployeeApplicationSprint4: Could not resolve dependencies for project com.alm.web:EmployeeApplicationSprint4:war:1.0-SNAPSHOT: Failure to find io.gatling.highcharts:gatling-charts-highcharts:jar:2.0.0-M3a in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced -> [Help 1]
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+Build step 'Invoke top-level Maven targets' marked build as failure
+[Cobertura] Publishing Cobertura coverage report...
+
+[Cobertura] Publishing Cobertura coverage results...
+
+[Cobertura] Cobertura coverage report found.
+
+Recording test results
+ERROR: Step ‘Publish JUnit test result report’ failed: Test reports were found but none of them are new. Did leafNodes run? 
+For example, /var/lib/jenkins/workspace/jenkins POC/target/surefire-reports/TEST-com.sample.mvc.controllerTest.EmployeeControllerTest.xml is 1 day 19 hr old
+
+Finished: FAILURE

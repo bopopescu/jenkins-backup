@@ -1,0 +1,31 @@
+Started by upstream project "[8mha:////4I+ETxC4bk/PILBXmso+Gp/0x58lUs4eyc8otMwAVx/wAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYZ/az8JH1vC1ffYN2U/OTs1CJdoMaSxMy81CJ9AG6xAZLRAAAA[0mK8EMS-docker-container" build number [8mha:////4L6kIu+t0dOYSZF0txXHEkHhufvm1bcsl6XOcwgVlgM0AAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgY5/az8JH1vC1ffYN2U/OTs1CJdoMaSxMy81CJ9UzMAO546wdMAAAA=[0m56
+originally caused by:
+ Started by upstream project "[8mha:////4OL/PTOay+cuxYqslPnvlT08V94WA9chpizlg+I792CQAAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYl/az8JH1X32BVI4PEopLMtMTkkmIguyQfSOSlVpQW6wMA+Yp9cNcAAAA=[0mEMS artifacts to nexus" build number [8mha:////4IJyr9Y0hCr+Ay9c/pcfagtKF7kd67mISriI+E0NN4G/AAAArh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYV/az8JH1X32BVI4PEopLMtMTkkmIguyQfSOSlVpQW65taAgAXJlrk2QAAAA==[0m59
+ originally caused by:
+  Started by upstream project "[8mha:////4PX+kCpU42cbP65vcIHjvQ+pDxn4zBczrVoBnk8074WIAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZR/az8JH1vC1ffYN2k0sycFF0QHwCu9PMzygAAAA==[0mK8EMS-build-job" build number [8mha:////4NHPSfqcX0d9+v9YH3WHnp9nWT28p+QXTQSzcJtBdoEAAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZx/az8JH1vC1ffYN2k0sycFF0Q39wAAHd8J2nMAAAA[0m70
+  originally caused by:
+   Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/kube-deploy
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github-cred-gcp
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision e1993dbe6390ae0e34659254bb4a787a95664a23 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e1993dbe6390ae0e34659254bb4a787a95664a23
+Commit message: "Update ems-k8s-deployment.yaml"
+ > git rev-list --no-walk e1993dbe6390ae0e34659254bb4a787a95664a23 # timeout=10
+[kube-deploy] $ /bin/sh -xe /tmp/jenkins6095635167223414119.sh
++ /var/lib/jenkins/workspace/EMS-k8s-deployment/google-cloud-sdk/bin/gcloud container clusters get-credentials cluster-1 --zone us-central1-a --project elevated-module-203506
+Fetching cluster endpoint and auth data.
+kubeconfig entry generated for cluster-1.
++ echo 54
+54
++ kubectl set image deployment/k8s k8s=amritase/emsrepo:latest --record
+deployment.apps "k8s" image updated
+Finished: SUCCESS

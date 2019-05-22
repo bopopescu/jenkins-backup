@@ -1,0 +1,26 @@
+2018-05-11 16:19:27,818 DEBUG    root            Loaded Command Group: [u'gcloud', u'config']
+2018-05-11 16:19:27,819 DEBUG    root            Loaded Command Group: [u'gcloud', u'config', u'config_helper']
+2018-05-11 16:19:27,821 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2018-05-11 16:19:27,824 INFO     root            Display format: "default json"
+2018-05-11 16:19:27,824 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "amu2812",
+    "properties": {
+      "core": {
+        "account": "amu2812@gmail.com",
+        "disable_usage_reporting": "False",
+        "project": "elevated-module-203506"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.Gly4BWWoNXYHR_TAM0oTkRlY_05OBrPRAjAsbdIFEwKTMgsnEAQyKj888trBBYhX7K5Qz4AqP1rreT1oY3bQgBsiTq_urgJUNiLdu35kf9CYasgzsqgkWOvpoh2R6A",
+    "token_expiry": "2018-05-11T11:49:15Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/var/lib/jenkins/.config/gcloud/config_sentinel"
+  }
+}
+2018-05-11 16:19:27,824 INFO     ___FILE_ONLY___ 
+
+2018-05-11 16:19:28,044 DEBUG    root            Metrics reporting process started...

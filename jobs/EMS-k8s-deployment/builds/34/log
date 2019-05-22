@@ -1,0 +1,46 @@
+Started by upstream project "[8mha:////4Ia7MG2MzKZwdrJWXMembAin+bwcvJS9Ufs12D+lpjWeAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JH2X/OTs1KK0zJxUfQCko2JXxQAAAA==[0mDockerfile" build number [8mha:////4GOzE5oMg5aIX4xIhnVCnJMjG1je/71q+XiUS2Vx88GMAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwmoBn6WflJ+i75ydmpRWmZOan6JoYAHh1u48cAAAA=[0m41
+originally caused by:
+ Started by upstream project "[8mha:////4OL/PTOay+cuxYqslPnvlT08V94WA9chpizlg+I792CQAAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYl/az8JH1X32BVI4PEopLMtMTkkmIguyQfSOSlVpQW6wMA+Yp9cNcAAAA=[0mEMS artifacts to nexus" build number [8mha:////4OZNfH5UDeJy+OvuKs9ackxQlCo0u1P9q94gq/Xgf1kMAAAArh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYV/az8JH1X32BVI4PEopLMtMTkkmIguyQfSOSlVpQW65saAACznoad2QAAAA==[0m50
+ originally caused by:
+  Started by upstream project "[8mha:////4D/8sbNLkN+rgecQ6bDAHx0XIm8f6iKlqKJD3paQ6punAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYJ/az8JH1X32BVI4Ok0sycFCBdklpcog8ALRwl8c0AAAA=[0mEMS build test" build number [8mha:////4BGj1uAkyB9ZU+kotbpv7w1AhgBay+2gUnQnthIBg7zlAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYp/az8JH1X32BVI4Ok0sycFCBdklpcom9mAAAA4NrOzwAAAA==[0m60
+  originally caused by:
+   Started by user [8mha:////4Ic7CrHJ5vMO8u+CXASKo6IeCCPwwF5jPnLTWGiK/QQ0AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL94sQioCkAXZHSqMEAAAA=[0msarang
+  Started by upstream project "[8mha:////4D/8sbNLkN+rgecQ6bDAHx0XIm8f6iKlqKJD3paQ6punAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYJ/az8JH1X32BVI4Ok0sycFCBdklpcog8ALRwl8c0AAAA=[0mEMS build test" build number [8mha:////4De2rnWo3nLIUlkOWN0k9Ysud8vUTETfexU8t3QDDJdNAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYp/az8JH1X32BVI4Ok0sycFCBdklpcom9mCACW0N25zwAAAA==[0m61
+  originally caused by:
+   Started by user [8mha:////4Ic7CrHJ5vMO8u+CXASKo6IeCCPwwF5jPnLTWGiK/QQ0AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL94sQioCkAXZHSqMEAAAA=[0msarang
+Building in workspace /var/lib/jenkins/workspace/EMS-k8s-deployment
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 6c26dfd2a737aefe440c482fd0bafa17e8f92b05 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6c26dfd2a737aefe440c482fd0bafa17e8f92b05
+Commit message: "Create test"
+ > git rev-list --no-walk 6c26dfd2a737aefe440c482fd0bafa17e8f92b05 # timeout=10
+[EMS-k8s-deployment] $ /bin/sh -xe /tmp/jenkins7339602907106046844.sh
++ grep image: ems-k8s-deployment.yaml
++ awk {print$3}
++ cut -d / -f2
++ IMAGENAME=amritase
++ git checkout master
+Previous HEAD position was 6c26dfd... Create test
+Switched to branch 'master'
+Your branch and 'origin/master' have diverged,
+and have 21 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
++ sed -i s/amritase\/amritase/amritase\/amritase:41/g ems-k8s-deployment.yaml
++ git add ems-k8s-deployment.yaml
++ git commit -m EMS Deployment file updated with version 41
+[master 6aff05c] EMS Deployment file updated with version 41
+ 1 file changed, 1 insertion(+), 1 deletion(-)
++ git config --global push.default simple
++ git push https://github.com/amritasengar/dockerfile.git
+fatal: could not read Username for 'https://github.com': No such device or address
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

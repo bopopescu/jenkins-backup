@@ -1,0 +1,91 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>EMS artifacts to nexus</upstreamProject>
+            <upstreamUrl>job/EMS%20artifacts%20to%20nexus/</upstreamUrl>
+            <upstreamBuild>56</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UpstreamCause>
+                <upstreamProject>EMS build test</upstreamProject>
+                <upstreamUrl>job/EMS%20build%20test/</upstreamUrl>
+                <upstreamBuild>67</upstreamBuild>
+                <upstreamCauses>
+                  <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+                </upstreamCauses>
+              </hudson.model.Cause_-UpstreamCause>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.8.0">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.1">
+              <sha1>bec3a175bbe8fc84bdbf9a55638c0198416baa97</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>50</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/amritasengar/dockerfile.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.8.0">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/lib/jenkins/workspace/Dockerfile</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <hudson.plugins.copyartifact.CopyArtifact_-EnvAction plugin="copyartifact@1.39.1"/>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record>
+        <entry>
+          <string>EmployeeApplicationSprint4-1.0-SNAPSHOT.war</string>
+          <string>db927278443ffad202199d984be11788</string>
+        </entry>
+      </record>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+    <org.jenkinsci.plugins.docker.commons.fingerprint.DockerFingerprintAction plugin="docker-commons@1.11">
+      <imageIDs>
+        <string>sha256:11c031c209af44a681969fed928e31722037554b80feb581c93f7d646ba35daa</string>
+        <string>sha256:e46ca23bb2ca03a18b266e269d0bb9475f0ddab9e6d30c061e0a82a8235bd35e</string>
+      </imageIDs>
+    </org.jenkinsci.plugins.docker.commons.fingerprint.DockerFingerprintAction>
+  </actions>
+  <queueId>350</queueId>
+  <timestamp>1525769813527</timestamp>
+  <startTime>1525769813563</startTime>
+  <result>SUCCESS</result>
+  <displayName>#50 amritase/amritase:50 amritase/amritase:latest</displayName>
+  <duration>60192</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/Dockerfile</workspace>
+  <hudsonVersion>2.107.1</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@3.8.0">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

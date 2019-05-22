@@ -1,0 +1,44 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/jenkins POC
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/Employee-Management-System.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/Employee-Management-System.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/amritasengar/Employee-Management-System.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3bdbe2aa74db1dcacf514aeeec413c4d8496d67c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3bdbe2aa74db1dcacf514aeeec413c4d8496d67c
+Commit message: "new comit"
+ > git rev-list --no-walk 316a616faa682eb3db4b4debc2ea498844cd337e # timeout=10
+[jenkins POC] $ /opt/maven/bin/mvn clean install cobertura:cobertura -Dcobertura.report.format=xml
+[INFO] Scanning for projects...
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Malformed POM /var/lib/jenkins/workspace/jenkins POC/pom.xml: Unrecognised tag: 'snapshotRepository' (position: START_TAG seen ...<repository>\n\t\t <snapshotRepository>... @12:24)  @ /var/lib/jenkins/workspace/jenkins POC/pom.xml, line 12, column 24
+ @ 
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] The build could not read 1 project -> [Help 1]
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]   The project com.alm.web:EmployeeApplicationSprint4:1.0-SNAPSHOT (/var/lib/jenkins/workspace/jenkins POC/pom.xml) has 1 error
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR]     Malformed POM /var/lib/jenkins/workspace/jenkins POC/pom.xml: Unrecognised tag: 'snapshotRepository' (position: START_TAG seen ...<repository>\n\t\t <snapshotRepository>... @12:24)  @ /var/lib/jenkins/workspace/jenkins POC/pom.xml, line 12, column 24 -> [Help 2]
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[8mha:////4GwEEBCbDmBWPN2Fwswh5sKWoZSFB0qz3+HiBn6Bok9ZAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException
+Build step 'Invoke top-level Maven targets' marked build as failure
+[Cobertura] Publishing Cobertura coverage report...
+
+[Cobertura] Publishing Cobertura coverage results...
+
+[Cobertura] Cobertura coverage report found.
+
+Recording test results
+ERROR: Step ‘Publish JUnit test result report’ failed: Test reports were found but none of them are new. Did leafNodes run? 
+For example, /var/lib/jenkins/workspace/jenkins POC/target/surefire-reports/TEST-com.sample.mvc.controllerTest.EmployeeControllerTest.xml is 1 day 19 hr old
+
+Finished: FAILURE

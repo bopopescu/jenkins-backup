@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-07-18 09:54:29.316 UTC</timestamp>
+  <original>
+    <name>K8EMS-build-job</name>
+    <number>73</number>
+  </original>
+  <md5sum>ba6e39be16488eda91ac19c7724bd5ef</md5sum>
+  <fileName>EmployeeApplicationSprint4-1.0-SNAPSHOT.war</fileName>
+  <usages>
+    <entry>
+      <string>K8EMS-build-job</string>
+      <ranges>73</ranges>
+    </entry>
+    <entry>
+      <string>EMS artifacts to nexus</string>
+      <ranges>62</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

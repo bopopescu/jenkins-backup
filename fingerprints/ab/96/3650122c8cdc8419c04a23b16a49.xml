@@ -1,0 +1,26 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-05-11 08:05:05.70 UTC</timestamp>
+  <original>
+    <name>K8EMS-docker-container</name>
+    <number>56</number>
+  </original>
+  <md5sum>ab963650122c8cdc8419c04a23b16a49</md5sum>
+  <fileName>Docker image sha256:ab963650122c8cdc8419c04a23b16a49ade6d0db1a08858ec541d620e08a61ac</fileName>
+  <usages/>
+  <facets>
+    <org.jenkinsci.plugins.docker.commons.fingerprint.DockerAncestorFingerprintFacet plugin="docker-commons@1.11">
+      <timestamp>1526025904907</timestamp>
+      <imageId>sha256:ab963650122c8cdc8419c04a23b16a49ade6d0db1a08858ec541d620e08a61ac</imageId>
+      <usages>
+        <entry>
+          <string>K8EMS-docker-container</string>
+          <ranges>56</ranges>
+        </entry>
+      </usages>
+      <ancestorImageIds class="sorted-set">
+        <string>sha256:3d3e174bf404958855509de35a00b064ae7a1d40e594d4c3330bd47446a28bf7</string>
+      </ancestorImageIds>
+    </org.jenkinsci.plugins.docker.commons.fingerprint.DockerAncestorFingerprintFacet>
+  </facets>
+</fingerprint>

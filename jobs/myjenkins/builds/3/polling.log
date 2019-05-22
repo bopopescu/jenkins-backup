@@ -1,0 +1,10 @@
+Started on 29 Mar, 2018 11:33:58 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision 95f1e332605d9501f923b94fe5ed12b310820181 (refs/remotes/origin/master)
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git ls-remote -h https://github.com/amritasengar/Employee-Management-System.git # timeout=10
+Found 2 remote heads on https://github.com/amritasengar/Employee-Management-System.git
+[poll] Latest remote head revision on refs/heads/master is: 70e1fdd8528dfd243d7ff853853db005d04e79ae
+Done. Took 1.5 sec
+Changes found

@@ -1,0 +1,11 @@
+commit fad88660140f528a3257604613668a285526d405
+tree dd99005a479db8ed7e37b44bda8948e6f390ebcd
+parent eb27b2c88f3490102e428093dc025d4ae1eb32d4
+author amritasengar <36789880+amritasengar@users.noreply.github.com> 2018-05-08 14:53:35 +0530
+committer GitHub <noreply@github.com> 2018-05-08 14:53:35 +0530
+
+    Update ems-k8s-deployment.yaml
+
+
+
+:100644 100644 56185edfb5183fad42ad09627ef5cc7cd48d669a 72379008c5d484c5a9dff3e02bf4223a05afa3fc M	ems-k8s-deployment.yaml

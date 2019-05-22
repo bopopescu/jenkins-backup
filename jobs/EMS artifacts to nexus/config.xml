@@ -1,0 +1,64 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.plugins.copyartifact.CopyArtifactPermissionProperty plugin="copyartifact@1.39.1">
+      <projectNameList>
+        <string>K8EMS-build-job</string>
+      </projectNameList>
+    </hudson.plugins.copyartifact.CopyArtifactPermissionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <jenkins.triggers.ReverseBuildTrigger>
+      <spec></spec>
+      <upstreamProjects>K8EMS-build-job</upstreamProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </jenkins.triggers.ReverseBuildTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.plugins.copyartifact.CopyArtifact plugin="copyartifact@1.39.1">
+      <project>K8EMS-build-job</project>
+      <filter>target/EmployeeApplicationSprint4-1.0-SNAPSHOT.war</filter>
+      <target></target>
+      <excludes></excludes>
+      <selector class="hudson.plugins.copyartifact.StatusBuildSelector"/>
+      <doNotFingerprintArtifacts>false</doNotFingerprintArtifacts>
+    </hudson.plugins.copyartifact.CopyArtifact>
+    <com.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep plugin="nexus-jenkins-plugin@1.1.0-05">
+      <nexusInstanceId>12345</nexusInstanceId>
+      <nexusRepositoryId>EMS-release</nexusRepositoryId>
+      <packages>
+        <com.sonatype.nexus.ci.nxrm.MavenPackage>
+          <coordinate>
+            <groupId>com.alm.web</groupId>
+            <artifactId>EmployeeApplicationSprint4</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <packaging>war</packaging>
+          </coordinate>
+          <assets/>
+        </com.sonatype.nexus.ci.nxrm.MavenPackage>
+      </packages>
+    </com.sonatype.nexus.ci.nxrm.NexusPublisherBuildStep>
+  </builders>
+  <publishers>
+    <hudson.tasks.Mailer plugin="mailer@1.21">
+      <recipients>amritase@cybage.com</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.tasks.Mailer>
+  </publishers>
+  <buildWrappers/>
+</project>

@@ -1,0 +1,41 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>K8EMS-build-job</upstreamProject>
+            <upstreamUrl>job/K8EMS-build-job/</upstreamUrl>
+            <upstreamBuild>71</upstreamBuild>
+            <upstreamCauses>
+              <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.copyartifact.CopyArtifact_-EnvAction plugin="copyartifact@1.39.1"/>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record>
+        <entry>
+          <string>EmployeeApplicationSprint4-1.0-SNAPSHOT.war</string>
+          <string>6332f8b10ee044078a846555398890c0</string>
+        </entry>
+      </record>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+  </actions>
+  <queueId>401</queueId>
+  <timestamp>1526035676441</timestamp>
+  <startTime>1526035676529</startTime>
+  <result>SUCCESS</result>
+  <duration>880</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/EMS artifacts to nexus</workspace>
+  <hudsonVersion>2.107.1</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

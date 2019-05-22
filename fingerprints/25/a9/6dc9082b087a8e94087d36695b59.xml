@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-05-07 12:17:38.655 UTC</timestamp>
+  <original>
+    <name>EMS build test</name>
+    <number>61</number>
+  </original>
+  <md5sum>25a96dc9082b087a8e94087d36695b59</md5sum>
+  <fileName>EmployeeApplicationSprint4-1.0-SNAPSHOT.war</fileName>
+  <usages>
+    <entry>
+      <string>K8EMS-docker-container</string>
+      <ranges>41</ranges>
+    </entry>
+    <entry>
+      <string>EMS artifacts to nexus</string>
+      <ranges>50</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

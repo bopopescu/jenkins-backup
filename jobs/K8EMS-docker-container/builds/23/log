@@ -1,0 +1,196 @@
+Started by user [8mha:////4HCZzfWImOcXIGN7aD59HYhOERYuMZB9dM9wo69rhKsIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6pcWpRfpZqXnZmXnFSaWZOSkAiHITRscAAAA=[0mjenkinsbuild
+Building in workspace /var/lib/jenkins/workspace/Dockerfile
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision d8feeffa7d2fb2105b2f6bfb6dc816d69020c57b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d8feeffa7d2fb2105b2f6bfb6dc816d69020c57b
+Commit message: "push"
+ > git rev-list --no-walk d8feeffa7d2fb2105b2f6bfb6dc816d69020c57b # timeout=10
+Copied 1 artifact from "[8mha:////4ErJ1t690Ajt+AyTUeRqalI+Rvm9n+vMXESS4beXS8tKAAAAlx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgK2GQ0M/KT9J39Q1WNTJIKs3MSQHSJanFJfoAYvv9Vp0AAAA=[0mEMS build test" build number [8mha:////4M17DSxV9IP60fX58/+TOyznOXpx5SOkDdhYgLDP8feGAAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmGQ1s/KT9J39Q1WNTJIKs3MSQHSJanFJfqmhvoApo8EgaAAAAA=[0m51
+[Dockerfile] $ docker build -t amritase/amritase:23 --pull=true /var/lib/jenkins/workspace/Dockerfile
+Sending build context to Docker daemon  54.25MB
+Step 1/11 : FROM oraclelinux:7-slim
+7-slim: Pulling from library/oraclelinux
+b0efbbec3b2e: Pulling fs layer
+b0efbbec3b2e: Verifying Checksum
+b0efbbec3b2e: Download complete
+b0efbbec3b2e: Pull complete
+Digest: sha256:215413b44dbfe5b945914f30a5ccaeec83b25d0c9829218f7a2f607a4ff5ff2e
+Status: Downloaded newer image for oraclelinux:7-slim
+ ---> c94cc930790a
+Step 2/11 : ARG PACKAGE_URL=https://repo.mysql.com/yum/mysql-8.0-community/docker/x86_64/mysql-community-server-minimal-8.0.11-1.el7.x86_64.rpm
+ ---> Running in 54464271edfa
+Removing intermediate container 54464271edfa
+ ---> 1dd3e4818967
+Step 3/11 : ARG PACKAGE_URL_SHELL=https://repo.mysql.com/yum/mysql-tools-community/el/7/x86_64/mysql-shell-8.0.11-1.el7.x86_64.rpm
+ ---> Running in 5caec4e211e0
+Removing intermediate container 5caec4e211e0
+ ---> 17a85b04855b
+Step 4/11 : RUN rpmkeys --import https://repo.mysql.com/RPM-GPG-KEY-mysql   && yum install -y $PACKAGE_URL $PACKAGE_URL_SHELL libpwquality   && yum clean all   && mkdir /docker-entrypoint-initdb.d
+ ---> Running in 156c99d1f6af
+Loaded plugins: ovl
+Examining /var/tmp/yum-root-zt_Fh3/mysql-community-server-minimal-8.0.11-1.el7.x86_64.rpm: mysql-community-server-minimal-8.0.11-1.el7.x86_64
+Marking /var/tmp/yum-root-zt_Fh3/mysql-community-server-minimal-8.0.11-1.el7.x86_64.rpm to be installed
+Examining /var/tmp/yum-root-zt_Fh3/mysql-shell-8.0.11-1.el7.x86_64.rpm: mysql-shell-8.0.11-1.el7.x86_64
+Marking /var/tmp/yum-root-zt_Fh3/mysql-shell-8.0.11-1.el7.x86_64.rpm to be installed
+Resolving Dependencies
+--> Running transaction check
+---> Package libpwquality.x86_64 0:1.2.3-5.el7 will be installed
+--> Processing Dependency: cracklib-dicts >= 2.8 for package: libpwquality-1.2.3-5.el7.x86_64
+--> Processing Dependency: libpam.so.0(LIBPAM_EXTENSION_1.1.1)(64bit) for package: libpwquality-1.2.3-5.el7.x86_64
+--> Processing Dependency: libpam.so.0(LIBPAM_EXTENSION_1.0)(64bit) for package: libpwquality-1.2.3-5.el7.x86_64
+--> Processing Dependency: libpam.so.0(LIBPAM_1.0)(64bit) for package: libpwquality-1.2.3-5.el7.x86_64
+--> Processing Dependency: pam(x86-64) for package: libpwquality-1.2.3-5.el7.x86_64
+--> Processing Dependency: libpam.so.0()(64bit) for package: libpwquality-1.2.3-5.el7.x86_64
+--> Processing Dependency: libcrack.so.2()(64bit) for package: libpwquality-1.2.3-5.el7.x86_64
+---> Package mysql-community-server-minimal.x86_64 0:8.0.11-1.el7 will be installed
+--> Processing Dependency: libaio.so.1(LIBAIO_0.1)(64bit) for package: mysql-community-server-minimal-8.0.11-1.el7.x86_64
+--> Processing Dependency: libaio.so.1(LIBAIO_0.4)(64bit) for package: mysql-community-server-minimal-8.0.11-1.el7.x86_64
+--> Processing Dependency: libnuma.so.1(libnuma_1.1)(64bit) for package: mysql-community-server-minimal-8.0.11-1.el7.x86_64
+--> Processing Dependency: libnuma.so.1(libnuma_1.2)(64bit) for package: mysql-community-server-minimal-8.0.11-1.el7.x86_64
+--> Processing Dependency: libaio.so.1()(64bit) for package: mysql-community-server-minimal-8.0.11-1.el7.x86_64
+--> Processing Dependency: libnuma.so.1()(64bit) for package: mysql-community-server-minimal-8.0.11-1.el7.x86_64
+---> Package mysql-shell.x86_64 0:8.0.11-1.el7 will be installed
+--> Running transaction check
+---> Package cracklib.x86_64 0:2.9.0-11.el7 will be installed
+--> Processing Dependency: gzip for package: cracklib-2.9.0-11.el7.x86_64
+---> Package cracklib-dicts.x86_64 0:2.9.0-11.el7 will be installed
+---> Package libaio.x86_64 0:0.3.109-13.el7 will be installed
+---> Package numactl-libs.x86_64 0:2.0.9-7.el7 will be installed
+---> Package pam.x86_64 0:1.1.8-22.el7 will be installed
+--> Running transaction check
+---> Package gzip.x86_64 0:1.5-10.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package         Arch   Version         Repository                         Size
+================================================================================
+Installing:
+ libpwquality    x86_64 1.2.3-5.el7     ol7_latest                         84 k
+ mysql-community-server-minimal
+                 x86_64 8.0.11-1.el7    /mysql-community-server-minimal-8.0.11-1.el7.x86_64
+                                                                          113 M
+ mysql-shell     x86_64 8.0.11-1.el7    /mysql-shell-8.0.11-1.el7.x86_64   18 M
+Installing for dependencies:
+ cracklib        x86_64 2.9.0-11.el7    ol7_latest                         79 k
+ cracklib-dicts  x86_64 2.9.0-11.el7    ol7_latest                        3.6 M
+ gzip            x86_64 1.5-10.el7      ol7_latest                        129 k
+ libaio          x86_64 0.3.109-13.el7  ol7_latest                         24 k
+ numactl-libs    x86_64 2.0.9-7.el7     ol7_latest                         29 k
+ pam             x86_64 1.1.8-22.el7    ol7_latest                        719 k
+
+Transaction Summary
+================================================================================
+Install  3 Packages (+6 Dependent packages)
+
+Total size: 136 M
+Total download size: 4.6 M
+Installed size: 143 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              795 kB/s | 4.6 MB  00:05     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : libaio-0.3.109-13.el7.x86_64                                 1/9 
+  Installing : gzip-1.5-10.el7.x86_64                                       2/9 
+  Installing : cracklib-2.9.0-11.el7.x86_64                                 3/9 
+  Installing : cracklib-dicts-2.9.0-11.el7.x86_64                           4/9 
+  Installing : pam-1.1.8-22.el7.x86_64                                      5/9 
+  Installing : libpwquality-1.2.3-5.el7.x86_64                              6/9 
+  Installing : numactl-libs-2.0.9-7.el7.x86_64                              7/9 
+  Installing : mysql-community-server-minimal-8.0.11-1.el7.x86_64           8/9 
+  Installing : mysql-shell-8.0.11-1.el7.x86_64                              9/9 
+  Verifying  : numactl-libs-2.0.9-7.el7.x86_64                              1/9 
+  Verifying  : mysql-shell-8.0.11-1.el7.x86_64                              2/9 
+  Verifying  : cracklib-dicts-2.9.0-11.el7.x86_64                           3/9 
+  Verifying  : pam-1.1.8-22.el7.x86_64                                      4/9 
+  Verifying  : gzip-1.5-10.el7.x86_64                                       5/9 
+  Verifying  : cracklib-2.9.0-11.el7.x86_64                                 6/9 
+  Verifying  : mysql-community-server-minimal-8.0.11-1.el7.x86_64           7/9 
+  Verifying  : libpwquality-1.2.3-5.el7.x86_64                              8/9 
+  Verifying  : libaio-0.3.109-13.el7.x86_64                                 9/9 
+
+Installed:
+  libpwquality.x86_64 0:1.2.3-5.el7                                             
+  mysql-community-server-minimal.x86_64 0:8.0.11-1.el7                          
+  mysql-shell.x86_64 0:8.0.11-1.el7                                             
+
+Dependency Installed:
+  cracklib.x86_64 0:2.9.0-11.el7        cracklib-dicts.x86_64 0:2.9.0-11.el7    
+  gzip.x86_64 0:1.5-10.el7              libaio.x86_64 0:0.3.109-13.el7          
+  numactl-libs.x86_64 0:2.0.9-7.el7     pam.x86_64 0:1.1.8-22.el7               
+
+Complete!
+Loaded plugins: ovl
+Cleaning repos: ol7_UEKR4 ol7_latest
+Cleaning up everything
+Maybe you want: rm -rf /var/cache/yum, to also free up space taken by orphaned data from disabled or removed repos
+Removing intermediate container 156c99d1f6af
+ ---> ff56b488a082
+Step 5/11 : VOLUME /var/lib/mysql
+ ---> Running in 8b4690bbf599
+Removing intermediate container 8b4690bbf599
+ ---> d668103ac7b3
+Step 6/11 : COPY docker-entrypoint.sh /entrypoint.sh
+ ---> e19e8f2af8a8
+Step 7/11 : COPY healthcheck.sh /healthcheck.sh
+ ---> d8dc11b1e367
+Step 8/11 : ENTRYPOINT ["/entrypoint.sh"]
+ ---> Running in 4c15685fa81f
+Removing intermediate container 4c15685fa81f
+ ---> f3ce6ba8b3fa
+Step 9/11 : HEALTHCHECK CMD /healthcheck.sh
+ ---> Running in 7cae5769331e
+Removing intermediate container 7cae5769331e
+ ---> 19ad716a4dcb
+Step 10/11 : EXPOSE 3306 33060
+ ---> Running in 078e52223857
+Removing intermediate container 078e52223857
+ ---> d5269bb76d4b
+Step 11/11 : CMD ["mysqld"]
+ ---> Running in 754a0227d134
+Removing intermediate container 754a0227d134
+ ---> e10db589a89a
+Successfully built e10db589a89a
+Successfully tagged amritase/amritase:23
+[Dockerfile] $ docker tag e10db589a89a amritase/amritase:latest
+[Dockerfile] $ docker inspect e10db589a89a
+[Dockerfile] $ docker push amritase/amritase:23
+The push refers to repository [docker.io/amritase/amritase]
+ee8b1fbe94da: Preparing
+1de14b3f5b4c: Preparing
+f979ed08be13: Preparing
+401b941ef605: Preparing
+1de14b3f5b4c: Pushed
+401b941ef605: Mounted from library/oraclelinux
+ee8b1fbe94da: Pushed
+f979ed08be13: Pushed
+23: digest: sha256:7e0a97e11d64aca49ca6a6fb7cd7027fded42a172424f9e5dcaa9e3fc7e652d4 size: 1156
+[Dockerfile] $ docker push amritase/amritase:latest
+The push refers to repository [docker.io/amritase/amritase]
+ee8b1fbe94da: Preparing
+1de14b3f5b4c: Preparing
+f979ed08be13: Preparing
+401b941ef605: Preparing
+ee8b1fbe94da: Layer already exists
+f979ed08be13: Layer already exists
+401b941ef605: Layer already exists
+1de14b3f5b4c: Layer already exists
+latest: digest: sha256:7e0a97e11d64aca49ca6a6fb7cd7027fded42a172424f9e5dcaa9e3fc7e652d4 size: 1156
+[Dockerfile] $ /bin/sh -xe /tmp/jenkins6876599158387869880.sh
++ $ docker build -f Dockerfile1 .
+/tmp/jenkins6876599158387869880.sh: 2: /tmp/jenkins6876599158387869880.sh: $: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

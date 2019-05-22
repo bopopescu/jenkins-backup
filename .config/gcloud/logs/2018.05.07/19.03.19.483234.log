@@ -1,0 +1,15 @@
+2018-05-07 19:03:19,488 DEBUG    root            Loaded Command Group: [u'gcloud', u'container']
+2018-05-07 19:03:19,490 DEBUG    root            Loaded Command Group: [u'gcloud', u'container', u'clusters']
+2018-05-07 19:03:19,491 DEBUG    root            Loaded Command Group: [u'gcloud', u'container', u'clusters', u'get_credentials']
+2018-05-07 19:03:19,506 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "formidable-byte-176106", --zone: "us-central1-a", NAME: "my-cluster"]
+2018-05-07 19:03:19,509 WARNING  root            Accessing a Kubernetes Engine cluster requires the kubernetes commandline
+client [kubectl]. To install, run
+  $ gcloud components install kubectl
+
+2018-05-07 19:03:19,510 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2018-05-07 19:03:20,375 DEBUG    root            Saved kubeconfig to /var/lib/jenkins/.kube/config
+2018-05-07 19:03:20,375 INFO     ___FILE_ONLY___ kubeconfig entry generated for my-cluster.
+
+2018-05-07 19:03:20,376 INFO     root            Display format: "default"
+2018-05-07 19:03:20,587 DEBUG    root            Metrics reporting process started...

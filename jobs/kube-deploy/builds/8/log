@@ -1,0 +1,25 @@
+Started by user [8mha:////4HCZzfWImOcXIGN7aD59HYhOERYuMZB9dM9wo69rhKsIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6pcWpRfpZqXnZmXnFSaWZOSkAiHITRscAAAA=[0mjenkinsbuild
+Building in workspace /var/lib/jenkins/workspace/kube-deploy
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github-cred-gcp
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision f0ae5fdcb3e1143b1802507d5f8a04bbc63cf574 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f0ae5fdcb3e1143b1802507d5f8a04bbc63cf574
+Commit message: "Update ems-k8s-deployment.yaml"
+ > git rev-list --no-walk f0ae5fdcb3e1143b1802507d5f8a04bbc63cf574 # timeout=10
+[kube-deploy] $ /bin/sh -xe /tmp/jenkins198818888053399562.sh
++ grep image: ems-k8s-deployment.yaml
++ awk {print$3}
++ cut -d / -f2
++ IMAGENAME=amritase
++ gcloud container clusters get-credentials my-cluster --zone us-central1-a --project formidable-byte-176106
+/tmp/jenkins198818888053399562.sh: 10: /tmp/jenkins198818888053399562.sh: gcloud: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

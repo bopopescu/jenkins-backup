@@ -1,0 +1,75 @@
+Started by user [8mha:////4HCZzfWImOcXIGN7aD59HYhOERYuMZB9dM9wo69rhKsIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6pcWpRfpZqXnZmXnFSaWZOSkAiHITRscAAAA=[0mjenkinsbuild
+Building in workspace /var/lib/jenkins/workspace/xml sonar test
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/test1.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/test1.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/amritasengar/test1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 225efe943354aae049f0fce5b18c52437359aa45 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 225efe943354aae049f0fce5b18c52437359aa45
+Commit message: "Merge branch 'master' of https://github.com/amritasengar/test1"
+First time build. Skipping changelog.
+[xml sonar test] $ /home/amritase/Downloads/sonar-scanner-3.0.3.778-linux/bin/sonar-scanner -e -Dsonar.host.url=http://localhost:9000 ******** ******** "-Dsonar.projectName=My xml" -Dsonar.projectVersion=1.0 -Dsonar.projectKey=my:xml -Dsonar.sources=. "-Dsonar.projectBaseDir=/var/lib/jenkins/workspace/xml sonar test"
+INFO: Option -e/--errors is no longer supported and will be ignored
+INFO: Scanner configuration file: /home/amritase/Downloads/sonar-scanner-3.0.3.778-linux/conf/sonar-scanner.properties
+INFO: Project root configuration file: /var/lib/jenkins/workspace/xml sonar test/sonar-project.properties
+INFO: SonarQube Scanner 3.0.3.778
+INFO: Java 1.8.0_121 Oracle Corporation (64-bit)
+INFO: Linux 4.13.0-36-generic amd64
+INFO: User cache: /var/lib/jenkins/.sonar/cache
+INFO: Load global repositories
+INFO: Load global repositories (done) | time=262ms
+INFO: User cache: /var/lib/jenkins/.sonar/cache
+INFO: Load plugins index
+INFO: Load plugins index (done) | time=6ms
+INFO: SonarQube server 5.6.7
+INFO: Default locale: "en_IN", source code encoding: "UTF-8" (analysis is platform dependent)
+INFO: Process project properties
+INFO: Load project repositories
+INFO: Load project repositories (done) | time=212ms
+INFO: Load quality profiles
+INFO: Load quality profiles (done) | time=100ms
+INFO: Load active rules
+INFO: Load active rules (done) | time=626ms
+INFO: Publish mode
+INFO: -------------  Scan My xml
+INFO: Load server rules
+INFO: Load server rules (done) | time=407ms
+INFO: Base dir: /var/lib/jenkins/workspace/xml sonar test
+INFO: Working dir: /var/lib/jenkins/workspace/xml sonar test/.scannerwork
+INFO: Source paths: .
+INFO: Source encoding: UTF-8, default locale: en_IN
+INFO: Index files
+INFO: 0 files indexed
+INFO: JaCoCoSensor: JaCoCo report not found : /var/lib/jenkins/workspace/xml sonar test/target/jacoco.exec
+INFO: JaCoCoItSensor: JaCoCo IT report not found: /var/lib/jenkins/workspace/xml sonar test/target/jacoco-it.exec
+INFO: Sensor Lines Sensor
+INFO: Sensor Lines Sensor (done) | time=0ms
+INFO: Sensor SCM Sensor
+INFO: Sensor SCM Sensor (done) | time=0ms
+INFO: Sensor Zero Coverage Sensor
+INFO: Sensor Zero Coverage Sensor (done) | time=0ms
+INFO: Sensor Code Colorizer Sensor
+INFO: Sensor Code Colorizer Sensor (done) | time=0ms
+INFO: Sensor CPD Block Indexer
+INFO: Sensor CPD Block Indexer (done) | time=0ms
+INFO: Calculating CPD for 0 files
+INFO: CPD calculation finished
+INFO: Analysis report generated in 34ms, dir size=10 KB
+INFO: Analysis reports compressed in 15ms, zip size=3 KB
+INFO: Analysis report uploaded in 109ms
+INFO: ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard/index/my:xml
+INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+INFO: More about the report processing at http://localhost:9000/api/ce/task?id=AWJHCrP9xgG26hYYZ74E
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 5.737s
+INFO: Final Memory: 42M/182M
+INFO: ------------------------------------------------------------------------
+Finished: SUCCESS

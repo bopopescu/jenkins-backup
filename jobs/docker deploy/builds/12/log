@@ -1,0 +1,155 @@
+Started by upstream project "[8mha:////4OL/PTOay+cuxYqslPnvlT08V94WA9chpizlg+I792CQAAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYl/az8JH1X32BVI4PEopLMtMTkkmIguyQfSOSlVpQW6wMA+Yp9cNcAAAA=[0mEMS artifacts to nexus" build number [8mha:////4L29ByRTuGKOj6V2dotIGbAnk2iHVdQrAVogE1iPiAdWAAAArh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYV/az8JH1X32BVI4PEopLMtMTkkmIguyQfSOSlVpQW65sZAwDKnKIv2QAAAA==[0m63
+originally caused by:
+ Started by upstream project "[8mha:////4PX+kCpU42cbP65vcIHjvQ+pDxn4zBczrVoBnk8074WIAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZR/az8JH1vC1ffYN2k0sycFF0QHwCu9PMzygAAAA==[0mK8EMS-build-job" build number [8mha:////4L5/zB4maeUN9STLzlkkxl5R7X4QaL542cp7fzn5/KXGAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZx/az8JH1vC1ffYN2k0sycFF0Q39wEAG64Sm7MAAAA[0m74
+ originally caused by:
+  Started by user [8mha:////4HCZzfWImOcXIGN7aD59HYhOERYuMZB9dM9wo69rhKsIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6pcWpRfpZqXnZmXnFSaWZOSkAiHITRscAAAA=[0mjenkinsbuild
+Building in workspace /var/lib/jenkins/workspace/docker deploy
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision e1993dbe6390ae0e34659254bb4a787a95664a23 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e1993dbe6390ae0e34659254bb4a787a95664a23
+Commit message: "Update ems-k8s-deployment.yaml"
+ > git rev-list --no-walk e1993dbe6390ae0e34659254bb4a787a95664a23 # timeout=10
+Copied 1 artifact from "[8mha:////4BrMAuZiZHfQh+v0Ag61UCBxf6Hbhpw5J+4rB6PihmrWAAAAkx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgL2EQ1c/KT9L3tnD1DdZNKs3MSdEF8QF1mwp9mgAAAA==[0mK8EMS-build-job" build number [8mha:////4AU8R/+13ir0IlqytCrCQ+50mbWZPSPjCu0BwK2dSFEWAAAAlh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmGQ0M/KT9L3tnD1DdZNKs3MSdEF8c1N9AFjXDSWnQAAAA==[0m74
+[docker deploy] $ /bin/sh -xe /tmp/jenkins4236156778862809755.sh
++ docker build -t amritase/emsrepo .
+Sending build context to Docker daemon  54.31MB
+Step 1/12 : FROM ubuntu:14.04
+ ---> 8cef1fa16c77
+Step 2/12 : LABEL Description="This image is used for github->circleci->dockerhub->tutum->aws" Version="1.0"
+ ---> Using cache
+ ---> 326b42947ee8
+Step 3/12 : MAINTAINER pushpendra
+ ---> Using cache
+ ---> 0108357b30d3
+Step 4/12 : RUN apt-get update
+ ---> Using cache
+ ---> d8073db5c5d8
+Step 5/12 : RUN sudo apt-get install -y openjdk-7-jdk
+ ---> Using cache
+ ---> d1f98da45695
+Step 6/12 : RUN sudo apt-get install -y tomcat7
+ ---> Using cache
+ ---> 5487adb1ab7e
+Step 7/12 : ENV CATALINA_HOME /usr/share/tomcat7/
+ ---> Using cache
+ ---> d7711ea5bb13
+Step 8/12 : ENV CATALINA_BASE /var/lib/tomcat7/
+ ---> Using cache
+ ---> b60d1f5dad34
+Step 9/12 : ENV PATH $CATALINA_HOME/bin:$PATH
+ ---> Using cache
+ ---> 747245241b44
+Step 10/12 : COPY ./target/*.war /var/lib/tomcat7/webapps/EmployeeApplication.war
+ ---> Using cache
+ ---> dde0735e017b
+Step 11/12 : EXPOSE 8080
+ ---> Using cache
+ ---> 5b58caf7999e
+Step 12/12 : CMD ["catalina.sh", "run"]
+ ---> Using cache
+ ---> 03e82825b754
+Successfully built 03e82825b754
+Successfully tagged amritase/emsrepo:latest
++ docker push amritase/emsrepo
+The push refers to repository [docker.io/amritase/emsrepo]
+da093ed008f5: Preparing
+2893ba6cca56: Preparing
+d8315b7f7639: Preparing
+a929e63d0aae: Preparing
+4622c8e1bdc0: Preparing
+b33859b66bfd: Preparing
+14fa4a9494bf: Preparing
+0c3819952093: Preparing
+05b0f7f2a817: Preparing
+b33859b66bfd: Waiting
+14fa4a9494bf: Waiting
+0c3819952093: Waiting
+05b0f7f2a817: Waiting
+d8315b7f7639: Layer already exists
+2893ba6cca56: Layer already exists
+4622c8e1bdc0: Layer already exists
+da093ed008f5: Layer already exists
+a929e63d0aae: Layer already exists
+b33859b66bfd: Layer already exists
+05b0f7f2a817: Layer already exists
+14fa4a9494bf: Layer already exists
+0c3819952093: Layer already exists
+56: digest: sha256:8ecf484bba7df46704f4fe2a4f56500fbcf7b61304035c71adfad57a8867c9ac size: 2207
+114b66609f4c: Preparing
+2893ba6cca56: Preparing
+d8315b7f7639: Preparing
+a929e63d0aae: Preparing
+4622c8e1bdc0: Preparing
+b33859b66bfd: Preparing
+14fa4a9494bf: Preparing
+0c3819952093: Preparing
+05b0f7f2a817: Preparing
+2893ba6cca56: Layer already exists
+d8315b7f7639: Layer already exists
+a929e63d0aae: Layer already exists
+4622c8e1bdc0: Layer already exists
+b33859b66bfd: Waiting
+05b0f7f2a817: Waiting
+14fa4a9494bf: Waiting
+b33859b66bfd: Layer already exists
+05b0f7f2a817: Layer already exists
+0c3819952093: Layer already exists
+14fa4a9494bf: Layer already exists
+114b66609f4c: Layer already exists
+57: digest: sha256:80a2b3fadab62af63f43f9b4bd24925f95a3fdaef2311e2af86a34b822af865b size: 2207
+63d3d011ea04: Preparing
+2893ba6cca56: Preparing
+d8315b7f7639: Preparing
+a929e63d0aae: Preparing
+4622c8e1bdc0: Preparing
+b33859b66bfd: Preparing
+14fa4a9494bf: Preparing
+0c3819952093: Preparing
+05b0f7f2a817: Preparing
+2893ba6cca56: Layer already exists
+d8315b7f7639: Layer already exists
+a929e63d0aae: Layer already exists
+4622c8e1bdc0: Layer already exists
+b33859b66bfd: Layer already exists
+14fa4a9494bf: Layer already exists
+0c3819952093: Layer already exists
+05b0f7f2a817: Layer already exists
+63d3d011ea04: Layer already exists
+58: digest: sha256:5094282250652c3fdc3fe8e6088e70af6f5325136356c5ce301868299112181f size: 2207
+c9e1901fedaf: Preparing
+2893ba6cca56: Preparing
+d8315b7f7639: Preparing
+a929e63d0aae: Preparing
+4622c8e1bdc0: Preparing
+b33859b66bfd: Preparing
+14fa4a9494bf: Preparing
+0c3819952093: Preparing
+05b0f7f2a817: Preparing
+b33859b66bfd: Waiting
+14fa4a9494bf: Waiting
+0c3819952093: Waiting
+05b0f7f2a817: Waiting
+2893ba6cca56: Layer already exists
+b33859b66bfd: Layer already exists
+14fa4a9494bf: Layer already exists
+0c3819952093: Layer already exists
+05b0f7f2a817: Layer already exists
+d8315b7f7639: Layer already exists
+a929e63d0aae: Layer already exists
+4622c8e1bdc0: Layer already exists
+c9e1901fedaf: Layer already exists
+latest: digest: sha256:d1cb2bb1d0fed830098f434365150821231c9d40ad095249982a6e0f3bb27f23 size: 2207
++ docker run -d -p 8090:8080 amritase/emsrepo
+b496dbd5cda26a16191f0cc0a5cb9e9fe9e8fc55fad08fb04518375e8fd370d1
+docker: Error response from daemon: driver failed programming external connectivity on endpoint inspiring_pasteur (b77612f63552a2b101dae22967aab7a4ec8191ef991f45f30adba16af6fb7e35): Bind for 0.0.0.0:8090 failed: port is already allocated.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

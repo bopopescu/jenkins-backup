@@ -1,0 +1,65 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>BUILD</name>
+          <description></description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.8.0">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/amritasengar/dockerfile.git</url>
+        <credentialsId>e9dc2483-abba-42e6-a456-0d9a9402a08b</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <hudson.triggers.SCMTrigger>
+      <spec>* * * * *</spec>
+      <ignorePostCommitHooks>false</ignorePostCommitHooks>
+    </hudson.triggers.SCMTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#IMAGENAME=`grep image: ems-k8s-deployment.yaml | awk &apos;{print$3}&apos; | cut  -d &quot;/&quot; -f2`
+#git checkout master
+#git pull
+#sed -i &quot;s/sarangrana\/$IMAGENAME/sarangrana\/$IMAGENAME:$BUILDJ3/g&quot; ems-k8s-deployment.yaml
+#git add ems-k8s-deployment.yaml
+#git commit -m &quot;EMS Deployment file updated with version $BUILDJ3&quot;
+#git push https://github.com/sarangrana/dockerfile.git
+
+gcloud container clusters get-credentials cluster-1 --zone us-central1-a --project elevated-module-203506
+
+#kubectl set image deployment/k8s k8s=sarangrana/k8ems:$BUILDJ3 --record
+
+kubectl set image deployment/k8s  k8s=amritase/emsrepo:$BUILD --record</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

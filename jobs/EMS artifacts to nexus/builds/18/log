@@ -1,0 +1,24 @@
+Started by user [8mha:////4HCZzfWImOcXIGN7aD59HYhOERYuMZB9dM9wo69rhKsIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6pcWpRfpZqXnZmXnFSaWZOSkAiHITRscAAAA=[0mjenkinsbuild
+Building in workspace /var/lib/jenkins/workspace/jenkins POC
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/Employee-Management-System.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/Employee-Management-System.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/amritasengar/Employee-Management-System.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 70e1fdd8528dfd243d7ff853853db005d04e79ae (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 70e1fdd8528dfd243d7ff853853db005d04e79ae
+Commit message: "Update test"
+ > git rev-list --no-walk 70e1fdd8528dfd243d7ff853853db005d04e79ae # timeout=10
+[jenkins POC] $ /bin/sh -xe /tmp/jenkins3945926400217447975.sh
++ mvn clean install cobertura:cobertura -Dcobertura.report.format=xml
+Error: Could not find or load main class org.codehaus.plexus.classworlds.launcher.Launcher
+Build step 'Execute shell' marked build as failure
+[Cobertura] Publishing Cobertura coverage report...
+
+Recording test results
+Finished: FAILURE

@@ -1,0 +1,7 @@
+Started by user [8mha:////4HCZzfWImOcXIGN7aD59HYhOERYuMZB9dM9wo69rhKsIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6pcWpRfpZqXnZmXnFSaWZOSkAiHITRscAAAA=[0mjenkinsbuild
+Building in workspace /var/lib/jenkins/workspace/proddeploy
+Copied 1 artifact from "[8mha:////4LioApbMyuztt7bSuwYUMxVSoisbz6iYHaymkvzI9WJwAAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMgQLGGQ1M/KT9LPSs3LzswrVjUyCPB31tVNzi+o1AcAFiJulZ4AAAA=[0mjenkins POC--copy" build number [8mha:////4FVAX2W4ON9PX/Hj9bPYRuzBvRbRswv4D6EfFXx7hMh4AAAAnR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmGQ0c/KT9LPSs3LzswrVjUyCPB31tVNzi+o1Dcx1gcAvMSldqEAAAA=[0m43
+Deploying /var/lib/jenkins/workspace/proddeploy/target/EmployeeApplicationSprint4-1.0-SNAPSHOT.war to container Tomcat 8.x Remote with context 
+  [/var/lib/jenkins/workspace/proddeploy/target/EmployeeApplicationSprint4-1.0-SNAPSHOT.war] is not deployed. Doing a fresh deployment.
+  Deploying [/var/lib/jenkins/workspace/proddeploy/target/EmployeeApplicationSprint4-1.0-SNAPSHOT.war]
+Finished: SUCCESS

@@ -1,0 +1,30 @@
+Started by user [8mha:////4HCZzfWImOcXIGN7aD59HYhOERYuMZB9dM9wo69rhKsIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6pcWpRfpZqXnZmXnFSaWZOSkAiHITRscAAAA=[0mjenkinsbuild
+Building in workspace /var/lib/jenkins/workspace/kube-deploy
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github-cred-gcp
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision bec3a175bbe8fc84bdbf9a55638c0198416baa97 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bec3a175bbe8fc84bdbf9a55638c0198416baa97
+Commit message: "Update ems-k8s-deployment.yaml"
+ > git rev-list --no-walk bec3a175bbe8fc84bdbf9a55638c0198416baa97 # timeout=10
+[kube-deploy] $ /bin/sh -xe /tmp/jenkins7840219887244597088.sh
++ grep image: ems-k8s-deployment.yaml
++ awk {print$3}
++ cut -d / -f2
++ IMAGENAME=amritase
++ /var/lib/jenkins/workspace/EMS-k8s-deployment/google-cloud-sdk/bin/gcloud container clusters get-credentials cluster-1 --zone us-central1-a --project elevated-module-203506
+WARNING: Accessing a Kubernetes Engine cluster requires the kubernetes commandline
+client [kubectl]. To install, run
+  $ gcloud components install kubectl
+
+Fetching cluster endpoint and auth data.
+ERROR: (gcloud.container.clusters.get-credentials) ResponseError: code=403, message=Required "container.clusters.get" permission for "projects/elevated-module-203506/zones/us-central1-a/clusters/cluster-1".
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

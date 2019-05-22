@@ -1,0 +1,23 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/Dockerfile
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision d8feeffa7d2fb2105b2f6bfb6dc816d69020c57b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d8feeffa7d2fb2105b2f6bfb6dc816d69020c57b
+Commit message: "push"
+ > git rev-list --no-walk 2741ba8a2c05337486fe00e18382f74a938184b8 # timeout=10
+Copied 1 artifact from "[8mha:////4ErJ1t690Ajt+AyTUeRqalI+Rvm9n+vMXESS4beXS8tKAAAAlx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgK2GQ0M/KT9J39Q1WNTJIKs3MSQHSJanFJfoAYvv9Vp0AAAA=[0mEMS build test" build number [8mha:////4M17DSxV9IP60fX58/+TOyznOXpx5SOkDdhYgLDP8feGAAAAmh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmGQ1s/KT9J39Q1WNTJIKs3MSQHSJanFJfqmhvoApo8EgaAAAAA=[0m51
+[Dockerfile] $ docker build -t amritase/amritase:22 --pull=true /var/lib/jenkins/workspace/Dockerfile
+Sending build context to Docker daemon  54.25MB
+Step 1/11 : FROM oraclelinux:7-slim
+Get https://registry-1.docker.io/v2/: dial tcp: lookup registry-1.docker.io on 127.0.1.1:53: read udp 127.0.0.1:44315->127.0.1.1:53: i/o timeout
+Build step 'Docker Build and Publish' marked build as failure
+Finished: FAILURE

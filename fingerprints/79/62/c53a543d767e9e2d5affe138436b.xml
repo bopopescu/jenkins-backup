@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-04-06 08:27:57.13 UTC</timestamp>
+  <original>
+    <name>jenkins POC--copy</name>
+    <number>45</number>
+  </original>
+  <md5sum>7962c53a543d767e9e2d5affe138436b</md5sum>
+  <fileName>EmployeeApplicationSprint4-1.0-SNAPSHOT.war</fileName>
+  <usages>
+    <entry>
+      <string>proddeploy</string>
+      <ranges>15</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

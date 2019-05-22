@@ -1,0 +1,11 @@
+commit 355ddabc65a5b103b62012af86f2349071e4cefa
+tree a86392dd1f61835401f018ab67122fe3c58c2edc
+parent 4f674ae85fb75b7b4d07132579159c8c9a629603
+author amritasengar <36789880+amritasengar@users.noreply.github.com> 2018-05-07 12:19:48 +0530
+committer GitHub <noreply@github.com> 2018-05-07 12:19:48 +0530
+
+    Create ems-k8s-deployment.yaml
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 9d6ecd404d997f8c53c0144010f59ba59e34a227 A	ems-k8s-deployment.yaml

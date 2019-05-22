@@ -1,0 +1,39 @@
+Started by upstream project "[8mha:////4Ia7MG2MzKZwdrJWXMembAin+bwcvJS9Ufs12D+lpjWeAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JH2X/OTs1KK0zJxUfQCko2JXxQAAAA==[0mDockerfile" build number [8mha:////4DY/RXXPgPSMRX09ShiDS9gJq6+AVJ8VgIO11mMVZzsqAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwmoBn6WflJ+i75ydmpRWmZOan6JiYAkekEk8cAAAA=[0m44
+originally caused by:
+ Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/EMS-k8s-deployment
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 118aba5919c16333c7a7eaa39fc552d8cc78304a (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 118aba5919c16333c7a7eaa39fc552d8cc78304a
+Commit message: "new1"
+ > git rev-list --no-walk 118aba5919c16333c7a7eaa39fc552d8cc78304a # timeout=10
+[EMS-k8s-deployment] $ /bin/sh -xe /tmp/jenkins7097331088484756940.sh
++ grep image: ems-k8s-deployment.yaml
++ awk {print$3}
++ cut -d / -f2
++ IMAGENAME=amritase
++ git checkout master
+Previous HEAD position was 118aba5... new1
+Switched to branch 'master'
+Your branch and 'origin/master' have diverged,
+and have 26 and 5 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
++ sed -i s/amritase\/amritase/amritase\/amritase:44/g ems-k8s-deployment.yaml
++ git add ems-k8s-deployment.yaml
++ git commit -m EMS Deployment file updated with version 44
+[master 6f4dc65] EMS Deployment file updated with version 44
+ 1 file changed, 1 insertion(+), 1 deletion(-)
++ git config --global push.default simple
++ git push https://github.com/amritasengar/dockerfile.git
+fatal: could not read Username for 'https://github.com': No such device or address
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

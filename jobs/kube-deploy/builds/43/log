@@ -1,0 +1,38 @@
+Started by an SCM change
+Started by upstream project "[8mha:////4I+ETxC4bk/PILBXmso+Gp/0x58lUs4eyc8otMwAVx/wAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYZ/az8JH1vC1ffYN2U/OTs1CJdoMaSxMy81CJ9AG6xAZLRAAAA[0mK8EMS-docker-container" build number [8mha:////4MK3AWZpEb0L6mwnREcEGkTJmhDq+P9NA3a03t66ybmwAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgY5/az8JH1vC1ffYN2U/OTs1CJdoMaSxMy81CJ9UxMAF/80L9MAAAA=[0m54
+originally caused by:
+ Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/kube-deploy
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github-cred-gcp
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision e1993dbe6390ae0e34659254bb4a787a95664a23 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e1993dbe6390ae0e34659254bb4a787a95664a23
+Commit message: "Update ems-k8s-deployment.yaml"
+ > git rev-list --no-walk fad88660140f528a3257604613668a285526d405 # timeout=10
+[kube-deploy] $ /bin/sh -xe /tmp/jenkins2335305977510659191.sh
++ grep image: ems-k8s-deployment.yaml
++ awk {print$3}
++ cut -d / -f2
++ IMAGENAME=emsrepo
++ /var/lib/jenkins/workspace/EMS-k8s-deployment/google-cloud-sdk/bin/gcloud container clusters get-credentials cluster-1 --zone us-central1-a --project elevated-module-203506
+WARNING: Accessing a Kubernetes Engine cluster requires the kubernetes commandline
+client [kubectl]. To install, run
+  $ gcloud components install kubectl
+
+Fetching cluster endpoint and auth data.
+kubeconfig entry generated for cluster-1.
++ /var/lib/jenkins/google-cloud-sdk/bin/kubectl delete -f ems-k8s-deployment.yaml
+service "k8s" deleted
+deployment "k8s" deleted
++ /var/lib/jenkins/google-cloud-sdk/bin/kubectl create -f ems-k8s-deployment.yaml
+service "k8s" created
+deployment "k8s" created
+Finished: SUCCESS

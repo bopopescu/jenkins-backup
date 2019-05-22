@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-05-07 11:36:53.113 UTC</timestamp>
+  <original>
+    <name>EMS build test</name>
+    <number>56</number>
+  </original>
+  <md5sum>537221ac4d3f4ab2cd1e3a266ec6a921</md5sum>
+  <fileName>EmployeeApplicationSprint4-1.0-SNAPSHOT.war</fileName>
+  <usages>
+    <entry>
+      <string>EMS artifacts to nexus</string>
+      <ranges>46</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

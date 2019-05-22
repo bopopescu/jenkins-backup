@@ -1,0 +1,32 @@
+Started by user [8mha:////4Ic7CrHJ5vMO8u+CXASKo6IeCCPwwF5jPnLTWGiK/QQ0AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL94sQioCkAXZHSqMEAAAA=[0msarang
+Building in workspace /var/lib/jenkins/workspace/EMS-k8s-deployment
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 355ddabc65a5b103b62012af86f2349071e4cefa (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 355ddabc65a5b103b62012af86f2349071e4cefa
+Commit message: "Create ems-k8s-deployment.yaml"
+ > git rev-list --no-walk 355ddabc65a5b103b62012af86f2349071e4cefa # timeout=10
+[EMS-k8s-deployment] $ /bin/sh -xe /tmp/jenkins1917908854374343653.sh
++ grep image: ems-k8s-deployment.yaml
++ awk {print$2}
++ cut -d / -f2
++ IMAGENAME=image:
++ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
++ sed -i s/amritase\/image:/amritase\/amritase:9/g ems-k8s-deployment.yaml
++ git add ems-k8s-deployment.yaml
++ git commit -m EMS Deployment file updated with version 9
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

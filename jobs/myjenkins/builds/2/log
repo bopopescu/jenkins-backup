@@ -1,0 +1,729 @@
+Started by user [8mha:////4HCZzfWImOcXIGN7aD59HYhOERYuMZB9dM9wo69rhKsIAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6pcWpRfpZqXnZmXnFSaWZOSkAiHITRscAAAA=[0mjenkinsbuild
+Building in workspace /var/lib/jenkins/workspace/myjenkins
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/Employee-Management-System.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/Employee-Management-System.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/amritasengar/Employee-Management-System.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 95f1e332605d9501f923b94fe5ed12b310820181 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 95f1e332605d9501f923b94fe5ed12b310820181
+Commit message: "test jenkins"
+ > git rev-list --no-walk 95f1e332605d9501f923b94fe5ed12b310820181 # timeout=10
+[myjenkins] $ /bin/sh -xe /tmp/jenkins3897829131339749344.sh
++ git log
+commit 95f1e332605d9501f923b94fe5ed12b310820181
+Author: amrita <amritase@cybage.com>
+Date:   Wed Mar 28 20:21:44 2018 +0530
+
+    test jenkins
+
+commit c199b391306782f5a5d3f2e04831c490a9b28532
+Author: amrita <amritase@cybage.com>
+Date:   Wed Mar 28 15:00:15 2018 +0530
+
+    msg1
+
+commit 8a87301ead4ed84699be005693056dd8295e9417
+Author: amrita <amritase@cybage.com>
+Date:   Wed Mar 28 14:57:01 2018 +0530
+
+    msg
+
+commit 6b98c9d4ea08f9bfa3541e89408ddfe9dd0e526d
+Merge: 72fe50a 1fd9678
+Author: amrita <amritase@cybage.com>
+Date:   Tue Mar 20 17:50:37 2018 +0530
+
+    test2
+
+commit 72fe50a69d828d87513cd92b6b7d347abe9dec9b
+Author: amrita <amritase@cybage.com>
+Date:   Tue Mar 20 17:48:15 2018 +0530
+
+    new repo
+
+commit 1fd9678151b7710cddb05e2b59adf0855d4f06bd
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Fri Dec 15 11:32:32 2017 +0530
+
+    Update buildspec.yml
+
+commit b9a549ec21473f6866b2b5c7d5cc714eae0585cf
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Fri Dec 15 11:15:15 2017 +0530
+
+    Update buildspec.yml
+
+commit 5c762de4a9d626d0a79bb410a63e41007e95429a
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Fri Dec 15 11:10:45 2017 +0530
+
+    Update buildspec.yml
+
+commit ced0c2e4ca74d0d018aafe56572a3a1f8a4bbab5
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Fri Dec 15 11:04:47 2017 +0530
+
+    Update buildspec.yml
+
+commit 913fa1225d4208171369781670f7299223956bc7
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Fri Dec 15 09:48:16 2017 +0530
+
+    Update buildspec.yml
+
+commit b9c2c949d07598096d32457044bcfb002053661b
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Thu Dec 14 12:06:46 2017 +0530
+
+    Update buildspec.yml
+
+commit 4b9221bbc4bd9a631e5ed888a4ac5e7e03540e94
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Thu Dec 14 11:54:30 2017 +0530
+
+    Update buildspec.yml
+
+commit be4546631d3c1741a082075bbd6d4159e2259b4c
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Thu Dec 14 11:50:18 2017 +0530
+
+    Update buildspec.yml
+
+commit c8efcecf0b08738e3c03667718349d7fcba5703b
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Thu Dec 14 11:43:45 2017 +0530
+
+    Update buildspec.yml
+
+commit c487e4ed1efc1c3f7bd6d2591e32352b7cf16bb5
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Thu Dec 14 11:34:36 2017 +0530
+
+    Update buildspec.yml
+
+commit 06dd8f8ae2ad81f8f197347803e25dff8f8098cc
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Thu Dec 14 10:52:32 2017 +0530
+
+    Update buildspec.yml
+
+commit 8b50ac516e7fadfb982349bb99bc7f6dc39bb58b
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Thu Dec 14 10:41:44 2017 +0530
+
+    Update buildspec.yml
+
+commit 5bf4fb40eb10d3efc780b1b9be64ddd00c4003ab
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 18:36:58 2017 +0530
+
+    Update buildspec.yml
+
+commit 04a6e358c6becb5aaf802f4485d964863e4f05be
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 18:29:59 2017 +0530
+
+    Update buildspec.yml
+
+commit f9107be124c485ce76daccffd1ceb10b04a82d08
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 18:21:02 2017 +0530
+
+    Update buildspec.yml
+
+commit ad078b4d82145b0f051b001b614cb9327f594e39
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 18:20:35 2017 +0530
+
+    Update buildspec.yml
+
+commit 83887e072b75eeb5247217a86fddaa27309b9e7f
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 18:15:15 2017 +0530
+
+    Update pom.xml
+
+commit 583389cc7896ada481981dd1c97db485aa1c3633
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 18:05:47 2017 +0530
+
+    Update buildspec.yml
+
+commit 796880690f7e8efb5308fad19c857d7d42f0ee40
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 18:05:28 2017 +0530
+
+    Update buildspec.yml
+
+commit 909b9c50eeef8128f7a7c49f5b204d46742793f5
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 18:05:26 2017 +0530
+
+    Update pom.xml
+
+commit b032905ddc5d6b9d6379f0c651ce1a1175bf396d
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 18:01:01 2017 +0530
+
+    Update buildspec.yml
+
+commit 706236840359213aeec0d294c9df65c3638ab1d4
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 17:56:54 2017 +0530
+
+    Update buildspec.yml
+
+commit 1b9702536afa6723f79aa5ee3f70debd7ef42642
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 17:56:38 2017 +0530
+
+    Update buildspec.yml
+
+commit ca8348e14af1ca6da569c1947ac40f1156a8ea77
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 17:55:55 2017 +0530
+
+    Update buildspec.yml
+
+commit 0c100f9a084941a0fc350f1b79564932886f8cf5
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 17:52:43 2017 +0530
+
+    Update buildspec.yml
+
+commit 775e3fc2d45ced696c816e301b125d46dbb36cc1
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 17:50:35 2017 +0530
+
+    Update buildspec.yml
+
+commit 798e2f89d049eafce932487b91892d4e65313f28
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 17:47:05 2017 +0530
+
+    Update buildspec.yml
+
+commit 7cfa95ecaf47afaeb0ace70c775276e5505ebdf6
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 17:41:37 2017 +0530
+
+    Update buildspec.yml
+
+commit 704f8494b5e9638bae4699ab0e13702aabddab22
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 17:40:56 2017 +0530
+
+    Update buildspec.yml
+
+commit 0ea6cff0c161cac22a057a2d457f3d9de0895162
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 17:34:29 2017 +0530
+
+    Update buildspec.yml
+
+commit 51fc66008daec8cf50ade0acff8aca2c64fcf036
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 17:26:15 2017 +0530
+
+    Update buildspec.yml
+
+commit 737afb32706d254d688d981bd6bd001313969b8c
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 17:25:36 2017 +0530
+
+    Update Dockerfile
+
+commit a86b3fb19e97f956be6c87ff544879038f433a42
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 16:38:12 2017 +0530
+
+    Create buildspec.yml
+
+commit d7f76ef1dcf4451de287d5a0a14bfb5cc34860ba
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Dec 13 16:35:01 2017 +0530
+
+    Rename buildspec.yml to buildspec123.yml
+
+commit 3b44b89929f0d0d52713df49d927e7a6fe42ac43
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Fri Nov 17 14:48:38 2017 +0530
+
+    Update README.md
+
+commit 75083fa833da1ef0bec1d4427bf0810f89512e5e
+Merge: 51c2213 f42fbf9
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Fri Nov 17 14:47:50 2017 +0530
+
+    Merge pull request #4 from paramanandd/develop
+    
+    Develop
+
+commit f42fbf9ad06571de33fe7779330ea9e7fa31aae8
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Fri Nov 17 14:19:04 2017 +0530
+
+    Update README.md
+
+commit a4ef08ae969e6d1e4bea855831ebad6c1e08696d
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Fri Nov 17 13:23:56 2017 +0530
+
+    Update README.md
+
+commit 2b6780c07d034cac7f576b22c73d84363a01a87d
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Fri Nov 17 11:58:21 2017 +0530
+
+    Update README.md
+
+commit 51c2213ff06511c267937ac413079f2be7caa70b
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Fri Nov 3 11:45:10 2017 +0530
+
+    Update buildspec.yml
+
+commit 4cc9fd01e4f9880d95432576bef9da38694d3338
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Fri Nov 3 11:43:02 2017 +0530
+
+    Update buildspec.yml
+
+commit 0236a58f9b84caba51f98cf876311165b3cebac0
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Fri Nov 3 11:37:46 2017 +0530
+
+    Update buildspec.yml
+
+commit dd5635110d24b89c24d0418d154336b4c1e07fcb
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Fri Nov 3 11:17:27 2017 +0530
+
+    Update buildspec.yml
+
+commit c0437508db3ecb608bca372ff822e578ba1c7165
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Wed Oct 25 15:20:49 2017 +0530
+
+    Update Dockerfile
+
+commit f226dc9dc98b186db4d4bb55084dcc2e17a4909a
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Tue Oct 24 17:46:19 2017 +0530
+
+    Update buildspec.yml
+
+commit 2fe9a4186c3bc54498f4affd5ba71517f27a7530
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Tue Oct 24 11:24:52 2017 +0530
+
+    Update buildspec.yml
+
+commit b8cc1da17f1eb543655ee9cff42a487c3489717a
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Tue Oct 24 10:39:03 2017 +0530
+
+    Update buildspec.yml
+
+commit 737100cd6327bf3e2bbbda9ebf332b9f5b0d8cbc
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Tue Oct 24 10:34:47 2017 +0530
+
+    Update buildspec.yml
+
+commit 0214d82d903d45c78647d7a5caab3eb9f2a39cfe
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Tue Oct 24 10:29:18 2017 +0530
+
+    Update buildspec.yml
+
+commit f200a0382b9f9e123157011326d156aab44579bf
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Tue Oct 24 10:25:09 2017 +0530
+
+    Update buildspec.yml
+
+commit 6224b02a3d5103e2108734128e15098db79f71ec
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Tue Oct 24 10:23:50 2017 +0530
+
+    Update buildspec.yml
+
+commit 2d6876ed3cf3847a382f9f32de0c230d9888e3f7
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Tue Oct 24 10:22:18 2017 +0530
+
+    Update buildspec.yml
+
+commit b9316e599f895409f313176476ee181cc0290c12
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Tue Oct 24 10:19:43 2017 +0530
+
+    Update buildspec.yml
+
+commit f3e9e22925287190b12cf4ffa64f2b579385a6e1
+Author: Paramanand Ashok Dhuri <paramanandd@gmail.com>
+Date:   Tue Oct 24 10:13:11 2017 +0530
+
+    Create buildspec.yml
+
+commit dee809a319ee77d2ee1d99eaecbb9da37d703105
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Tue Apr 25 07:55:07 2017 +0000
+
+    sonar.json created online with Bitbucket
+
+commit a1cd2b0515fd60d0d744c3ec9c1e47979a4563c3
+Merge: c42b9ac 0796f8b
+Author: Pallavi SenGupta <pallavise@cybage.com>
+Date:   Tue Mar 28 10:10:17 2017 +0000
+
+    Merged in release1 (pull request #12)
+    
+    EM-33 changed application header
+    
+    Approved-by: Paramanand Dhuri <paramanandd@cybage.com>
+
+commit 0796f8b221e0de0e622248de284ff08a3a24170e
+Merge: abd71e2 6bb93a9
+Author: Pallavi SenGupta <pallavise@cybage.com>
+Date:   Tue Mar 28 09:57:12 2017 +0000
+
+    Merged in develop (pull request #11)
+    
+    EM-33 changed application header
+    
+    Approved-by: Paramanand Dhuri <paramanandd@cybage.com>
+
+commit 6bb93a9b7282efbd0640b5319aa28e094189dba3
+Merge: 3bb3ff0 d999dc0
+Author: Pallavi SenGupta <pallavise@cybage.com>
+Date:   Tue Mar 28 09:55:03 2017 +0000
+
+    Merged in feature-33 (pull request #10)
+    
+    EM-33 changed application header
+    
+    Approved-by: Paramanand Dhuri <paramanandd@cybage.com>
+
+commit d999dc04bbbd6b20a44d187417a6f7211803717f
+Author: parma <paramanandd@cybage.com>
+Date:   Tue Mar 28 15:16:52 2017 +0530
+
+    EM-33 changed application header
+
+commit c42b9ac07ff5aeb1d9217eb9a7c535c951715c7b
+Merge: 9855076 abd71e2
+Author: Pallavi SenGupta <pallavise@cybage.com>
+Date:   Tue Mar 28 08:55:59 2017 +0000
+
+    Merged in release1 (pull request #9)
+    EM-33
+    Release1
+    
+    Approved-by: Paramanand Dhuri <paramanandd@cybage.com>
+
+commit abd71e2be379e377ee714786150c9b35a5a9777c
+Merge: b091376 3bb3ff0
+Author: Pallavi SenGupta <pallavise@cybage.com>
+Date:   Tue Mar 28 08:40:37 2017 +0000
+
+    Merged in develop (pull request #8)
+    EM-33
+    Develop
+    
+    Approved-by: Paramanand Dhuri <paramanandd@cybage.com>
+
+commit 3bb3ff0d20273e84f4698c321014d8f9412e28f7
+Merge: 3f47df1 74b91ae
+Author: Pallavi SenGupta <pallavise@cybage.com>
+Date:   Tue Mar 28 08:37:46 2017 +0000
+
+    Merged in feature-33 (pull request #7)
+     EM-33
+    README.md edited online with Bitbucket
+    
+    Approved-by: Paramanand Dhuri <paramanandd@cybage.com>
+
+commit 74b91ae96ce3472cd5410073daa6878d529566bf
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Tue Mar 28 08:24:03 2017 +0000
+
+    EM-33 README.md edited online with Bitbucket
+
+commit f12eb23c4f3217e3ea281f689836b38d2e3b2df4
+Author: Pallavi SenGupta <pallavise@cybage.com>
+Date:   Tue Mar 28 07:13:57 2017 +0000
+
+    README.md edited online with Bitbucket
+
+commit 985507674ce35991ccc81ea28d0bb18519ab4e93
+Merge: 8141c25 3f47df1
+Author: Pallavi SenGupta <pallavise@cybage.com>
+Date:   Mon Mar 27 12:02:13 2017 +0000
+
+    Merged in develop (pull request #6)
+    
+    Develop
+    
+    Approved-by: Paramanand Dhuri <paramanandd@cybage.com>
+
+commit b091376bea536e3dc0c5ce1b1cc02ea6b787a575
+Merge: 1adcd60 3f47df1
+Author: Pallavi SenGupta <pallavise@cybage.com>
+Date:   Mon Mar 27 11:42:38 2017 +0000
+
+    Merged in develop (pull request #5)
+    
+    Develop
+    
+    Approved-by: Paramanand Dhuri <paramanandd@cybage.com>
+
+commit 3f47df1d388a47adb8a3435698ee2e3b733a3a77
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Mon Mar 27 11:25:56 2017 +0000
+
+    EM-17  firstTest.txt deleted online with Bitbucket
+
+commit 8141c255381f79ebe747267f3de39b1168eb2a3a
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Sat Mar 25 09:53:28 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf.json deleted online with Bitbucket
+
+commit 1adcd60413d323db84b92faa4b599c91c69f7cdb
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Sat Mar 25 09:38:11 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf.json deleted online with Bitbucket
+
+commit 6e1f4719ebcbaeb96540e03844342d8a75221edd
+Author: Pallavi SenGupta <pallavise@cybage.com>
+Date:   Sat Mar 25 09:31:50 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf.json deleted online with Bitbucket
+
+commit a17020c7ec69034d8d0d27f8bca27b1021b82fdf
+Merge: 59a0d40 c377e63
+Author: Pallavi SenGupta <pallavise@cybage.com>
+Date:   Sat Mar 25 07:29:12 2017 +0000
+
+    Merged in release1 (pull request #2)
+    
+    pull request for merging changes from release1 to master branch
+    
+    Approved-by: Paramanand Dhuri <paramanandd@cybage.com>
+
+commit c377e63634b43b0957b1ed284cfbedbd8bf149b9
+Merge: 240d2f1 b673d77
+Author: Pallavi SenGupta <pallavise@cybage.com>
+Date:   Sat Mar 25 06:43:35 2017 +0000
+
+    Merged in develop (pull request #1)
+    
+    pull request for merging changes from develop to release1
+    
+    Approved-by: Paramanand Dhuri <paramanandd@cybage.com>
+
+commit b673d77442a8a40a24b370b31bf2c0606c34278f
+Author: Pallavi SenGupta <pallavise@cybage.com>
+Date:   Sat Mar 25 06:17:47 2017 +0000
+
+    README.md edited online with Bitbucket
+
+commit b99f5501f27d7ceb0442b4d8ab046a19be9af897
+Author: pallavi <pallavise@cybage.com>
+Date:   Fri Mar 24 20:02:52 2017 +0530
+
+    testing commit on develop branch
+
+commit 240d2f1a25d67e45d1b0c46bae7d5ab6dab5bfb5
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Fri Mar 24 13:52:52 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf.json edited online with Bitbucket
+
+commit 59a0d40254e80197d03b56cc285f4d99dc5a06fc
+Merge: f415985 fdef75f
+Author: root <root@ip-10-0-0-173.ec2.internal>
+Date:   Fri Mar 24 07:30:33 2017 +0000
+
+    Merge branch 'develop'
+    
+    added file to commit
+
+commit c29d0597e3f7bfdc8a74ec4b9c2bc7b34c559772
+Merge: a8df9db fdef75f
+Author: root <root@ip-10-0-0-173.ec2.internal>
+Date:   Fri Mar 24 06:30:45 2017 +0000
+
+    adedd uncommited changes
+
+commit fdef75fc70b10f586bcc2fd0f392a2338356fcec
+Author: root <root@ip-10-0-0-173.ec2.internal>
+Date:   Fri Mar 24 06:22:58 2017 +0000
+
+    added text file for testing
+
+commit 5a29469e69b544ef2d692fcebbb7cd4d592b304e
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Fri Mar 24 06:07:04 2017 +0000
+
+    pom.xml edited online with Bitbucket
+
+commit f41598545507d40a51d576fa7b2ed720e39731d8
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Fri Mar 24 05:57:29 2017 +0000
+
+    pom.xml edited online with Bitbucket
+
+commit b46858a2c582a10cc84a526965a7f04d85c7f9b7
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Fri Mar 24 05:43:36 2017 +0000
+
+    pom.xml edited online with Bitbucket
+
+commit 4072bacf8a04fd9a44ba475ed1057fe639f8fd9a
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Fri Mar 24 05:34:02 2017 +0000
+
+    pom.xml edited online with Bitbucket
+
+commit a8df9dbf20da01a4d1c9c6b0b961031c365e51c6
+Merge: d58be26 1a2b3e9
+Author: root <root@ip-10-0-0-173.ec2.internal>
+Date:   Fri Mar 24 05:13:28 2017 +0000
+
+    made changes in tdf file
+
+commit d58be26f140c642753284361b0324c96f6b8a1cf
+Merge: 4668fbb b57c468
+Author: root <root@ip-10-0-0-173.ec2.internal>
+Date:   Fri Mar 24 04:39:58 2017 +0000
+
+    Merge branch 'develop' of https://bitbucket.org/paramanandd/employee-management-system into develop
+    
+    starting git pull
+
+commit 1a2b3e9bb3fb4a8c08b3db8de497cf6ef79d4593
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Fri Mar 17 06:45:50 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf.json edited online with Bitbucket
+
+commit 2f92efc4fc8667609a9ee5171ca1c66c94c75ee1
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Fri Mar 17 06:45:30 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf-qa.json edited online with Bitbucket
+
+commit 4668fbbd2abdfb05b78436a34559215b028f07c5
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Fri Mar 17 06:45:06 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf.json edited online with Bitbucket
+
+commit 72920bb22f83924cea48f1c15396b86a025f1c2f
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Fri Mar 17 06:44:43 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf-qa.json edited online with Bitbucket
+
+commit b57c4681e2e3ebc1b1b2dfbef4413a2d05552efb
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Fri Mar 17 06:43:53 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf.json edited online with Bitbucket
+
+commit 1099e94aa2b5db99c55f1bdff888325c1da119fc
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Fri Mar 17 05:42:58 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf-qa.json edited online with Bitbucket
+
+commit 79b0ce914f6440ef1760630e35e743194c232fb9
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Thu Mar 16 06:54:23 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf-qa.json edited online with Bitbucket
+
+commit e7aa80f76a783ed49665d89b2b05bb70ce59196d
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Thu Mar 16 06:52:26 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf-qa.json edited online with Bitbucket
+
+commit eb434d5ba63a14e5c6adaf5a20e97ff0d3a6d4cd
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Thu Mar 16 05:59:35 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf-qa.json edited online with Bitbucket
+
+commit edac2e4fa0cb5c3e0b0acb8c064963462a7c62d0
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Thu Mar 16 05:56:14 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf-qa.json edited online with Bitbucket
+
+commit 077941eb5de2f76c51afcdab6876048ed9a47268
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Thu Mar 16 05:46:15 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf-qa.json edited online with Bitbucket
+
+commit 600c4d0d5fb846620b758e1e94ef80d4726b7869
+Merge: f663ad8 1cd5114
+Author: parma <paramanandd@cybage.com>
+Date:   Thu Mar 16 10:18:11 2017 +0530
+
+    Merge branch 'master' of https://bitbucket.org/paramanandd/bamboo-script
+
+commit 1cd51146a0658c575cba0aa1b7706f8a1270ea8f
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Wed Mar 15 14:14:50 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf-qa.json edited online with Bitbucket
+
+commit 42ec6688dc5e0db6daf97c0bdf3d39e76695cc65
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Wed Mar 15 12:54:07 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf-qa.json edited online with Bitbucket
+
+commit 0cb5896b9a03c44fb1040d417b79050add17c699
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Wed Mar 15 12:49:43 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf-qa.json edited online with Bitbucket
+
+commit 37648d9e9b7bdd7cf925c5568bb68726586b1463
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Wed Mar 15 12:23:32 2017 +0000
+
+    cybage-alm-emsbamboodemo-northvirginia-webserver-ecstdf-qa.json created online with Bitbucket
+
+commit 9c0fe2fe1b3e5f11584d2923197b43b9ce8b5298
+Author: Paramanand Dhuri <paramanandd@cybage.com>
+Date:   Wed Mar 15 12:07:47 2017 +0000
+
+    README.md created online with Bitbucket
+
+commit f663ad88b61deec50465c0d077696fb45ba5c6cf
+Author: PUSHPENDRA DEWANGAN_TL <pushpendrad@cybage.com>
+Date:   Wed Mar 15 13:28:57 2017 +0530
+
+    logging code added
+
+commit 829b2df248d9d457788fa5eab5fac6e9cb0939bf
+Author: PUSHPENDRA DEWANGAN_TL <pushpendrad@cybage.com>
+Date:   Mon Feb 27 10:57:20 2017 +0530
+
+    first commit
+Finished: SUCCESS

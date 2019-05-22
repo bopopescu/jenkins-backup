@@ -1,0 +1,37 @@
+Started by user [8mha:////4Ic7CrHJ5vMO8u+CXASKo6IeCCPwwF5jPnLTWGiK/QQ0AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL94sQioCkAXZHSqMEAAAA=[0msarang
+Building in workspace /var/lib/jenkins/workspace/EMS-k8s-deployment
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/dockerfile.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/dockerfile.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials github
+ > git fetch --tags --progress https://github.com/amritasengar/dockerfile.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3768b3ccd403246d1f1f489aa1c2c0c1a4730694 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3768b3ccd403246d1f1f489aa1c2c0c1a4730694
+Commit message: "Update ems-k8s-deployment.yaml"
+ > git rev-list --no-walk eab8f8c5f73bb4555588bf4b6f14db12c29ed1b4 # timeout=10
+[EMS-k8s-deployment] $ /bin/sh -xe /tmp/jenkins3555478045283220180.sh
++ grep image: ems-k8s-deployment.yaml
++ awk {print$3}
++ cut -d / -f2
++ IMAGENAME=amritase:27
++ git checkout master
+Previous HEAD position was 3768b3c... Update ems-k8s-deployment.yaml
+Switched to branch 'master'
+Your branch and 'origin/master' have diverged,
+and have 6 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
++ sed -i s/amritase\/amritase:27/amritase\/amritase:16/g ems-k8s-deployment.yaml
++ git add ems-k8s-deployment.yaml
++ git commit -m EMS Deployment file updated with version 16
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 6 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+nothing to commit, working directory clean
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

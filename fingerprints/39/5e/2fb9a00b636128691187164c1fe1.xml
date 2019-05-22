@@ -1,0 +1,29 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2018-07-18 09:54:40.650 UTC</timestamp>
+  <original>
+    <name>K8EMS-build-job</name>
+    <number>74</number>
+  </original>
+  <md5sum>395e2fb9a00b636128691187164c1fe1</md5sum>
+  <fileName>EmployeeApplicationSprint4-1.0-SNAPSHOT.war</fileName>
+  <usages>
+    <entry>
+      <string>K8EMS-docker-container</string>
+      <ranges>59-60</ranges>
+    </entry>
+    <entry>
+      <string>docker deploy</string>
+      <ranges>11-13</ranges>
+    </entry>
+    <entry>
+      <string>K8EMS-build-job</string>
+      <ranges>74</ranges>
+    </entry>
+    <entry>
+      <string>EMS artifacts to nexus</string>
+      <ranges>63</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

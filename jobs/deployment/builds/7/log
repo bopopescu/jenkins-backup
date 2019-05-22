@@ -1,0 +1,453 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/workspace/deployment
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/amritasengar/Employee-Management-System.git # timeout=10
+Fetching upstream changes from https://github.com/amritasengar/Employee-Management-System.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/amritasengar/Employee-Management-System.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 6a11cd7c2f5bd16d7ce116eccf2a088e1afbd650 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6a11cd7c2f5bd16d7ce116eccf2a088e1afbd650
+Commit message: "Update home.jsp"
+ > git rev-list --no-walk 5f84666b5bc7670dd2321c7b89d47705e101af14 # timeout=10
+[deployment] $ /opt/maven/bin/mvn clean install cobertura:cobertura -Dcobertura.report.format=xml
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Employee Management System 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4B1P8uT/JDFgfMGZp0z6tHEHjwZnVVLLtNjLatN9m72nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ EmployeeApplicationSprint4 ---
+[INFO] Deleting /var/lib/jenkins/workspace/deployment/target
+[INFO] 
+[8mha:////4B1P8uT/JDFgfMGZp0z6tHEHjwZnVVLLtNjLatN9m72nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ EmployeeApplicationSprint4 ---
+[8mha:////4CiX0MVzgoAv95q7FvvY0nZRvD0SlnQ0F7L39CAYkmXnAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 4 resources
+[INFO] 
+[8mha:////4B1P8uT/JDFgfMGZp0z6tHEHjwZnVVLLtNjLatN9m72nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ EmployeeApplicationSprint4 ---
+[INFO] Changes detected - recompiling the module!
+[8mha:////4CiX0MVzgoAv95q7FvvY0nZRvD0SlnQ0F7L39CAYkmXnAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 7 source files to /var/lib/jenkins/workspace/deployment/target/classes
+[8mha:////4CiX0MVzgoAv95q7FvvY0nZRvD0SlnQ0F7L39CAYkmXnAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /var/lib/jenkins/workspace/deployment/src/main/java/com/sample/mvc/dao/EmployeeDAOImpl.java: /var/lib/jenkins/workspace/deployment/src/main/java/com/sample/mvc/dao/EmployeeDAOImpl.java uses unchecked or unsafe operations.
+[8mha:////4CiX0MVzgoAv95q7FvvY0nZRvD0SlnQ0F7L39CAYkmXnAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /var/lib/jenkins/workspace/deployment/src/main/java/com/sample/mvc/dao/EmployeeDAOImpl.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[8mha:////4B1P8uT/JDFgfMGZp0z6tHEHjwZnVVLLtNjLatN9m72nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ EmployeeApplicationSprint4 ---
+[8mha:////4CiX0MVzgoAv95q7FvvY0nZRvD0SlnQ0F7L39CAYkmXnAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/deployment/src/test/resources
+[INFO] 
+[8mha:////4B1P8uT/JDFgfMGZp0z6tHEHjwZnVVLLtNjLatN9m72nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ EmployeeApplicationSprint4 ---
+[INFO] Changes detected - recompiling the module!
+[8mha:////4CiX0MVzgoAv95q7FvvY0nZRvD0SlnQ0F7L39CAYkmXnAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 3 source files to /var/lib/jenkins/workspace/deployment/target/test-classes
+[8mha:////4CiX0MVzgoAv95q7FvvY0nZRvD0SlnQ0F7L39CAYkmXnAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /var/lib/jenkins/workspace/deployment/src/test/java/com/sample/mvc/daoTest/EmployeeDAOImplTest.java: /var/lib/jenkins/workspace/deployment/src/test/java/com/sample/mvc/daoTest/EmployeeDAOImplTest.java uses unchecked or unsafe operations.
+[8mha:////4CiX0MVzgoAv95q7FvvY0nZRvD0SlnQ0F7L39CAYkmXnAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /var/lib/jenkins/workspace/deployment/src/test/java/com/sample/mvc/daoTest/EmployeeDAOImplTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[8mha:////4B1P8uT/JDFgfMGZp0z6tHEHjwZnVVLLtNjLatN9m72nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ EmployeeApplicationSprint4 ---
+[INFO] Surefire report directory: /var/lib/jenkins/workspace/deployment/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.sample.mvc.daoTest.EmployeeDAOImplTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.433 sec
+Running com.sample.mvc.serviceTest.EmployeeServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Running com.sample.mvc.controllerTest.EmployeeControllerTest
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /logs/emsapplication.log (No such file or directory)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:294)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:207)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:165)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:307)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:172)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:104)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:842)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:768)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:648)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:514)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:580)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:526)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:127)
+	at org.slf4j.impl.Log4jLoggerFactory.getLogger(Log4jLoggerFactory.java:66)
+	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:270)
+	at org.apache.commons.logging.impl.SLF4JLogFactory.getInstance(SLF4JLogFactory.java:156)
+	at org.apache.commons.logging.impl.SLF4JLogFactory.getInstance(SLF4JLogFactory.java:132)
+	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:274)
+	at com.sample.mvc.controller.EmployeeController.<init>(EmployeeController.java:28)
+	at com.sample.mvc.controllerTest.EmployeeControllerTest.<init>(EmployeeControllerTest.java:45)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:178)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:227)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:224)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:69)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.mockito.internal.runners.JUnit45AndHigherRunnerImpl.run(JUnit45AndHigherRunnerImpl.java:37)
+	at org.mockito.runners.MockitoJUnitRunner.run(MockitoJUnitRunner.java:62)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/jsp/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.sample.mvc.controller.EmployeeController.addEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/update],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.updateEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/{code}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.getEmployeeById(java.lang.Integer,org.springframework.ui.Model) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/delete/{employeeId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.deleteEmplyee(java.lang.Integer) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.listContacts(java.util.Map<java.lang.String, java.lang.Object>) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.viewHome() throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  MockServletContext:430 - Initializing Spring FrameworkServlet ''
+2018-05-08 20:02:21 INFO  TestDispatcherServlet:479 - FrameworkServlet '': initialization started
+2018-05-08 20:02:21 INFO  TestDispatcherServlet:498 - FrameworkServlet '': initialization completed in 2 ms
+2018-05-08 20:02:21 INFO  EmployeeController:74 - {"serverAddress":"amritase/127.0.1.1","httpMethod":"GET","resourcePath":"/edit","applicationName":"EMSapplication"}
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/jsp/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.sample.mvc.controller.EmployeeController.addEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/update],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.updateEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/{code}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.getEmployeeById(java.lang.Integer,org.springframework.ui.Model) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/delete/{employeeId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.deleteEmplyee(java.lang.Integer) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.listContacts(java.util.Map<java.lang.String, java.lang.Object>) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.viewHome() throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  MockServletContext:430 - Initializing Spring FrameworkServlet ''
+2018-05-08 20:02:21 INFO  TestDispatcherServlet:479 - FrameworkServlet '': initialization started
+2018-05-08 20:02:21 INFO  TestDispatcherServlet:498 - FrameworkServlet '': initialization completed in 0 ms
+2018-05-08 20:02:21 INFO  EmployeeController:90 - {"serverAddress":"amritase/127.0.1.1","httpMethod":"GET","resourcePath":"/delete","applicationName":"EMSapplication"}
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/jsp/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.sample.mvc.controller.EmployeeController.addEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/update],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.updateEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/{code}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.getEmployeeById(java.lang.Integer,org.springframework.ui.Model) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/delete/{employeeId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.deleteEmplyee(java.lang.Integer) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.listContacts(java.util.Map<java.lang.String, java.lang.Object>) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.viewHome() throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  MockServletContext:430 - Initializing Spring FrameworkServlet ''
+2018-05-08 20:02:21 INFO  TestDispatcherServlet:479 - FrameworkServlet '': initialization started
+2018-05-08 20:02:21 INFO  TestDispatcherServlet:498 - FrameworkServlet '': initialization completed in 0 ms
+2018-05-08 20:02:21 INFO  EmployeeController:58 - {"serverAddress":"amritase/127.0.1.1","httpMethod":"GET","resourcePath":"/list","applicationName":"EMSapplication"}
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/jsp/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.sample.mvc.controller.EmployeeController.addEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/update],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.updateEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/{code}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.getEmployeeById(java.lang.Integer,org.springframework.ui.Model) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/delete/{employeeId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.deleteEmplyee(java.lang.Integer) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.listContacts(java.util.Map<java.lang.String, java.lang.Object>) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.viewHome() throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  MockServletContext:430 - Initializing Spring FrameworkServlet ''
+2018-05-08 20:02:21 INFO  TestDispatcherServlet:479 - FrameworkServlet '': initialization started
+2018-05-08 20:02:21 INFO  TestDispatcherServlet:498 - FrameworkServlet '': initialization completed in 0 ms
+2018-05-08 20:02:21 INFO  EmployeeController:82 - {"serverAddress":"amritase/127.0.1.1","httpMethod":"POST","resourcePath":"/edit/update","applicationName":"EMSapplication"}
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/jsp/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.sample.mvc.controller.EmployeeController.addEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/update],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.updateEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/{code}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.getEmployeeById(java.lang.Integer,org.springframework.ui.Model) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/delete/{employeeId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.deleteEmplyee(java.lang.Integer) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.listContacts(java.util.Map<java.lang.String, java.lang.Object>) throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.viewHome() throws java.net.UnknownHostException
+2018-05-08 20:02:21 INFO  MockServletContext:430 - Initializing Spring FrameworkServlet ''
+2018-05-08 20:02:21 INFO  TestDispatcherServlet:479 - FrameworkServlet '': initialization started
+2018-05-08 20:02:21 INFO  TestDispatcherServlet:498 - FrameworkServlet '': initialization completed in 0 ms
+2018-05-08 20:02:21 INFO  EmployeeController:66 - {"serverAddress":"amritase/127.0.1.1","httpMethod":"POST","resourcePath":"/add","applicationName":"EMSapplication"}
+ModelAndView: reference to view with name 'redirect:/list'; model is null
+2018-05-08 20:02:21 INFO  EmployeeController:66 - {"serverAddress":"amritase/127.0.1.1","httpMethod":"POST","resourcePath":"/add","applicationName":"EMSapplication"}
+2018-05-08 20:02:21 INFO  EmployeeController:66 - {"serverAddress":"amritase/127.0.1.1","httpMethod":"POST","resourcePath":"/add","applicationName":"EMSapplication"}
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.052 sec
+
+Results :
+
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[8mha:////4B1P8uT/JDFgfMGZp0z6tHEHjwZnVVLLtNjLatN9m72nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.2:war (default-war) @ EmployeeApplicationSprint4 ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [EmployeeApplicationSprint4] in [/var/lib/jenkins/workspace/deployment/target/EmployeeApplicationSprint4-1.0-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/lib/jenkins/workspace/deployment/src/main/webapp]
+[INFO] Webapp assembled in [907 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/deployment/target/EmployeeApplicationSprint4-1.0-SNAPSHOT.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[8mha:////4B1P8uT/JDFgfMGZp0z6tHEHjwZnVVLLtNjLatN9m72nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.4:install (default-install) @ EmployeeApplicationSprint4 ---
+[INFO] Installing /var/lib/jenkins/workspace/deployment/target/EmployeeApplicationSprint4-1.0-SNAPSHOT.war to /var/lib/jenkins/.m2/repository/com/alm/web/EmployeeApplicationSprint4/1.0-SNAPSHOT/EmployeeApplicationSprint4-1.0-SNAPSHOT.war
+[INFO] Installing /var/lib/jenkins/workspace/deployment/pom.xml to /var/lib/jenkins/.m2/repository/com/alm/web/EmployeeApplicationSprint4/1.0-SNAPSHOT/EmployeeApplicationSprint4-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] >>> cobertura-maven-plugin:2.7:cobertura (default-cli) > [cobertura]test @ EmployeeApplicationSprint4 >>>
+[INFO] 
+[8mha:////4B1P8uT/JDFgfMGZp0z6tHEHjwZnVVLLtNjLatN9m72nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ EmployeeApplicationSprint4 ---
+[8mha:////4CiX0MVzgoAv95q7FvvY0nZRvD0SlnQ0F7L39CAYkmXnAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 4 resources
+[INFO] 
+[8mha:////4B1P8uT/JDFgfMGZp0z6tHEHjwZnVVLLtNjLatN9m72nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ EmployeeApplicationSprint4 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4B1P8uT/JDFgfMGZp0z6tHEHjwZnVVLLtNjLatN9m72nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- cobertura-maven-plugin:2.7:instrument (default-cli) @ EmployeeApplicationSprint4 ---
+[INFO] Cobertura 2.1.1 - GNU GPL License (NO WARRANTY) - See COPYRIGHT file
+[INFO] Cobertura: Saved information on 7 classes.
+[INFO] Cobertura: Saved information on 7 classes.
+
+[INFO] Instrumentation was successful.
+[INFO] NOT adding cobertura ser file to attached artifacts list.
+[INFO] 
+[8mha:////4B1P8uT/JDFgfMGZp0z6tHEHjwZnVVLLtNjLatN9m72nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ EmployeeApplicationSprint4 ---
+[8mha:////4CiX0MVzgoAv95q7FvvY0nZRvD0SlnQ0F7L39CAYkmXnAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/deployment/src/test/resources
+[INFO] 
+[8mha:////4B1P8uT/JDFgfMGZp0z6tHEHjwZnVVLLtNjLatN9m72nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ EmployeeApplicationSprint4 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4B1P8uT/JDFgfMGZp0z6tHEHjwZnVVLLtNjLatN9m72nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ EmployeeApplicationSprint4 ---
+[INFO] Surefire report directory: /var/lib/jenkins/workspace/deployment/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.sample.mvc.daoTest.EmployeeDAOImplTest
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/var/lib/jenkins/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/var/lib/jenkins/.m2/repository/ch/qos/logback/logback-classic/1.0.13/logback-classic-1.0.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+log4j:ERROR setFile(null,true) call failed.
+java.io.FileNotFoundException: /logs/emsapplication.log (No such file or directory)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
+	at org.apache.log4j.FileAppender.setFile(FileAppender.java:294)
+	at org.apache.log4j.RollingFileAppender.setFile(RollingFileAppender.java:207)
+	at org.apache.log4j.FileAppender.activateOptions(FileAppender.java:165)
+	at org.apache.log4j.config.PropertySetter.activate(PropertySetter.java:307)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:172)
+	at org.apache.log4j.config.PropertySetter.setProperties(PropertySetter.java:104)
+	at org.apache.log4j.PropertyConfigurator.parseAppender(PropertyConfigurator.java:842)
+	at org.apache.log4j.PropertyConfigurator.parseCategory(PropertyConfigurator.java:768)
+	at org.apache.log4j.PropertyConfigurator.configureRootCategory(PropertyConfigurator.java:648)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:514)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:580)
+	at org.apache.log4j.helpers.OptionConverter.selectAndConfigure(OptionConverter.java:526)
+	at org.apache.log4j.LogManager.<clinit>(LogManager.java:127)
+	at org.slf4j.impl.Log4jLoggerFactory.getLogger(Log4jLoggerFactory.java:66)
+	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:270)
+	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:281)
+	at net.sourceforge.cobertura.coveragedata.TouchCollector.<clinit>(TouchCollector.java:40)
+	at com.sample.mvc.dao.EmployeeDAOImpl.__cobertura_init(EmployeeDAOImpl.java)
+	at com.sample.mvc.dao.EmployeeDAOImpl.<clinit>(EmployeeDAOImpl.java)
+	at com.sample.mvc.daoTest.EmployeeDAOImplTest.<init>(EmployeeDAOImplTest.java:33)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:178)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:227)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:224)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:69)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:48)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.mockito.internal.runners.JUnit45AndHigherRunnerImpl.run(JUnit45AndHigherRunnerImpl.java:37)
+	at org.mockito.runners.MockitoJUnitRunner.run(MockitoJUnitRunner.java:62)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.306 sec
+Running com.sample.mvc.serviceTest.EmployeeServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec
+Running com.sample.mvc.controllerTest.EmployeeControllerTest
+2018-05-08 20:02:33 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/update],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.updateEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:33 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/jsp/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.sample.mvc.controller.EmployeeController.addEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:33 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/{code}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.getEmployeeById(java.lang.Integer,org.springframework.ui.Model) throws java.net.UnknownHostException
+2018-05-08 20:02:33 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/delete/{employeeId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.deleteEmplyee(java.lang.Integer) throws java.net.UnknownHostException
+2018-05-08 20:02:33 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.listContacts(java.util.Map<java.lang.String, java.lang.Object>) throws java.net.UnknownHostException
+2018-05-08 20:02:33 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.viewHome() throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  MockServletContext:430 - Initializing Spring FrameworkServlet ''
+2018-05-08 20:02:34 INFO  TestDispatcherServlet:479 - FrameworkServlet '': initialization started
+2018-05-08 20:02:34 INFO  TestDispatcherServlet:498 - FrameworkServlet '': initialization completed in 2 ms
+2018-05-08 20:02:34 INFO  EmployeeController:58 - {"serverAddress":"amritase/127.0.1.1","httpMethod":"GET","resourcePath":"/list","applicationName":"EMSapplication"}
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/update],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.updateEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/jsp/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.sample.mvc.controller.EmployeeController.addEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/{code}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.getEmployeeById(java.lang.Integer,org.springframework.ui.Model) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/delete/{employeeId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.deleteEmplyee(java.lang.Integer) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.listContacts(java.util.Map<java.lang.String, java.lang.Object>) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.viewHome() throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  MockServletContext:430 - Initializing Spring FrameworkServlet ''
+2018-05-08 20:02:34 INFO  TestDispatcherServlet:479 - FrameworkServlet '': initialization started
+2018-05-08 20:02:34 INFO  TestDispatcherServlet:498 - FrameworkServlet '': initialization completed in 1 ms
+2018-05-08 20:02:34 INFO  EmployeeController:74 - {"serverAddress":"amritase/127.0.1.1","httpMethod":"GET","resourcePath":"/edit","applicationName":"EMSapplication"}
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/update],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.updateEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/jsp/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.sample.mvc.controller.EmployeeController.addEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/{code}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.getEmployeeById(java.lang.Integer,org.springframework.ui.Model) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/delete/{employeeId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.deleteEmplyee(java.lang.Integer) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.listContacts(java.util.Map<java.lang.String, java.lang.Object>) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.viewHome() throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  MockServletContext:430 - Initializing Spring FrameworkServlet ''
+2018-05-08 20:02:34 INFO  TestDispatcherServlet:479 - FrameworkServlet '': initialization started
+2018-05-08 20:02:34 INFO  TestDispatcherServlet:498 - FrameworkServlet '': initialization completed in 0 ms
+2018-05-08 20:02:34 INFO  EmployeeController:90 - {"serverAddress":"amritase/127.0.1.1","httpMethod":"GET","resourcePath":"/delete","applicationName":"EMSapplication"}
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/update],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.updateEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/jsp/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.sample.mvc.controller.EmployeeController.addEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/{code}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.getEmployeeById(java.lang.Integer,org.springframework.ui.Model) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/delete/{employeeId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.deleteEmplyee(java.lang.Integer) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.listContacts(java.util.Map<java.lang.String, java.lang.Object>) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.viewHome() throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  MockServletContext:430 - Initializing Spring FrameworkServlet ''
+2018-05-08 20:02:34 INFO  TestDispatcherServlet:479 - FrameworkServlet '': initialization started
+2018-05-08 20:02:34 INFO  TestDispatcherServlet:498 - FrameworkServlet '': initialization completed in 0 ms
+2018-05-08 20:02:34 INFO  EmployeeController:66 - {"serverAddress":"amritase/127.0.1.1","httpMethod":"POST","resourcePath":"/add","applicationName":"EMSapplication"}
+ModelAndView: reference to view with name 'redirect:/list'; model is null
+2018-05-08 20:02:34 INFO  EmployeeController:66 - {"serverAddress":"amritase/127.0.1.1","httpMethod":"POST","resourcePath":"/add","applicationName":"EMSapplication"}
+2018-05-08 20:02:34 INFO  EmployeeController:66 - {"serverAddress":"amritase/127.0.1.1","httpMethod":"POST","resourcePath":"/add","applicationName":"EMSapplication"}
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/update],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.updateEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/jsp/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.sample.mvc.controller.EmployeeController.addEmployee(com.sample.mvc.model.EmployeeCommand) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/edit/{code}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.getEmployeeById(java.lang.Integer,org.springframework.ui.Model) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/delete/{employeeId}],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.deleteEmplyee(java.lang.Integer) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/list],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.listContacts(java.util.Map<java.lang.String, java.lang.Object>) throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping:197 - Mapped "{[/home],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.sample.mvc.controller.EmployeeController.viewHome() throws java.net.UnknownHostException
+2018-05-08 20:02:34 INFO  MockServletContext:430 - Initializing Spring FrameworkServlet ''
+2018-05-08 20:02:34 INFO  TestDispatcherServlet:479 - FrameworkServlet '': initialization started
+2018-05-08 20:02:34 INFO  TestDispatcherServlet:498 - FrameworkServlet '': initialization completed in 0 ms
+2018-05-08 20:02:34 INFO  EmployeeController:82 - {"serverAddress":"amritase/127.0.1.1","httpMethod":"POST","resourcePath":"/edit/update","applicationName":"EMSapplication"}
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.449 sec
+2018-05-08 20:02:35 INFO  CoverageDataFileHandler:86 - Cobertura: Loaded information on 7 classes.
+2018-05-08 20:02:35 INFO  CoverageDataFileHandler:138 - Cobertura: Saved information on 7 classes.
+
+Results :
+
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] <<< cobertura-maven-plugin:2.7:cobertura (default-cli) < [cobertura]test @ EmployeeApplicationSprint4 <<<
+[INFO] 
+[8mha:////4B1P8uT/JDFgfMGZp0z6tHEHjwZnVVLLtNjLatN9m72nAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- cobertura-maven-plugin:2.7:cobertura (default-cli) @ EmployeeApplicationSprint4 ---
+[INFO] Cobertura 2.1.1 - GNU GPL License (NO WARRANTY) - See COPYRIGHT file
+[INFO] Cobertura: Loaded information on 7 classes.
+Report time: 178ms
+
+[INFO] Cobertura Report generation was successful.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 22.877 s
+[INFO] Finished at: 2018-05-08T20:02:36+05:30
+[INFO] Final Memory: 33M/266M
+[INFO] ------------------------------------------------------------------------
+[Cobertura] Publishing Cobertura coverage report...
+
+[Cobertura] Publishing Cobertura coverage results...
+
+[Cobertura] Cobertura coverage report found.
+
+Recording test results
+Deploying /var/lib/jenkins/workspace/deployment/target/EmployeeApplicationSprint4-1.0-SNAPSHOT.war to container Tomcat 8.x Remote with context 
+ERROR: Build step failed with exception
+org.codehaus.cargo.container.ContainerException: Failed to redeploy [/var/lib/jenkins/workspace/deployment/target/EmployeeApplicationSprint4-1.0-SNAPSHOT.war]
+	at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:192)
+	at hudson.plugins.deploy.CargoContainerAdapter.deploy(CargoContainerAdapter.java:77)
+	at hudson.plugins.deploy.CargoContainerAdapter$DeployCallable.invoke(CargoContainerAdapter.java:147)
+	at hudson.plugins.deploy.CargoContainerAdapter$DeployCallable.invoke(CargoContainerAdapter.java:117)
+	at hudson.FilePath.act(FilePath.java:1009)
+	at hudson.FilePath.act(FilePath.java:987)
+	at hudson.plugins.deploy.CargoContainerAdapter.redeploy(CargoContainerAdapter.java:114)
+	at hudson.plugins.deploy.PasswordProtectedAdapterCargo.redeploy(PasswordProtectedAdapterCargo.java:93)
+	at hudson.plugins.deploy.DeployPublisher.perform(DeployPublisher.java:64)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+	at hudson.model.Run.execute(Run.java:1752)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.invoke(TomcatManager.java:561)
+	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.list(TomcatManager.java:876)
+	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.getStatus(TomcatManager.java:889)
+	at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:173)
+	... 17 more
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.invoke(TomcatManager.java:561)
+	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.list(TomcatManager.java:876)
+	at org.codehaus.cargo.container.tomcat.internal.TomcatManager.getStatus(TomcatManager.java:889)
+	at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:173)
+	at hudson.plugins.deploy.CargoContainerAdapter.deploy(CargoContainerAdapter.java:77)
+	at hudson.plugins.deploy.CargoContainerAdapter$DeployCallable.invoke(CargoContainerAdapter.java:147)
+	at hudson.plugins.deploy.CargoContainerAdapter$DeployCallable.invoke(CargoContainerAdapter.java:117)
+	at hudson.FilePath.act(FilePath.java:1009)
+	at hudson.FilePath.act(FilePath.java:987)
+	at hudson.plugins.deploy.CargoContainerAdapter.redeploy(CargoContainerAdapter.java:114)
+	at hudson.plugins.deploy.PasswordProtectedAdapterCargo.redeploy(PasswordProtectedAdapterCargo.java:93)
+	at hudson.plugins.deploy.DeployPublisher.perform(DeployPublisher.java:64)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+	at hudson.model.Run.execute(Run.java:1752)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Build step 'Deploy war/ear to a container' marked build as failure
+Finished: FAILURE

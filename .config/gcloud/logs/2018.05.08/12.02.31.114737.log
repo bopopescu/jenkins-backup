@@ -1,0 +1,23 @@
+2018-05-08 12:02:31,119 DEBUG    root            Loaded Command Group: [u'gcloud', u'container']
+2018-05-08 12:02:31,121 DEBUG    root            Loaded Command Group: [u'gcloud', u'container', u'clusters']
+2018-05-08 12:02:31,122 DEBUG    root            Loaded Command Group: [u'gcloud', u'container', u'clusters', u'get_credentials']
+2018-05-08 12:02:31,138 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "elevated-module-203506", --zone: "us-central1-a", NAME: "cluster-1"]
+2018-05-08 12:02:31,141 WARNING  root            Accessing a Kubernetes Engine cluster requires the kubernetes commandline
+client [kubectl]. To install, run
+  $ gcloud components install kubectl
+
+2018-05-08 12:02:31,142 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2018-05-08 12:02:32,053 DEBUG    root            (gcloud.container.clusters.get-credentials) ResponseError: code=403, message=Required "container.clusters.get" permission for "projects/elevated-module-203506/zones/us-central1-a/clusters/cluster-1".
+Traceback (most recent call last):
+  File "/var/lib/jenkins/workspace/EMS-k8s-deployment/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 844, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/var/lib/jenkins/workspace/EMS-k8s-deployment/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 756, in Run
+    resources = command_instance.Run(args)
+  File "/var/lib/jenkins/workspace/EMS-k8s-deployment/google-cloud-sdk/lib/surface/container/clusters/get_credentials.py", line 86, in Run
+    cluster = adapter.GetCluster(cluster_ref)
+  File "/var/lib/jenkins/workspace/EMS-k8s-deployment/google-cloud-sdk/lib/googlecloudsdk/api_lib/container/api_adapter.py", line 626, in GetCluster
+    raise exceptions.HttpException(error, util.HTTP_ERROR_FORMAT)
+HttpException: ResponseError: code=403, message=Required "container.clusters.get" permission for "projects/elevated-module-203506/zones/us-central1-a/clusters/cluster-1".
+2018-05-08 12:02:32,054 ERROR    root            (gcloud.container.clusters.get-credentials) ResponseError: code=403, message=Required "container.clusters.get" permission for "projects/elevated-module-203506/zones/us-central1-a/clusters/cluster-1".
+2018-05-08 12:02:32,274 DEBUG    root            Metrics reporting process started...
